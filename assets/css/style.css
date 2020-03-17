@@ -14,16 +14,14 @@ nav, .nav, h1, h2, h3, h4, h5, h6 {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1; }
 
-h1 {
-  text-align: center; }
-
-h1, h2 {
-  margin: 2rem 0; }
-
 h2, h3, h4, h5, h6 {
   color: #404040; }
 
 h1 {
+  width: max-content;
+  margin: 2rem auto;
+  padding-bottom: 1em;
+  border-bottom: solid 1px #e5e5e5;
   font-size: 200%;
   color: #404040; }
 
@@ -145,7 +143,7 @@ footer {
   position: absolute; }
 
 .message {
-  color: #bfbfbf;
+  color: #e5e5e5;
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
