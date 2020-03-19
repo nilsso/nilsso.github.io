@@ -46,7 +46,8 @@
 <li class="toc-entry toc-h3"><a href="#modular-congruence">Modular congruence</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#pitch-and-pitch-class-intervals">Pitch and pitch class intervals</a></li>
+<li class="toc-entry toc-h2"><a href="#pitch-class">Pitch class</a></li>
+<li class="toc-entry toc-h2"><a href="#pitch-intervals">Pitch intervals</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#physics-of-sound">Physics of sound</a>
@@ -73,6 +74,12 @@
 
 <h2 id="modular-arithmetic">
 <a class="anchor" href="#modular-arithmetic" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modular arithmetic</h2>
+
+<blockquote>
+  <p>If math <em>really</em> isn’t of interest to you then feel free to skip this section and instead head
+straight to <a href="#pitch-class">pitch class</a>, but know that most atonal music techniques are built upon
+the notion of modular arithmetic, which this section will briefly build up.</p>
+</blockquote>
 
 <p>In this section we’ll try to understand what is meant by the following statements or expressions:</p>
 
@@ -155,11 +162,10 @@ We express this congruence:</p>
 a\equiv b\bmod n.
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.46375em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span><span class="mbin"><span class="mord"><span class="mord mathrm">m</span><span class="mord mathrm">o</span><span class="mord mathrm">d</span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mspace" style="margin-right:0.05555555555555555em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mord">.</span></span></span></span></span></p>
 
-<p>In the example above we saw that there is an infinite amount of remainders congruent to -5 modulo</p>
-<ol>
-  <li>Instead of listing them out (which might take a while, since there’s an infinite number of
-them), we call this set of congruent integers the <em>congruence class</em> of 5 modulo 12, and denote it:</li>
-</ol>
+<p>In the example above we saw that there is an infinite amount of remainders congruent
+to -5 modulo 12. Instead of listing them out (which might take a while, since there’s an infinite
+number of them), we call this set of congruent integers the <em>congruence class</em> of 5 modulo 12, and
+denote it:</p>
 
 <p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>5</mn><msub><mo stretchy="false">]</mo><mn>12</mn></msub><mo>=</mo><mo stretchy="false">{</mo><mo>…</mo><mo separator="true">,</mo><mn>19</mn><mo separator="true">,</mo><mn>7</mn><mo separator="true">,</mo><mtext>‐</mtext><mn>5</mn><mo separator="true">,</mo><mtext>‐</mtext><mn>17</mn><mo separator="true">,</mo><mtext>‐</mtext><mn>29</mn><mo separator="true">,</mo><mo>…</mo><mo stretchy="false">}</mo><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
 [5]_{12} = \{\ldots,19,7,‐5,‐17,‐29,\ldots\}.
@@ -183,8 +189,19 @@ modulo <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3
    -</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83889em;vertical-align:-0.15em;"></span><span class="mord">−</span><span class="mord"><span class="mord"><span class="mord mathbb">Z</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mopen">[</span><span class="mord">0</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">[</span><span class="mord">1</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">[</span><span class="mord">2</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">[</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mopen">[</span><span class="mord mathdefault">a</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.78041em;vertical-align:-0.13597em;"></span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">n</span><span class="mclose">}</span><span class="mord">.</span><span class="mord">−</span></span></span></span></span>
    -->
 
-<h2 id="pitch-and-pitch-class-intervals">
-<a class="anchor" href="#pitch-and-pitch-class-intervals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pitch and pitch class intervals</h2>
+<hr>
+
+<div class="vexflow" data="random-3-2"></div>
+
+<h2 id="pitch-class">
+<a class="anchor" href="#pitch-class" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pitch class</h2>
+
+<hr>
+
+<div class="vexflow" data="random-3-2"></div>
+
+<h2 id="pitch-intervals">
+<a class="anchor" href="#pitch-intervals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pitch intervals</h2>
 
 <div class="vexflow" data="C4/q,D4|E4/q,F4|G4/q,A4"></div>
 
@@ -321,6 +338,11 @@ though learning and using it was a pretty involved process.</p>
     <hr>
     <footer>
         
+<script type="text/javascript" src="/assets/js/anchor.min.js"></script>
+<script type="text/javascript">
+    anchors.add('#content h1, #content h2, #content h3');
+</script>
+
 
 
     </footer>
