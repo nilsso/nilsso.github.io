@@ -1,9 +1,11 @@
 html {
+  color: #464c53;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   line-height: 1.5; }
 
 body {
+  background-color: #f7f9fa;
   width: 860px;
   margin: 2rem auto 50vh auto; }
 
@@ -11,6 +13,7 @@ nav, .nav, h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif; }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #1a334c;
   line-height: 1.1; }
 
 h1 {
@@ -35,6 +38,9 @@ li {
 a, a small, a:hover small {
   color: #4080bf;
   text-decoration: none; }
+
+a:hover, a small:hover, a:hover small, a small:hover small, a:focus, a small:focus {
+  color: #bf8040; }
 
 a small, a:hover small small {
   margin-top: -0.3rem;
