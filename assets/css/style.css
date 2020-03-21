@@ -1,7 +1,7 @@
 html {
   color: #464c53;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather", serif;
   line-height: 1.5; }
 
 body {
@@ -10,7 +10,7 @@ body {
   margin: 2rem auto 50vh auto; }
 
 nav, .nav, h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Slab", serif; }
+  font-family: "Roboto Mono", monospace; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #1a334c;
@@ -61,12 +61,25 @@ hr {
   height: 1px;
   margin: 2rem 0; }
 
-blockquote {
-  font-size: inherit;
-  border-left: 4px solid #E5E5E5;
-  margin: 0;
+blockquote, .thm, .thm-theorem, .thm-proposition, .thm-lemma, .thm-corollary, .thm-definition {
+  margin: 1rem 0;
   padding-left: 1rem;
-  font-style: normal; }
+  border-left: 4px solid #E5E5E5; }
+
+.thm-theorem {
+  border-color: #4080bf; }
+
+.thm-proposition {
+  border-color: #bf8040; }
+
+.thm-lemma {
+  border-color: #bf4040; }
+
+.thm-corollary {
+  border-color: #bfbf40; }
+
+.thm-definition {
+  border-color: #4040bf; }
 
 code, pre, kbd {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
@@ -100,8 +113,12 @@ dt {
   font-weight: 700; }
 
 th, td {
+  text-align: center;
   padding: 5px 10px;
   border-bottom: 1px solid #E5E5E5; }
+
+th {
+  font-family: "Roboto Mono", monospace; }
 
 tr:last-child th, tr:last-child td {
   border-bottom: none; }
@@ -124,8 +141,9 @@ footer {
   bottom: 50px;
   -webkit-font-smoothing: subpixel-antialiased; }
 
-.toc-entry .toc-h4, .toc-entry .toc-h5, .toc-entry .toc-h6 {
-  display: none; }
+.section-nav {
+  font-family: "Roboto Mono", monospace;
+  font-size: 80%; }
 
 .anchorjs-link {
   position: absolute; }
@@ -167,25 +185,6 @@ footer {
 
 .tooltip:hover .tooltip-text, a:hover small.tooltip .tooltip-text, a small:hover small.tooltip .tooltip-text {
   visibility: visible; }
-
-.thm, .thm-theorem, .thm-proposition, .thm-lemma, .thm-corollary, .thm-definition {
-  padding-left: 1rem;
-  border-left: solid 4px #E5E5E5; }
-
-.thm-theorem {
-  border-color: #4080bf; }
-
-.thm-proposition {
-  border-color: #bf8040; }
-
-.thm-lemma {
-  border-color: #bf4040; }
-
-.thm-corollary {
-  border-color: #bfbf40; }
-
-.thm-definition {
-  border-color: #4040bf; }
 
 @media (max-width: 960px) {
   html {
