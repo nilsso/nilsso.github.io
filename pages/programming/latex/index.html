@@ -9,6 +9,16 @@
 
 <!-- KaTeX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script type="module">
+    import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.mjs";
+    renderMathInElement(document.body, {
+        delimiters: [
+            {right: "$$", left: "$$", display: true},
+            {right: "$", left: "$", display: false},
+        ]
+    });
+</script>
 
 
 
@@ -93,7 +103,9 @@ the middle of a line of text. In the latter the expression sits centered
 on the page and at full size, as to be displayed. Consider the following
 expression as an inline block, $\sum_{j=0}^n a_j$, and as a display block</p>
 
-<script type="math/tex; mode=display">\sum_{j=0}^n a_j</script>
+<div class="kdmath">$$
+\sum_{j=0}^n a_j
+$$</div>
 
 <p>We can also force
 inline blocks to look like a display block by including <code class="tex highlighter-rouge">\displaystyle</code>.
@@ -101,7 +113,9 @@ For example, <code class="tex highlighter-rouge">$\displaystyle\sum_{j=0}^n a_j$
 $\displaystyle \sum_{j=0}^n a_j$. And vice versa we can force display
 blocks to appear like inline by using the <code class="highlighter-rouge">\textstyle</code> command.</p>
 
-<script type="math/tex; mode=display">\textstyle \sum_{j=0}^n a_j</script>
+<div class="kdmath">$$
+\textstyle \sum_{j=0}^n a_j
+$$</div>
 
 <p>Produced by <code class="highlighter-rouge">$$\textstyle \sum_{j=0}^n a_j$$</code></p>
 
@@ -319,10 +333,12 @@ snippet.</p>
 <span class="k">\huge</span><span class="p">{</span><span class="k">\sqrt</span><span class="p">{</span><span class="k">\smirk</span><span class="p">^</span>2<span class="p">}</span>=<span class="k">\fear</span><span class="p">}</span>
 </code></pre></div></div>
 
-<script type="math/tex; mode=display">\def\smirk{😏}
+<div class="kdmath">$$
+\def\smirk{😏}
 \def\fear{😨}
 
-\huge{\sqrt{\smirk^2}=\fear}</script>
+\huge{\sqrt{\smirk^2}=\fear}
+$$</div>
 
 <p>It’s common to be entering repetitive and long commands in $\rm\LaTeX$ that
 become less of a chore to enter when made into a macro. For instance when typing
@@ -343,10 +359,12 @@ up calculus I’d often define a macro to reduce a little bit of tedium. So that
 
 <p>But which both still produce the same thing</p>
 
-<script type="math/tex; mode=display">\def\ddx{\frac{d}{dx}}
+<div class="kdmath">$$
+\def\ddx{\frac{d}{dx}}
 \ddx y(x)
 = \ddx\left(\frac{x^2}{1+x}\right)
-= \frac{(1+x)\ddx(x^2)-x^2\ddx(1+x)}{{(1+x)}^2}</script>
+= \frac{(1+x)\ddx(x^2)-x^2\ddx(1+x)}{{(1+x)}^2}
+$$</div>
 
 <h2 id="environments">Environments</h2>
 
@@ -390,7 +408,7 @@ being a lot less typing</p>
 <code class="highlighter-rouge">align</code> and <code class="highlighter-rouge">gather</code> environments. Both allow math to be broken into
 several lines, but align allows you to… align. For example</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{aligned}
 2 &= 10-4\cdot 2 \\
   &= 10-2(24-10\cdot 2) \\
@@ -398,7 +416,8 @@ several lines, but align allows you to… align. For example</p>
   &= 34-24-2\cdot 24+4(34-24) \\
   &= 34-24-2\cdot 24+4\cdot 34-4\cdot 24 \\
   &= 5\cdot 34-7\cdot 24
-\end{aligned} %]]></script>
+\end{aligned}
+$$</div>
 
 <p>Is produced by making the equals signs the
 alignment character by putting an ampersand <code class="highlighter-rouge">&amp;</code> in front of them and
@@ -469,6 +488,7 @@ The output PDF should have</p>
 with ligatures as my monospaced font. On Mac this font is best installed via
 <code class="highlighter-rouge">brew cask install font-firacode-nerd-font</code> (or <code class="highlighter-rouge">font-fira-code</code> if you don’t want
 all of them icons). To then use it in $\rm\LaTeX$ add:</p>
+
 <div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\usepackage</span><span class="p">{</span>fontspec<span class="p">}</span>
 <span class="k">\setmonofont</span><span class="na">[Contextuals={Alternate}]</span><span class="p">{</span>FuraCode Nerd Font<span class="p">}</span>
 </code></pre></div></div>

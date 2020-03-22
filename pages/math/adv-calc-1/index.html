@@ -9,6 +9,16 @@
 
 <!-- KaTeX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script type="module">
+    import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.mjs";
+    renderMathInElement(document.body, {
+        delimiters: [
+            {right: "$$", left: "$$", display: true},
+            {right: "$", left: "$", display: false},
+        ]
+    });
+</script>
 
 
 
@@ -150,8 +160,9 @@ $\seq{a_{n_k}}_{k=1}^\infty$ is a subsequence of $\seq{a_n}_{n=1}^\infty$.</p>
 <p>The limit of the sequence $\seq{a_n}$ (denoted $\lim_{n\to\infty}a_n=L$) is a
 unique value $L$ which exists if:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\forall\epsilon>0,\exists N\in\N,\forall n\geq N,|a_n-L|<\epsilon %]]></script>
+<div class="kdmath">$$
+\forall\epsilon&gt;0,\exists N\in\N,\forall n\geq N,|a_n-L|&lt;\epsilon
+$$</div>
 </div>
 </figure>
 
@@ -299,19 +310,21 @@ A convergent sequence is bounded.
     <div>
 <p>A sequence $\seq{a_n}_{n=1}^\infty$ is a <strong>Cauchy sequence</strong> if</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\forall\epsilon>0,
+<div class="kdmath">$$
+\forall\epsilon&gt;0,
 \exists N\in\N,
 \forall n,m\geq N,
-|a_n-a_m|<\epsilon %]]></script>
+|a_n-a_m|&lt;\epsilon
+$$</div>
 
 <p>Or alternatively by the substitution $m=n+k$</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\forall\epsilon>0,
+<div class="kdmath">$$
+\forall\epsilon&gt;0,
 \exists N\in\N,
 \forall n\geq N, \forall k\in\N,
-|a_{n+k}-a_n|<\epsilon %]]></script>
+|a_{n+k}-a_n|&lt;\epsilon
+$$</div>
 </div>
 </figure>
 
@@ -485,8 +498,9 @@ $\lim_{n\to\infty}(a_n+b_n)=-\infty$.</p>
 $\forall\epsilon&gt;0$ there exists infinitely many terms of $\seq{a_n}$ in the
 interval $(s-\epsilon,s+\epsilon)$. This is equivalent to the statement:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\forall\epsilon>0,\forall N\in\N,\exists n>N,|a_n-s|<\epsilon %]]></script>
+<div class="kdmath">$$
+\forall\epsilon&gt;0,\forall N\in\N,\exists n&gt;N,|a_n-s|&lt;\epsilon
+$$</div>
 </div>
 </figure>
 
@@ -547,17 +561,20 @@ denoted $\Liminf a_n$ or $\liminf a_n$.</p>
   <li>
     <p>If it is bounded above then</p>
 
-    <script type="math/tex; mode=display">% <![CDATA[
-\forall\epsilon>0,\exists N\in\N,\forall n\in\N,n\geq N,
-a_n<\Limsup a_n+\epsilon %]]></script>
+    <div class="kdmath">$$
+\forall\epsilon&gt;0,\exists N\in\N,\forall n\in\N,n\geq N,
+a_n&lt;\Limsup a_n+\epsilon
+$$</div>
 
     <p>And there exists infinitely many $n$ such that $a_n&gt;\Limsup a_n-\epsilon$.</p>
   </li>
   <li>
     <p>If it is bounded below then</p>
 
-    <script type="math/tex; mode=display">\forall\epsilon>0,\exists N\in\N,\forall n\in\N,n\geq N,
-a_n>\Liminf a_n-\epsilon</script>
+    <div class="kdmath">$$
+\forall\epsilon&gt;0,\exists N\in\N,\forall n\in\N,n\geq N,
+a_n&gt;\Liminf a_n-\epsilon
+$$</div>
 
     <p>And there exists infinitely many $n$ such that $a_n&lt;\Liminf a_n+\epsilon$.</p>
   </li>
@@ -577,7 +594,9 @@ many elements $a_n$ above or below $s$.</p>
 equal to one another if and only if they also equal the limit of $a_n$ which
 exists:</p>
 
-<script type="math/tex; mode=display">\Limsup a_n=\Liminf a_n=\lim_{n\to\infty}a_n</script>
+<div class="kdmath">$$
+\Limsup a_n=\Liminf a_n=\lim_{n\to\infty}a_n
+$$</div>
 </div>
 </figure>
 
@@ -625,12 +644,13 @@ points, we set $\Liminf a_n=+\infty$.</li>
 <p>Lastly, assume that $\forall n\in\N,a_n\geq 0,b_n\geq 0$ and
 $\lim_{n\to\infty}b_n&gt;0$, then:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \Limsup(a_n b_n)
 = \begin{cases}
-(\Limsup a_n)(\lim_{n\to\infty}b_n) & \Limsup a_n\neq+\infty \\
-+\infty & \Limsup a_n=+\infty
-\end{cases} %]]></script>
+(\Limsup a_n)(\lim_{n\to\infty}b_n) &amp; \Limsup a_n\neq+\infty \\
++\infty &amp; \Limsup a_n=+\infty
+\end{cases}
+$$</div>
 </div>
 </figure>
 
@@ -648,16 +668,17 @@ $\lim_{n\to\infty}b_n&gt;0$, then:</p>
     <div>
 <p>Given a function $f:D\to R\subset\R$, a point $x_0$, eventually not in $D$, and $L\in\R$, finite, we say that <strong>the limit of the function $f$ at $x_0$ is $L$</strong> if and only if:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{gathered}
 \forall\epsilon,
-\exists\delta>0,
+\exists\delta&gt;0,
 \forall x\in D,
 x\neq x_0,
-|x-x_0|<\delta \Rightarrow
-|f(x)-L|<\epsilon \Leftrightarrow \\
+|x-x_0|&lt;\delta \Rightarrow
+|f(x)-L|&lt;\epsilon \Leftrightarrow \\
 \lim_{x\to x_0}f(x)=L
-\end{gathered} %]]></script>
+\end{gathered}
+$$</div>
 </div>
 </figure>
 
@@ -667,16 +688,17 @@ x\neq x_0,
     <div>
 <p>Or alternatively by the substitution $h=x-x_0$:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{gathered}
 \forall\epsilon,
-\exists\delta>0,
+\exists\delta&gt;0,
 \forall h\in D,
 h\neq 0,
-|h|<\delta \Rightarrow
-|f(x_0+h)-L|<\epsilon \Leftrightarrow \\
+|h|&lt;\delta \Rightarrow
+|f(x_0+h)-L|&lt;\epsilon \Leftrightarrow \\
 \lim_{x\to x_0}f(x)=L
-\end{gathered} %]]></script>
+\end{gathered}
+$$</div>
 </div>
 </figure>
 
@@ -686,36 +708,40 @@ h\neq 0,
     <div>
 <p>We also have the definition of finite limits from the right:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{gathered}
 \forall\epsilon,
-\exists\delta>0,
+\exists\delta&gt;0,
 \forall x\in D,
 x\neq x_0,
-x_0<x<x_0+\delta \Rightarrow
-|f(x)-L|<\epsilon \Leftrightarrow \\
+x_0&lt;x&lt;x_0+\delta \Rightarrow
+|f(x)-L|&lt;\epsilon \Leftrightarrow \\
 \lim_{x\to x_0+}f(x)=L
-\end{gathered} %]]></script>
+\end{gathered}
+$$</div>
 
 <p>And also from the left:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{gathered}
 \forall\epsilon,
-\exists\delta>0,
+\exists\delta&gt;0,
 \forall x\in D,
 x\neq x_0,
-x_0-\delta<x<x_0 \Rightarrow
-|f(x)-L|<\epsilon \Leftrightarrow \\
+x_0-\delta&lt;x&lt;x_0 \Rightarrow
+|f(x)-L|&lt;\epsilon \Leftrightarrow \\
 \lim_{x\to x_0-}f(x)=L
-\end{gathered} %]]></script>
+\end{gathered}
+$$</div>
 </div>
 </figure>
 
 <p>Note that for a limit to exist it must exist from both the left and from the right:</p>
 
-<script type="math/tex; mode=display">\lim_{x\to x_0}f(x)=L \Leftrightarrow
-\left(\lim_{x\to x_0+}f(x)=L\right)\wedge \left(\lim_{x\to x_0-}f(x)=L\right)</script>
+<div class="kdmath">$$
+\lim_{x\to x_0}f(x)=L \Leftrightarrow
+\left(\lim_{x\to x_0+}f(x)=L\right)\wedge \left(\lim_{x\to x_0-}f(x)=L\right)
+$$</div>
 
 <h3 id="sequential-characterization-of-limits">Sequential characterization of limits</h3>
 
@@ -745,11 +771,15 @@ exist.
 
 <p>In addition, if $f$ is increasing we have:</p>
 
-<script type="math/tex; mode=display">\lim_{x\to c-}f(x)\leq f(c)\leq\lim_{x\to c+}f(x)</script>
+<div class="kdmath">$$
+\lim_{x\to c-}f(x)\leq f(c)\leq\lim_{x\to c+}f(x)
+$$</div>
 
 <p>If $f$ is decreasing, we have:</p>
 
-<script type="math/tex; mode=display">\lim_{x\to c-}f(x)\geq f(c)\geq\lim_{x\to c+}f(x)</script>
+<div class="kdmath">$$
+\lim_{x\to c-}f(x)\geq f(c)\geq\lim_{x\to c+}f(x)
+$$</div>
 
 <p>(The limits $\lim_{x\to a+}f(x)$ and $\lim_{x\to b-}f(x)$ exist as well.)</p>
 </div>
@@ -812,15 +842,17 @@ about what said limits could be.</p>
 <p>Let a function $f:D\to R\subset\R$, we have for limits going to positive
 infinity:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \lim_{x\to x_0} = +\infty\Leftrightarrow
-\forall M>0,\exists\delta>0,\forall x\in D,x\neq x_0,|x-x_0|<\delta\Rightarrow f(x)>M %]]></script>
+\forall M&gt;0,\exists\delta&gt;0,\forall x\in D,x\neq x_0,|x-x_0|&lt;\delta\Rightarrow f(x)&gt;M
+$$</div>
 
 <p>And for limits going to negative infinity:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \lim_{x\to x_0} = -\infty\Leftrightarrow
-\forall M>0,\exists\delta>0,\forall x\in D,x\neq x_0,|x-x_0|<\delta\Rightarrow f(x)<-M %]]></script>
+\forall M&gt;0,\exists\delta&gt;0,\forall x\in D,x\neq x_0,|x-x_0|&lt;\delta\Rightarrow f(x)&lt;-M
+$$</div>
 
 <p>Similar to finite limits, we can have infinite limits approach $x_0$ from either
 the right or from the left.</p>
@@ -836,12 +868,16 @@ the right or from the left.</p>
 <p>Assume that $\forall x\in(a,b)$, $f(x)&gt;0$, let $x_0\in(a,b)$ such that
 $\lim_{x\to x_0}f(x)=0.$ Then:</p>
 
-<script type="math/tex; mode=display">\lim_{x\to x_0}\frac{1}{f(x)}=+\infty</script>
+<div class="kdmath">$$
+\lim_{x\to x_0}\frac{1}{f(x)}=+\infty
+$$</div>
 
 <p>Assume that $\forall x\in(a,b)$, $f(x)&lt;0$, let $x_0\in(a,b)$ such that
 $\lim_{x\to x_0}f(x)=0.$ Then:</p>
 
-<script type="math/tex; mode=display">\lim_{x\to x_0}\frac{1}{f(x)}=-\infty</script>
+<div class="kdmath">$$
+\lim_{x\to x_0}\frac{1}{f(x)}=-\infty
+$$</div>
 </div>
 </figure>
 
@@ -852,7 +888,9 @@ $\lim_{x\to x_0}f(x)=0.$ Then:</p>
 <p>Assume that $\lim_{x\to x_0}f(x)=L&gt;0$ (finite) or $\lim_{x\to x_0}f(x)=+\infty$
 and $\lim_{x\to x_0}g(x)=+\infty$. Then:</p>
 
-<script type="math/tex; mode=display">\lim_{x\to x_0}f(x)g(x)=+\infty</script>
+<div class="kdmath">$$
+\lim_{x\to x_0}f(x)g(x)=+\infty
+$$</div>
 </div>
 </figure>
 
@@ -863,7 +901,9 @@ and $\lim_{x\to x_0}g(x)=+\infty$. Then:</p>
 <p>Assume that $\lim_{x\to x_0}f(x)=L$ (finite) or $\lim_{x\to x_0}f(x)=+\infty$
 and $\lim_{x\to x_0}g(x)=+\infty$. Then:</p>
 
-<script type="math/tex; mode=display">\lim_{x\to x_0}(f(x)+g(x))=+\infty</script>
+<div class="kdmath">$$
+\lim_{x\to x_0}(f(x)+g(x))=+\infty
+$$</div>
 </div>
 </figure>
 
@@ -892,17 +932,19 @@ $\lim_{x\to x_0}f(x)g(x)=+\infty$.</li>
     <div>
 <p>Of finite limits at infinity:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{gathered}
 \lim_{x\to+\infty}f(x)=L \Leftrightarrow \\
-\forall\epsilon>0,\exists X>0,\forall x>X \Rightarrow |f(x)-L|<\epsilon
-\end{gathered} %]]></script>
+\forall\epsilon&gt;0,\exists X&gt;0,\forall x&gt;X \Rightarrow |f(x)-L|&lt;\epsilon
+\end{gathered}
+$$</div>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{gathered}
 \lim_{x\to-\infty}f(x)=L \Leftrightarrow \\
-\forall\epsilon>0,\exists X>0,\forall x<-X \Rightarrow |f(x)-L|<\epsilon
-\end{gathered} %]]></script>
+\forall\epsilon&gt;0,\exists X&gt;0,\forall x&lt;-X \Rightarrow |f(x)-L|&lt;\epsilon
+\end{gathered}
+$$</div>
 </div>
 </figure>
 
@@ -912,28 +954,33 @@ $\lim_{x\to x_0}f(x)g(x)=+\infty$.</li>
     <div>
 <p>And of infinite limits at infinity:</p>
 
-<script type="math/tex; mode=display">\begin{gathered}
+<div class="kdmath">$$
+\begin{gathered}
 \lim_{x\to+\infty}f(x)=+\infty \Leftrightarrow \\
-\forall M>0, \exists X>0, \forall x>X \Rightarrow f(x)>M
-\end{gathered}</script>
+\forall M&gt;0, \exists X&gt;0, \forall x&gt;X \Rightarrow f(x)&gt;M
+\end{gathered}
+$$</div>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{gathered}
 \lim_{x\to+\infty}f(x)=-\infty \Leftrightarrow \\
-\forall M>0, \exists X>0, \forall x>X \Rightarrow f(x)<-M
-\end{gathered} %]]></script>
+\forall M&gt;0, \exists X&gt;0, \forall x&gt;X \Rightarrow f(x)&lt;-M
+\end{gathered}
+$$</div>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{gathered}
 \lim_{x\to-\infty}f(x)=+\infty \Leftrightarrow \\
-\forall M>0, \exists X>0, \forall x<-X \Rightarrow f(x)>M
-\end{gathered} %]]></script>
+\forall M&gt;0, \exists X&gt;0, \forall x&lt;-X \Rightarrow f(x)&gt;M
+\end{gathered}
+$$</div>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{gathered}
 \lim_{x\to-\infty}f(x)=-\infty \Leftrightarrow \\
-\forall M>0, \exists X>0, \forall x<-X \Rightarrow f(x)<-M
-\end{gathered} %]]></script>
+\forall M&gt;0, \exists X&gt;0, \forall x&lt;-X \Rightarrow f(x)&lt;-M
+\end{gathered}
+$$</div>
 </div>
 </figure>
 
@@ -961,11 +1008,12 @@ exists and is finite.</p>
 <p>Let a function $f:[a,+\infty)\to\R$ then $\lim_{x\to+\infty}f(x)$ exists and is
 finite if and only if:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\forall\epsilon>0,
-  \exists X>0,
+<div class="kdmath">$$
+\forall\epsilon&gt;0,
+  \exists X&gt;0,
   \forall b,c\in[a,+\infty),
-  c>b\geq X \Rightarrow |f(c)-f(b)|<\epsilon %]]></script>
+  c&gt;b\geq X \Rightarrow |f(c)-f(b)|&lt;\epsilon
+$$</div>
 </div>
 </figure>
 
@@ -979,18 +1027,21 @@ finite if and only if:</p>
 
 <p>A function $f$ is <strong>uniformly continuous on an interval $D\subset\R$</strong> if and only if:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \forall\epsilon>0,
 \exists\delta>0,
 \forall x_1,x_2\in D,
 |x_2-x_1|<\delta \Rightarrow
-|f(x_2)-f(x_1)|<\epsilon %]]></script>
+|f(x_2)-f(x_1)|<\epsilon
+$$</div>
 
 <h3 id="sequential-chatacterization">Sequential chatacterization</h3>
 
 <p>A function $f:D\to \R$ is uniformly continuous on $D$ if and only if:</p>
 
-<script type="math/tex; mode=display">\forall\seq{u_n}</script>
+<div class="kdmath">$$
+\forall\seq{u_n}
+$$</div>
 
 <hr />
 
@@ -1005,7 +1056,9 @@ finite if and only if:</p>
 <p>Let a function $f(x)$ defined over an open domain $D$. Let $x_0\in D$. The
 <strong>derivative</strong> of $f$ at $x_0$, and denoted $f’(x_0)$, is defined by</p>
 
-<script type="math/tex; mode=display">f'(x_0)=\lim_{h\to 0}\frac{f(x_)+h)-f(x_0)}{h}</script>
+<div class="kdmath">$$
+f'(x_0)=\lim_{h\to 0}\frac{f(x_)+h)-f(x_0)}{h}
+$$</div>
 
 <p>Providing that the limit exists.</p>
 </div>
@@ -1038,7 +1091,9 @@ The classic example is the absolute value function.</p>
 <p>Let a function $f(x):D\to R\subset\R$. The associated <strong>derivative function</strong>
 $f’(x):D’\to R’\subset\R$ is defined as</p>
 
-<script type="math/tex; mode=display">\forall x\in D',f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}</script>
+<div class="kdmath">$$
+\forall x\in D',f'(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
+$$</div>
 
 <p>Where $D’\subseteq D$ is the set of points where the limit exists.</p>
 </div>
@@ -1060,15 +1115,19 @@ $x$ is applied.</p>
     <div>
 <p>We re-notate the derivative as:</p>
 
-<script type="math/tex; mode=display">f'(x)
+<div class="kdmath">$$
+f'(x)
 = \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
 = \lim_{\Delta x\to 0}\frac{\Delta f}{\Delta x}
-= \frac{df(x)}{dx}</script>
+= \frac{df(x)}{dx}
+$$</div>
 
 <p>And when we want to designate the derivative at a specific point $x_0$, we can
 use the following notation:</p>
 
-<script type="math/tex; mode=display">\left.\frac{df(x)}{dx}\right|_{x=x_0}</script>
+<div class="kdmath">$$
+\left.\frac{df(x)}{dx}\right|_{x=x_0}
+$$</div>
 </div>
 </figure>
 
@@ -1139,8 +1198,10 @@ ${\left(\frac{f}{g}\right)}'(x)=\frac{f'(g(x)-f(x)g'(x)}{g^2(x)}$
     <div>
 <p>The second-order derivative of $f$ is defined and denoted by</p>
 
-<script type="math/tex; mode=display">f''(x)=(f'(x))' \Leftrightarrow
-\frac{d^2f(x)}{dx^2}=\frac{d}{dx}\left(\frac{df(x)}{dx}\right)</script>
+<div class="kdmath">$$
+f''(x)=(f'(x))' \Leftrightarrow
+\frac{d^2f(x)}{dx^2}=\frac{d}{dx}\left(\frac{df(x)}{dx}\right)
+$$</div>
 </div>
 </figure>
 
@@ -1158,7 +1219,9 @@ $\Delta x$ (just as $\Delta x$ represents the increment of $x$).</p>
 at the basepoint $x$ and with increment $\Delta x$.
 It is denoted and defined by:</p>
 
-<script type="math/tex; mode=display">df(x,\Delta x)=f'(x)\Delta x</script>
+<div class="kdmath">$$
+df(x,\Delta x)=f'(x)\Delta x
+$$</div>
 
 <table>
   <tbody>
@@ -1170,7 +1233,9 @@ It is denoted and defined by:</p>
   </tbody>
 </table>
 
-<script type="math/tex; mode=display">f(x+\Delta x)-f(x)\approx df(x,\Delta x)</script>
+<div class="kdmath">$$
+f(x+\Delta x)-f(x)\approx df(x,\Delta x)
+$$</div>
 </div>
 </figure>
 
@@ -1183,7 +1248,9 @@ of notation.</p>
     <div>
 <p>Assume $f$ is differentiable at $x$. Then</p>
 
-<script type="math/tex; mode=display">f(x+\Delta x)-f(x)=df(x,\Delta x)+\Delta xQ_x(\Delta x)</script>
+<div class="kdmath">$$
+f(x+\Delta x)-f(x)=df(x,\Delta x)+\Delta xQ_x(\Delta x)
+$$</div>
 
 <p>Where $\lim_{\Delta x\to 0}Q_x(\Delta x)=0$.</p>
 </div>

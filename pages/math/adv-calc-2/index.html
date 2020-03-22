@@ -9,6 +9,16 @@
 
 <!-- KaTeX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script type="module">
+    import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.mjs";
+    renderMathInElement(document.body, {
+        delimiters: [
+            {right: "$$", left: "$$", display: true},
+            {right: "$", left: "$", display: false},
+        ]
+    });
+</script>
 
 
 
@@ -76,16 +86,19 @@ $$
     <h3></h3>
     <hr />
     <div>
-<script type="math/tex; mode=display">\sum_{k=0}^n r^k = \frac{1-r^{k+1}}{1-r}</script>
+<div class="kdmath">$$
+\sum_{k=0}^n r^k = \frac{1-r^{k+1}}{1-r}
+$$</div>
 </div>
 </figure>
 
 <p>By default, consider functions that are bounded on closed and bounded intervals</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \exists a,b\in\R,a,b<\infty,f:[a,b]\to\R
 \text{ such that }
-\exists m,M\in\R,m,M<\infty,\forall x\in[a,b],m\le f(x)\le M %]]></script>
+\exists m,M\in\R,m,M<\infty,\forall x\in[a,b],m\le f(x)\le M
+$$</div>
 
 <!-- Ch 1 .................................................................. -->
 <h1 id="riemann-integrals">Riemann integrals</h1>
@@ -104,13 +117,16 @@ smaller sub-intervals.</p>
 <p>A <strong>partition</strong> $P$ of the interval $[a,b]$ is the set of points
   $\seq{x_k}_{k=0}^n$ (not necessarily equidistant) such that</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-a=x_0<x_1<x_2<\ldots<x_{k-1}<x_k<\ldots<x_{n-1}<x_n=b %]]></script>
+<div class="kdmath">$$
+a=x_0&lt;x_1&lt;x_2&lt;\ldots&lt;x_{k-1}&lt;x_k&lt;\ldots&lt;x_{n-1}&lt;x_n=b
+$$</div>
 
 <p>The k-th subinterval of $P$ is the interval $P_k=[x_{k-1},x_k]$ and its length
   is given by</p>
 
-<script type="math/tex; mode=display">\abs{P_k} = \Delta x_k = x_k-x_{k-1}</script>
+<div class="kdmath">$$
+\abs{P_k} = \Delta x_k = x_k-x_{k-1}
+$$</div>
 
 <p>So the first subinterval is $\abs{P_1} = \Delta x_1 = x_1-x_0$</p>
 </div>
@@ -122,7 +138,9 @@ a=x_0<x_1<x_2<\ldots<x_{k-1}<x_k<\ldots<x_{n-1}<x_n=b %]]></script>
     <div>
 <p>The <strong>norm of a partition</strong> $P=\seq{x_k}_{k=0}^n$ denoted $\norm P$ is defined</p>
 
-<script type="math/tex; mode=display">\norm P = \max_{k=1,2,\ldots,n}\abs{P_k} = \max_{k=1,2,\ldots,n}\Delta x_k</script>
+<div class="kdmath">$$
+\norm P = \max_{k=1,2,\ldots,n}\abs{P_k} = \max_{k=1,2,\ldots,n}\Delta x_k
+$$</div>
 </div>
 </figure>
 
@@ -133,11 +151,13 @@ a=x_0<x_1<x_2<\ldots<x_{k-1}<x_k<\ldots<x_{n-1}<x_n=b %]]></script>
 <p>The <strong>upper sum</strong> and <strong>lower sum</strong> for the function $f:[a,b]\to\R$ corresponding to
   partition $P=\seq{s_k}_{k=0}^n$ are respectively given by</p>
 
-<script type="math/tex; mode=display">U(f,P)=\sum_{k=1}^n M_k(f,P)\Delta x_k\text{, where }
+<div class="kdmath">$$
+U(f,P)=\sum_{k=1}^n M_k(f,P)\Delta x_k\text{, where }
   M_k(f,P)=\sup_{x\in P_k}f(x)
   \\
   L(f,P)=\sum_{k=1}^n m_k(f,P)\Delta x_k\text{, where }
-  m_k(f,P)=\inf_{x\in P_k}f(x)</script>
+  m_k(f,P)=\inf_{x\in P_k}f(x)
+$$</div>
 </div>
 </figure>
 
@@ -160,8 +180,10 @@ a=x_0<x_1<x_2<\ldots<x_{k-1}<x_k<\ldots<x_{n-1}<x_n=b %]]></script>
 <p>Let a function $f:[a,b]\to\R$ and two partitions $P_A$ and $P_B$ of
   $[a,b]$. If $P_B$ is finer than $P_A$ then</p>
 
-<script type="math/tex; mode=display">U(f,P_B)\le U(f,P_A)\text{, and }
-  L(f,P_B)\ge L(f,P_A)</script>
+<div class="kdmath">$$
+U(f,P_B)\le U(f,P_A)\text{, and }
+  L(f,P_B)\ge L(f,P_A)
+$$</div>
 </div>
 </figure>
 
@@ -172,7 +194,9 @@ a=x_0<x_1<x_2<\ldots<x_{k-1}<x_k<\ldots<x_{n-1}<x_n=b %]]></script>
 <p>If $P_A$ and $P_B$ are two arbitrary partitions (one is not necessarily finer
   than the other) of $[a,b]$ then</p>
 
-<script type="math/tex; mode=display">L(f,P_B)\le U(f,P_A)</script>
+<div class="kdmath">$$
+L(f,P_B)\le U(f,P_A)
+$$</div>
 </div>
 </figure>
 
@@ -187,12 +211,14 @@ a=x_0<x_1<x_2<\ldots<x_{k-1}<x_k<\ldots<x_{n-1}<x_n=b %]]></script>
   interval $[a,b]$, the upper and lower integrals of $f$ on $[a,b]$ are
   respectively defined by</p>
 
-<script type="math/tex; mode=display">\overline{\int_a^b}f(x)dx
+<div class="kdmath">$$
+\overline{\int_a^b}f(x)dx
   = \inf_P U(f,P)
   = \inf\seq{U(f,P)}\text{, and }
   \underline{\int_a^b}f(x)dx
   = \sup_P L(f,P)
-  = \sup\seq{L(f,P)}</script>
+  = \sup\seq{L(f,P)}
+$$</div>
 </div>
 </figure>
 
@@ -203,11 +229,12 @@ a=x_0<x_1<x_2<\ldots<x_{k-1}<x_k<\ldots<x_{n-1}<x_n=b %]]></script>
 <p>A bounded function $f:[a,b]\to\R$ is said to be <strong>Riemann integrable</strong> on
   $[a,b]$ if</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\forall\varepsilon>0,\exists\delta>0,\norm{P}<\delta\Rightarrow
-  U(f,P)-L(f,P)<\varepsilon \\
+<div class="kdmath">$$
+\forall\varepsilon&gt;0,\exists\delta&gt;0,\norm{P}&lt;\delta\Rightarrow
+  U(f,P)-L(f,P)&lt;\varepsilon \\
   \Leftrightarrow
-  \lim_{\norm P\to 0}\left(U(f,P)-L(f,P)\right)=0 %]]></script>
+  \lim_{\norm P\to 0}\left(U(f,P)-L(f,P)\right)=0
+$$</div>
 
 <p>That is the norm of the partition (the
   length of the largest interval in the partition) goes to zero, so the
@@ -218,9 +245,10 @@ a=x_0<x_1<x_2<\ldots<x_{k-1}<x_k<\ldots<x_{n-1}<x_n=b %]]></script>
 <p>We can also show that a function is not Riemann integrable by showing the
 complement. That is</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \exists\varepsilon>0,\forall\delta>0,\exists P,
-(\norm{P}<\delta)\wedge(U(f,P)-L(f,P)\ge\varepsilon) %]]></script>
+(\norm{P}<\delta)\wedge(U(f,P)-L(f,P)\ge\varepsilon)
+$$</div>
 
 <figure>
     <h3>Proposition 1.2.2</h3>
@@ -228,7 +256,9 @@ complement. That is</p>
     <div>
 <p>Let a bounded and Riemann integrable function $f:[a,b]\to\R$, then</p>
 
-<script type="math/tex; mode=display">\underline{\int_a^b}f(x)dx=\overline{\int_a^b}f(x)dx=\int_a^b f(x)dx</script>
+<div class="kdmath">$$
+\underline{\int_a^b}f(x)dx=\overline{\int_a^b}f(x)dx=\int_a^b f(x)dx
+$$</div>
 
 <p>And the quantity $\int_a^b f(x)dx$ is called the <strong>Riemann integral</strong> of $f$
   over $[a,b]$.</p>
@@ -244,7 +274,9 @@ complement. That is</p>
   The <strong>Riemann sum</strong> of $f$ over $P$ and with the set of points
   $\seq{c_k}_{k=1}^n$ is given by</p>
 
-<script type="math/tex; mode=display">R_n(f,\seq{c_k}_{k=1}^n)=\sum_{k=1}^n f(c_k)\Delta x_k</script>
+<div class="kdmath">$$
+R_n(f,\seq{c_k}_{k=1}^n)=\sum_{k=1}^n f(c_k)\Delta x_k
+$$</div>
 
 <p>Which we denote $R_n$ (if there is no ambiguity).</p>
 </div>
@@ -256,14 +288,17 @@ complement. That is</p>
     <div>
 <p>Assume $f$ is Riemann integrable over $[a,b]$ then</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\forall\varepsilon>0,\exists\delta>0,\forall P,\norm P<\delta \Rightarrow
-  \left|R_n(f,\seq{c_k}_{k=1}^n)-\int_a^b f(x)dx\right|<\varepsilon %]]></script>
+<div class="kdmath">$$
+\forall\varepsilon&gt;0,\exists\delta&gt;0,\forall P,\norm P&lt;\delta \Rightarrow
+  \left|R_n(f,\seq{c_k}_{k=1}^n)-\int_a^b f(x)dx\right|&lt;\varepsilon
+$$</div>
 
 <p>For any arbitrary set of points $\seq{c_k}$ associated with $P$.
   Note that this statement is equivalent to</p>
 
-<script type="math/tex; mode=display">\int_a^b f(x)dx=\lim_{n\to\infty}R_n</script>
+<div class="kdmath">$$
+\int_a^b f(x)dx=\lim_{n\to\infty}R_n
+$$</div>
 </div>
 </figure>
 
@@ -276,13 +311,16 @@ complement. That is</p>
 <p>Let a bounded function $f:[a,b]\to\R$.
   Assume that $\exists I\in\R$ (finite) such that</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
-\forall\varepsilon>0,\exists\delta>0,\forall P,
-  \norm P<\delta,\abs{R_n-I}<\varepsilon %]]></script>
+<div class="kdmath">$$
+\forall\varepsilon&gt;0,\exists\delta&gt;0,\forall P,
+  \norm P&lt;\delta,\abs{R_n-I}&lt;\varepsilon
+$$</div>
 
 <p>Then $f$ is Riemann integrable on $[a,b]$ and</p>
 
-<script type="math/tex; mode=display">I=\int_a^b f(x)dx</script>
+<div class="kdmath">$$
+I=\int_a^b f(x)dx
+$$</div>
 </div>
 </figure>
 
@@ -305,16 +343,17 @@ independent of the point you choose.</p>
 
 <p><strong>Continuity:</strong></p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \forall x_0\in[a,b],\forall\varepsilon>0,
 \exists\delta(\varepsilon,x_0)>0,\forall x\in[a,b],
 \abs{x-x_0}<\delta
 \Rightarrow
-\abs{f(x)-f(x_0)}<\varepsilon %]]></script>
+\abs{f(x)-f(x_0)}<\varepsilon
+$$</div>
 
 <p><strong>Uniform continuity:</strong></p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{aligned}
   &\forall\varepsilon>0,
   \exists\delta(\varepsilon)>0,
@@ -331,7 +370,8 @@ independent of the point you choose.</p>
   \abs{x_1-x_2}<\delta
   \Rightarrow
   \abs{f(x)-f(x_0)}<\varepsilon
-\end{aligned} %]]></script>
+\end{aligned}
+$$</div>
 
 <figure>
     <h3>Theorem 1.2.6</h3>
@@ -353,13 +393,17 @@ independent of the point you choose.</p>
     <h3>Theorem</h3>
     <hr />
     <div>
-<script type="math/tex; mode=display">\sum_{k=n_0}^\infty a_k\text{ converges }\Rightarrow\lim_{n\to\infty}a_n=0</script>
+<div class="kdmath">$$
+\sum_{k=n_0}^\infty a_k\text{ converges }\Rightarrow\lim_{n\to\infty}a_n=0
+$$</div>
 </div>
 </figure>
 
 <p>Also consider the contraposition</p>
 
-<script type="math/tex; mode=display">\lim_{n\to\infty}a_n\ne 0\Rightarrow\sum_{k=n_0}^\infty a_k\text{ diverges}</script>
+<div class="kdmath">$$
+\lim_{n\to\infty}a_n\ne 0\Rightarrow\sum_{k=n_0}^\infty a_k\text{ diverges}
+$$</div>
 
 <hr />
 
@@ -368,8 +412,8 @@ independent of the point you choose.</p>
     <hr />
     <div>
 <p>A series of the form
-<script type="math/tex">\sum_{n=1}^\infty(-1)^{n-1}a_n=a_1-a_2+\cdots\text{ or }
-\sum_{n=1}^\infty(-1)^n a_n=-a_1=a_2-\cdots\text{ or }</script>
+<span class="kdmath">$\sum_{n=1}^\infty(-1)^{n-1}a_n=a_1-a_2+\cdots\text{ or }
+\sum_{n=1}^\infty(-1)^n a_n=-a_1=a_2-\cdots\text{ or }$</span>
 Where $\forall n\in\N$, $a_n\ge 0$ is called an alternating series.</p>
 </div>
 </figure>

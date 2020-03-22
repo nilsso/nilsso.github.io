@@ -9,6 +9,16 @@
 
 <!-- KaTeX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script type="module">
+    import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.mjs";
+    renderMathInElement(document.body, {
+        delimiters: [
+            {right: "$$", left: "$$", display: true},
+            {right: "$", left: "$", display: false},
+        ]
+    });
+</script>
 
 
 
@@ -105,7 +115,9 @@ $$
 with powers one (or zero). $x=4$ is linear while $x^2=4$ is not (quadratic).
 Linear equations take the form</p>
 
-<script type="math/tex; mode=display">a_1 x_1+a_2 x_2+\cdots+a_n x_n = d</script>
+<div class="kdmath">$$
+a_1 x_1+a_2 x_2+\cdots+a_n x_n = d
+$$</div>
 
 <p>Linear equations have a set of solutions with values for the variables which
 solve the equation consistently. For $x=4$, the only solution for the
@@ -115,23 +127,25 @@ equation.</p>
 <p>A <em>linear system</em> is when we consider several equations to be related. A linear
 system has the form (where rows/equations are labeled $p_1,\ldots,p_j$)</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{aligned}
 p_1&: & a_{1,1}x_1+a_{1,2}x_2+\cdots+a_{1,n}x_n &= d_1 \\
 \vdots \\
 p_i&: & a_{i,1}x_1+a_{i,2}x_2+\cdots+a_{i,n}x_n &= d_i \\
 \vdots \\
 p_j&: & a_{j,1}x_1+a_{j,2}x_2+\cdots+a_{j,n}x_n &= d_j
-\end{aligned} %]]></script>
+\end{aligned}
+$$</div>
 
 <p>Solutions to a linear system are values which solve all the equations at the
 same time. For example the linear system</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{aligned}
 x &= 1 \\
 x + y &= 3
-\end{aligned} %]]></script>
+\end{aligned}
+$$</div>
 
 <p>Has a solution when $x=1$ and $y=2$, denoted as the tuple $(1,2)$.
 This is verifiable by plugging the first equation into the second and solving
@@ -145,9 +159,10 @@ lead to the solutions of the system. We call these manipulations elementary
 operations, row operations, or Gaussian, and we have <em>addition</em>, <em>scalar
 multiplication</em> and <em>swapping</em>. For the operations, consider the example system</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{aligned}
-p_1&: & x &= 1 \\ p_2&: & x + y &= 3 \end{aligned} %]]></script>
+p_1&: & x &= 1 \\ p_2&: & x + y &= 3 \end{aligned}
+$$</div>
 
 <h3 id="scalar-multiplication">Scalar multiplication</h3>
 
@@ -155,9 +170,10 @@ p_1&: & x &= 1 \\ p_2&: & x + y &= 3 \end{aligned} %]]></script>
 a single row by some number (a scalar) and replace what was there.
 For the example we start my multiplying row 1 by -1</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \xrightarrow{(-1)p_1}~:
-\begin{aligned} -x &= -1 \\ x + y &= 3 \end{aligned} %]]></script>
+\begin{aligned} -x &= -1 \\ x + y &= 3 \end{aligned}
+$$</div>
 
 <h3 id="addition">Addition</h3>
 
@@ -165,26 +181,29 @@ For the example we start my multiplying row 1 by -1</p>
 the terms of another and replace what was there with the new sum. For the
 example system replace row 2 by addition rows 1 and 2 together</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \xrightarrow{p_1+p_2}~:
 \begin{aligned} -x &= -1 \\ (-x)+x+y &= (-1)+3 \end{aligned}
 \Rightarrow
-\begin{aligned} -x &= -1 \\ y &= 2 \end{aligned} %]]></script>
+\begin{aligned} -x &= -1 \\ y &= 2 \end{aligned}
+$$</div>
 
 <p>We would then want to again multiply row 1 by -1 to get a solution in terms of x
 and y</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \xrightarrow{(-1)p_1}~:
-\begin{aligned} x &= 1 \\ y &= 2 \end{aligned} %]]></script>
+\begin{aligned} x &= 1 \\ y &= 2 \end{aligned}
+$$</div>
 
 <p>But starting from the beginning, we could have done both operations at once:
 multiplying row 1 by -1 before adding it to row 2 (consider this subtracting one
 row from another)</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \xrightarrow{(-1)p_1+p_2}~:
-\begin{aligned} x &= 1 \\ y &= 2 \end{aligned} %]]></script>
+\begin{aligned} x &= 1 \\ y &= 2 \end{aligned}
+$$</div>
 
 <h3 id="swap">Swap</h3>
 
@@ -193,7 +212,7 @@ In this previous example it isn’t useful, but when systems contain rows with o
 of order leading terms, we want to swap them into a sort of descending order.
 For example</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{array}{ 4*r }
   & y & + & z = d \\
 x &   & + & z = e \\
@@ -205,7 +224,8 @@ x &   & + & z = e \\
 x &   & + & z = e \\
   & y & + & z = d \\
   &   &   & z = f
-\end{array} %]]></script>
+\end{array}
+$$</div>
 
 <p>Swapping rows 1 and 2 tidy up the system, and is important for future methods.</p>
 
@@ -218,18 +238,19 @@ and j<sup>th</sup> column positions, and is the j<sup>th</sup> element.
 These exact location of elements are crucial.
 The form of a matrix is such</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{pmatrix}
 a_{11} & a_{12} & \cdots & a_{1j} \\
 a_{21} & a_{22} & \cdots & a_{2j} \\
 \vdots & \vdots & \ddots & \vdots \\
 a_{i1} & a_{i2} & \cdots & a_{ij}
 \end{pmatrix}
-= [a_{ij}]\in \R^{m\times n} %]]></script>
+= [a_{ij}]\in \R^{m\times n}
+$$</div>
 
 <p>For example</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{pmatrix}
 0 & 6 & 1 \\
 2 & 4 & 3
@@ -242,16 +263,18 @@ b_{21} & b_{22} & b_{23}
 \begin{array}{3*c}
 b_{11}=0 & b_{12}=6 & b_{13}=1 \\
 b_{21}=2 & b_{22}=4 & b_{23}=3
-\end{array} %]]></script>
+\end{array}
+$$</div>
 
 <p>A matrix with with values only in one dimension is called a vector. If it’s only
 a column then it’s a <em>column vector</em>, and a <em>row vector</em> if it’s only a row.
 Vectors are denoted with an arrow over the symbol.</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \vec u = \begin{pmatrix} a \\ b \\ c \end{pmatrix}
 \quad
-\vec v = \begin{pmatrix} a & b & c \end{pmatrix} %]]></script>
+\vec v = \begin{pmatrix} a & b & c \end{pmatrix}
+$$</div>
 
 <h2 id="matrix-operations">Matrix operations</h2>
 
@@ -264,7 +287,9 @@ particular <em>addition</em>, <em>scalar multiplication</em> and <em>matrix mult
 every term in a matrix.
 Given a matrix $A=[a_{ij}]\in\R^{m\times n}$ and a scalar $k$</p>
 
-<script type="math/tex; mode=display">k\cdot A = [k\cdot a_{ij}]\in\R^{m\times n}</script>
+<div class="kdmath">$$
+k\cdot A = [k\cdot a_{ij}]\in\R^{m\times n}
+$$</div>
 
 <h3 id="matrix-addition">Matrix addition</h3>
 
@@ -272,7 +297,9 @@ Given a matrix $A=[a_{ij}]\in\R^{m\times n}$ and a scalar $k$</p>
 matrices together corresponding to location.
 Given matrices $A=[a_{ij}]\in\R^{m\times n}$ and $B=[b_{ij}]\in\R^{m\times n}$</p>
 
-<script type="math/tex; mode=display">A+B = [a_{ij}+b_{ij}]\in\R^{m\times n}</script>
+<div class="kdmath">$$
+A+B = [a_{ij}+b_{ij}]\in\R^{m\times n}
+$$</div>
 
 <h3 id="matrix-multiplication">Matrix multiplication</h3>
 
@@ -281,7 +308,7 @@ Given matrices $A=[a_{ij}]\in\R^{m\times n}$ and $B=[b_{ij}]\in\R^{m\times n}$</
 then right must have <em>n</em> rows. That is, left has dimensions $m\times n$ and
 right has dimensions $n\times p$.</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 A\times B
 = \begin{pmatrix}
   a_{11} & a_{12} & \cdots & a_{1n} \\
@@ -293,7 +320,8 @@ A\times B
   b_{21} & \cdots & b_{2p} \\
   \vdots & \ddots & \vdots \\
   b_{n1} & \cdots & b_{np}
-\end{pmatrix} %]]></script>
+\end{pmatrix}
+$$</div>
 
 <p>The number of rows in left and the number of columns in right are arbitrary but
 will change the dimensions of the resulting matrix. The result will have only as
@@ -301,7 +329,7 @@ many rows as left and only as many columns as right.
 The operation is highly algorithmic and follows the same pattern.
 Multiplying two $2\times 2$ matrices is a good example</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{pmatrix}
   \color{red}{a_1} & \color{red}{a_2} \\
   \color{green}{a_3} & \color{green}{a_4}
@@ -315,12 +343,13 @@ Multiplying two $2\times 2$ matrices is a good example</p>
   \color{red}{a_1}\color{orange}{b_2}+\color{red}{a_2}\color{orange}{b_4} \\
   \color{green}{a_3}\color{blue}{b_1}+\color{green}{a_4}\color{blue}{b_3} &
   \color{green}{a_3}\color{orange}{b_2}+\color{green}{a_4}\color{orange}{b_4}
-\end{pmatrix} %]]></script>
+\end{pmatrix}
+$$</div>
 
 <p>Considering the arbitrary dimensions, if left had only 1 row then so would the
 result, and if right had only 1 column then so would the result.</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{pmatrix}
   \color{red}{a_1} & \color{red}{a_2}
 \end{pmatrix}
@@ -344,7 +373,8 @@ result, and if right had only 1 column then so would the result.</p>
 \begin{pmatrix}
   \color{red}{a_1}\color{blue}{b_1}+\color{red}{a_2}\color{blue}{b_2} \\
   \color{green}{a_3}\color{blue}{b_1}+\color{green}{a_4}\color{blue}{b_2}
-\end{pmatrix} %]]></script>
+\end{pmatrix}
+$$</div>
 
 <h2 id="matrix-abbreviation-of-linear-systems">Matrix abbreviation of linear systems</h2>
 
@@ -356,7 +386,7 @@ Whatever falls on the right side of the equation will be placed into an extra
 column on the right of the matrix, separated from the indeterminate columns by a
 line. This is called an <em>augmented matrix</em>.</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{array}{ *7r }
      x & + &  y &   &    & = & 0 \\
     2x & - &  y & + & 3z & = & 3 \\
@@ -367,11 +397,12 @@ line. This is called an <em>augmented matrix</em>.</p>
     1 & 1 & 0 & 0 \\
     2 & -1 & 3 & 3 \\
     1 & -2 & -1 & 3
-  \end{array}\right) %]]></script>
+  \end{array}\right)
+$$</div>
 
 <p>Operating on system becomes notationally simpler.</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \begin{aligned}
   \left(\begin{array}{@{}rrr|r@{}}
     1 & 1 & 0 & 0 \\
@@ -433,11 +464,14 @@ line. This is called an <em>augmented matrix</em>.</p>
     0 & 1 & 0 & -1 \\
     0 & 0 & 1 & 0
   \end{array}\right)
-\end{aligned} %]]></script>
+\end{aligned}
+$$</div>
 
 <p>And we can express the solution to a linear system as a vector</p>
 
-<script type="math/tex; mode=display">\vec s = \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}</script>
+<div class="kdmath">$$
+\vec s = \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}
+$$</div>
 
 <h1 id="linear-systems-cont">Linear Systems (cont.)</h1>
 
@@ -558,13 +592,15 @@ Instead the dot-product may or may-not be defined (and cross-product).</p>
 <p>If we define such an element based multiplication it would necessitate
 the following</p>
 
-<script type="math/tex; mode=display">\begin{bmatrix}a\\b\end{bmatrix} \Leftrightarrow p(x)=a+bx \\
+<div class="kdmath">$$
+\begin{bmatrix}a\\b\end{bmatrix} \Leftrightarrow p(x)=a+bx \\
   \begin{bmatrix}c\\d\end{bmatrix} \Leftrightarrow q(x)=c+dx \\
   %
   \begin{bmatrix}a\\b\end{bmatrix}
   \begin{bmatrix}c\\d\end{bmatrix}
   = \begin{bmatrix}ac\\bc\end{bmatrix} \Leftrightarrow
-  p(x)q(x)=(ac)+(bd)x</script>
+  p(x)q(x)=(ac)+(bd)x
+$$</div>
 
 <p>Clearly it does not make sense for $p(x)q(x)=(a+bx)(c+dx)=(ac)+(bd)x$.</p>
 
@@ -574,12 +610,12 @@ the following</p>
 
 <ol>
   <li>The <em>product</em> $V_1\times\cdots\times V_m$ is defined by
-<script type="math/tex">V_1\times\cdots\times V_m
-= \{(v_1,\ldots,v_m):(v_1\in V_1),\ldots,(v_m\in V_m)\}</script></li>
+<span class="kdmath">$V_1\times\cdots\times V_m
+= \{(v_1,\ldots,v_m):(v_1\in V_1),\ldots,(v_m\in V_m)\}$</span></li>
   <li>Addition on $V_1\times\cdots\times V_m$ is defined by
-<script type="math/tex">(u_1,\ldots,u_m)+(v_1,\ldots,v_m)=(u_1+v_1,\ldots,u_m+v_m)</script></li>
+<span class="kdmath">$(u_1,\ldots,u_m)+(v_1,\ldots,v_m)=(u_1+v_1,\ldots,u_m+v_m)$</span></li>
   <li>Scalar multiplication on $V_1\times\cdots\times V_m$ is defined by
-<script type="math/tex">\lambda(v_1,\ldots,v_m)=(\lambda v_1,\ldots,\lambda v_m)</script></li>
+<span class="kdmath">$\lambda(v_1,\ldots,v_m)=(\lambda v_1,\ldots,\lambda v_m)$</span></li>
 </ol>
 
 <p>Based on these definitions we can prove that the product of vector spaces is
@@ -603,13 +639,14 @@ Then $V_1\times\cdots\times V_m$ is a vector space over $\F$.</p>
   <li>We can build a basis:</li>
 </ul>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 \left\{
 \begin{matrix}
 (1,(0,0,0)) & (z,(0,0,0)), & (z^2,(0,0,0)) \\
 (0,(1,0,0)) & (0,(0,1,0)), & (0,(0,0,1))
 \end{matrix}
-\right\} %]]></script>
+\right\}
+$$</div>
 
 <figure>
     <h3>Theorem: Dimension of a product is the sum of dimensions</h3>
@@ -636,16 +673,20 @@ The basis set of three unit vectors in the direction of the x-axis, the y-axis
 and z-axies respectively is called the <em>standard</em> basis, and notated as
 $\hat\imath$, $\hat\jmath$ and $\hat k$ (i-hat, j-hat, k-hat).</p>
 
-<script type="math/tex; mode=display">\begin{gather}
+<div class="kdmath">$$
+\begin{gather}
 \hat \imath=e_1=e_{x}=(1,0,0)\\
 \hat \jmath=e_2=e_{y}=(0,1,0)\\
 \hat k=e_3=e_{z}=(0,0,1)
-\end{gather}</script>
+\end{gather}
+$$</div>
 
 <p>By defining the basis of a vector space we can describe any vector in that space
 as the linear combination of the basis vectors.</p>
 
-<script type="math/tex; mode=display">\vec A=(A_{x})\hat\imath+(A_{y})\hat\jmath+(A_z)\hat k</script>
+<div class="kdmath">$$
+\vec A=(A_{x})\hat\imath+(A_{y})\hat\jmath+(A_z)\hat k
+$$</div>
 
 <p>For a set of vectors to be basis they must all be linearly independent;
 basically meaning that of the vectors in the set, none are multiples. Consider a
@@ -657,7 +698,9 @@ removing one of the parallel vectors.</p>
 <p>A list $v_1,\ldots,v_n$ of vectors in vectorspace $V$ is a basis for $V$
 if and only if for all $v$ can be written uniquely in the form</p>
 
-<script type="math/tex; mode=display">v=\sum_{l=1}^n a_l v_l,~ a_1,\ldots,a_n\in\F</script>
+<div class="kdmath">$$
+v=\sum_{l=1}^n a_l v_l,~ a_1,\ldots,a_n\in\F
+$$</div>
 
 <p>Every spanning list in a vector space can be reduced to a basis of the vector
 space.</p>
@@ -758,9 +801,10 @@ e_i,e_j\rangle$) we can convert the standard coordinates of the vector $\vec v$
 to non-standard ordinates by applying the inverse of the matrix representing
 basis $W$.</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="kdmath">$$
 W=\left[\begin{matrix}w_{1x}&w_{1y}\\w_{2x}&w_{2y}\end{matrix}\right];\
-W^{-1}(\vec v)_S\rightarrow(\vec v)_W %]]></script>
+W^{-1}(\vec v)_S\rightarrow(\vec v)_W
+$$</div>
 
 <p>In any change of the base the actually vector remains the same, but is now
 described by using different coefficients for the different base.</p>
@@ -800,7 +844,7 @@ the space (And recall that any list has finite length).</p>
 <p>A function $p:\F\to\F$ is called a <em>polynomial</em> with coefficients in $\F$
 if there exist $a_0,\ldots,a_m\in\F$ such that</p>
 
-<p><script type="math/tex">p(z)=a_0+a_1 z+a_2 z^2+\cdots+a_m z^m</script>
+<p><span class="kdmath">$p(z)=a_0+a_1 z+a_2 z^2+\cdots+a_m z^m$</span>
 For all $z\in\F$.</p>
 
 <p>And $\P(\F)$ is the set of all polynomials (of all degrees)
@@ -815,7 +859,9 @@ with coefficients in $\F$.</p>
 <p>A polynomial $p\in\P(\F)$ is said to have degree $m$ if there exist scalars
 $a_0,a_1,\ldots,a_m\in\F$ with $a_m\ne 0$ such that</p>
 
-<script type="math/tex; mode=display">p(z)=a_0+a_1 z+a_2 z^2+\cdots+a_m z^m</script>
+<div class="kdmath">$$
+p(z)=a_0+a_1 z+a_2 z^2+\cdots+a_m z^m
+$$</div>
 
 <p>For all $z\in\F$. If $p$ has degree $m$ we write $\deg p=m$.</p>
 
@@ -843,26 +889,34 @@ with coefficients in $\F$ and degree at most $m$.</p>
   <li>Identity $I\in\calL(V,V)$ defined by</li>
 </ul>
 
-<script type="math/tex; mode=display">Iv\equiv I(v)=v</script>
+<div class="kdmath">$$
+Iv\equiv I(v)=v
+$$</div>
 
 <ul>
   <li>Differentiation $D\in\calL(\P(\F),\P(\F))$ defined by</li>
 </ul>
 
-<script type="math/tex; mode=display"></script>
+<div class="kdmath">$$
+
+$$</div>
 
 <ul>
   <li>Integration $T\in\calL(\P(\R),\R)$ defined by</li>
 </ul>
 
-<script type="math/tex; mode=display">T_p\equiv T(p)=\int_0^1 p(x)~dx</script>
+<div class="kdmath">$$
+T_p\equiv T(p)=\int_0^1 p(x)~dx
+$$</div>
 
 <ul>
   <li>Backward shift $T\in\calL(\F^\infty,\F^\infty)$ (even though the indexes are
 shifted forward) defined by</li>
 </ul>
 
-<script type="math/tex; mode=display">T(z_1,z_2,\ldots)=T(z_2,z_3,\ldots)</script>
+<div class="kdmath">$$
+T(z_1,z_2,\ldots)=T(z_2,z_3,\ldots)
+$$</div>
 
 <h2 id="examples-1">Examples</h2>
 
@@ -870,14 +924,18 @@ shifted forward) defined by</li>
 
 <p>Define $T\in\calL(\R^3,\R^2)$ as</p>
 
-<script type="math/tex; mode=display">T(x,y,z)=(x-y+z,\pi x+e^\pi y+z)</script>
+<div class="kdmath">$$
+T(x,y,z)=(x-y+z,\pi x+e^\pi y+z)
+$$</div>
 
 <h3 id="fntofm">$\F^n\to\F^m$</h3>
 
 <p>Here $T\in\calL(\F^n,\F^m)$ is defined as</p>
 
-<script type="math/tex; mode=display">T(x_1,\ldots,x_n)
-= (A_{1,1}x_1+\cdots+A_{1,n}x_n,\ldots,A_{m,1}x_1+\cdots+A_{m,n}x_n)</script>
+<div class="kdmath">$$
+T(x_1,\ldots,x_n)
+= (A_{1,1}x_1+\cdots+A_{1,n}x_n,\ldots,A_{m,1}x_1+\cdots+A_{m,n}x_n)
+$$</div>
 
 <p>For scalars $A_{i,j}$ and $x_i$.
 Every linear map $\F^n\to\F^m$ can be written in this form.</p>

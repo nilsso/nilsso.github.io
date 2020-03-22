@@ -7,7 +7,7 @@ html {
 body {
   background-color: #f7f9fa;
   width: 860px;
-  margin: 2rem auto 50vh auto; }
+  margin: 2em auto 50vh auto; }
 
 nav, .nav, h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Mono", monospace; }
@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   width: max-content;
-  margin: 2rem auto;
+  margin: 2em auto;
   padding-bottom: 1em;
   border-bottom: solid 1px #E5E5E5;
   font-size: 200%; }
@@ -30,10 +30,10 @@ h3 {
   font-size: 120%; }
 
 ol, ul {
-  padding-left: 2rem; }
+  padding-left: 2em; }
 
 li {
-  padding-left: 1rem; }
+  padding-left: 1em; }
 
 a, a small, a:hover small {
   color: #4080bf;
@@ -43,7 +43,7 @@ a:hover, a small:hover, a:hover small, a small:hover small, a:focus, a small:foc
   color: #bf8040; }
 
 a small, a:hover small small {
-  margin-top: -0.3rem;
+  margin-top: -0.3em;
   display: block; }
 
 a:hover small, a small:hover small {
@@ -59,10 +59,10 @@ hr {
   border: 0;
   background: #E5E5E5;
   height: 1px;
-  margin: 2rem 0; }
+  margin: 2em 0; }
 
 blockquote, .thm, .thm-theorem, .thm-proposition, .thm-lemma, .thm-corollary, .thm-definition {
-  margin: 1rem 0;
+  margin: 1em 0;
   padding-left: 1rem;
   border-left: 4px solid #E5E5E5; }
 
@@ -84,29 +84,21 @@ blockquote, .thm, .thm-theorem, .thm-proposition, .thm-lemma, .thm-corollary, .t
 .thm-definition {
   border-color: #4040bf; }
 
-code, pre, kbd {
+code, kbd {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  font-size: 0.9rem; }
+  font-size: 90%;
+  padding: 0 0.3em; }
 
-kbd {
-  padding: 2px 4px;
-  margin: 0 2px;
-  border-radius: 2px; }
+.highlighter-rouge {
+  border-radius: 3pt;
+  border: 1pt solid #E5E5E5; }
 
-figure, div > .highlighter-rouge {
-  margin: 1rem 2rem;
-  padding: 0 1rem;
-  background: #f8f8f8;
-  border-radius: 5px;
-  border: 1px solid #E5E5E5;
-  overflow-x: auto; }
-  figure hr, div > .highlighter-rouge hr {
-    margin: 1rem -1rem; }
-  figure h1, div > .highlighter-rouge h1, figure h2, div > .highlighter-rouge h2, figure h3, div > .highlighter-rouge h3, figure div, div > .highlighter-rouge div {
-    margin: 1rem 0; }
-
-pre {
-  margin: 0; }
+div.highlighter-rouge {
+  padding: 0.5em 1em; }
+  div.highlighter-rouge code, div.highlighter-rouge kbd, div.highlighter-rouge pre {
+    border: none;
+    margin: 0;
+    padding: 0; }
 
 table {
   border-collapse: collapse;
@@ -168,12 +160,10 @@ footer {
   overflow-x: scroll;
   overflow-y: hidden; }
 
-svg {
-  width: 100%; }
-
-.vexflow svg {
-  display: block;
-  margin: 0 auto; }
+.vf {
+  display: flex; }
+  .vf svg {
+    margin: 0 auto; }
 
 .tooltip {
   position: relative;

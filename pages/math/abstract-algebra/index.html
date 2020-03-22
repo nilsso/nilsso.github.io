@@ -9,6 +9,16 @@
 
 <!-- KaTeX -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script type="module">
+    import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.mjs";
+    renderMathInElement(document.body, {
+        delimiters: [
+            {right: "$$", left: "$$", display: true},
+            {right: "$", left: "$", display: false},
+        ]
+    });
+</script>
 
 
 
@@ -295,7 +305,9 @@ $\phi(u)^{-1}=\phi(u^{-1})$.</li>
 <p>$a(x),b(x)\in F[x]$ are <strong>associates</strong> if $a(x)=cb(x)$
 for some non-zero $c\in F[X]$, such that:</p>
 
-<script type="math/tex; mode=display">a(x)=cb(x) \Leftrightarrow c^{-1}a(x)=b(x)</script>
+<div class="kdmath">$$
+a(x)=cb(x) \Leftrightarrow c^{-1}a(x)=b(x)
+$$</div>
 
     <span class="tooltip-text">Definition ?</span>
 </div>
@@ -328,7 +340,9 @@ degree.</li>
     
 <p>Every non-constant $a(x)\in F[x]$ can be written in the form:</p>
 
-<script type="math/tex; mode=display">a(x)=p_1(x)p_2(x)\cdots p_n(x)</script>
+<div class="kdmath">$$
+a(x)=p_1(x)p_2(x)\cdots p_n(x)
+$$</div>
 
 <p>Where $\forall i\in\N$, $p_i(x)$ is an irreducible polynomial.
 Moreover, this expression is unique up-to reordering and unit multiples.</p>
