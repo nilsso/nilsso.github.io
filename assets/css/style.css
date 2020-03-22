@@ -66,6 +66,9 @@ blockquote, .thm, .thm-theorem, .thm-proposition, .thm-lemma, .thm-corollary, .t
   padding-left: 1rem;
   border-left: 4px solid #E5E5E5; }
 
+.thm nav, .thm-theorem nav, .thm-proposition nav, .thm-lemma nav, .thm-corollary nav, .thm-definition nav, .thm h1, .thm-theorem h1, .thm-proposition h1, .thm-lemma h1, .thm-corollary h1, .thm-definition h1, .thm h2, .thm-theorem h2, .thm-proposition h2, .thm-lemma h2, .thm-corollary h2, .thm-definition h2, .thm h3, .thm-theorem h3, .thm-proposition h3, .thm-lemma h3, .thm-corollary h3, .thm-definition h3, .thm h4, .thm-theorem h4, .thm-proposition h4, .thm-lemma h4, .thm-corollary h4, .thm-definition h4, .thm h5, .thm-theorem h5, .thm-proposition h5, .thm-lemma h5, .thm-corollary h5, .thm-definition h5, .thm h6, .thm-theorem h6, .thm-proposition h6, .thm-lemma h6, .thm-corollary h6, .thm-definition h6 {
+  text-align: left; }
+
 .thm-theorem {
   border-color: #4080bf; }
 
@@ -165,6 +168,9 @@ footer {
   overflow-x: scroll;
   overflow-y: hidden; }
 
+svg {
+  width: 100%; }
+
 .vexflow svg {
   display: block;
   margin: 0 auto; }
@@ -188,22 +194,13 @@ footer {
 
 @media (max-width: 960px) {
   html {
-    font-size: 60%;
     padding: 0 15px; }
 
   body {
     width: auto; }
 
   nav, h1, h2, h3, h4, h5, h6 {
-    text-align: center; }
-
-  ul, ol {
-    padding-left: 0;
-    white-space: nowrap; }
-
-  li {
-    list-style-position: inside;
-    overflow-x: scroll; }
-
-  .float-right {
-    float: none; } }
+    text-align: center; } }
+@media (max-width: 540px) {
+  html {
+    font-size: 60%; } }
