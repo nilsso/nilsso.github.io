@@ -191,6 +191,9 @@ footer {
 
   nav, h1, h2, h3, h4, h5, h6 {
     text-align: center; } }
-@media (max-width: 540px) {
+@media (max-width: 800px) {
+  html {
+    font-size: 80%; } }
+@media (max-width: 400px) {
   html {
     font-size: 60%; } }
