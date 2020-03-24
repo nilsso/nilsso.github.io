@@ -54,7 +54,7 @@
 <li class="toc-entry toc-h2"><a href="#modular-arithmetic">Modular arithmetic</a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#quotient-remainder-theorem">Quotient-remainder theorem</a></li>
-<li class="toc-entry toc-h3"><a href="#modular-congruence">Modular congruence</a></li>
+<li class="toc-entry toc-h3"><a href="#modular-congruence-and-congruence-classes">Modular congruence and congruence classes</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#pitch-class">Pitch class</a></li>
@@ -87,39 +87,57 @@ E4qd R48r | C5q C#4q | C#4q D5q | D5q R4qr | B4q B4q
     ">
 </div>
 
+<p>Analyzing post-tonal or atonal music is a far-cry from classical musical analysis of functional
+harmony. The jargon we hvae become so use to—tonic chords, dominant chords, tonicization,
+modulation, etc.—are gone, and in their place we are left with numbers, sets, and transformations.
+In most ways the transition to post-tonal analysis purly mathematical, which to many is a scary
+transition, but as I am a student of mathematics in additional to music, I wont shy away from the
+math that sitting in the backround in these notes.</p>
+
+<p>Before discussing anything about music, I think it is more than appropriate to familiarize
+ourselves with this math that will be in the background of all of post-tonal analysis, in particular
+abstract algebra and in particular modular arithmetic. Forthunately, following this math setup
+everything will be simplified notationally: for an integer $a\in(0,12]$, instead of writing
+$[a]_{12}$ we’ll just write $a$, with the understanding that $a$ lies within the set of integers
+modulus 12.</p>
+
 <h2 id="modular-arithmetic">
 <a class="anchor" href="#modular-arithmetic" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modular arithmetic</h2>
 
-<div class="thm">
-<p>If math <em>really</em> isn’t of interest to you then feel free to skip this section and instead head
-straight to <a href="#pitch-class">pitch class</a>, but know that most atonal music techniques are built upon
-the notion of modular arithmetic, which this section will briefly build up.</p>
+<!--
+   -<div class='thm'>
+<p>-If math <em>really</em> isn’t of interest to you then feel free to skip this section and instead head
+-straight to <a href="#pitch-class">pitch class</a>, but know that most atonal music techniques are built upon
+-the notion of modular arithmetic, which this section will briefly build up.
+-</p>
 </div>
+
+   -->
 
 <p>In this section we’ll try to understand what is meant by the following statements or expressions:</p>
 
 <ul>
-  <li>“<span class="kdmath">$a$</span> is congruent/equivalent to <span class="kdmath">$b$</span> modulo <span class="kdmath">$n$</span>”,</li>
-  <li>“<span class="kdmath">$[a]_n$</span> is the congruence class of <span class="kdmath">$a$</span> modulo <span class="kdmath">$n$</span>”,</li>
+  <li>“$a$ is congruent/equivalent to $b$ modulo $n$”,</li>
+  <li>“$[a]_n$ is the congruence class of $a$ modulo $n$”,</li>
 </ul>
 
 <h3 id="quotient-remainder-theorem">
 <a class="anchor" href="#quotient-remainder-theorem" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quotient-remainder theorem</h3>
 
-<p>Chances are you know about <em>Euclidean</em> division.
-For example, <span class="kdmath">$1\div 2$</span> is 1 divided by 2 (or 2 dividing 1) and represents symbolically the number of
+<p>Chances are you know about Euclidean division.
+For example, $1\div 2$ is 1 divided by 2 (or 2 dividing 1) and represents symbolically the number of
 times 2 goes into 1 plus some remainder.
 What might not be as familiar are the two parts of Euclidean division taken separately:
 the <em>quotient</em> and the <em>remainder</em>.</p>
 
-<p>Let <span class="kdmath">$a$</span> and <span class="kdmath">$b$</span> both be integers.</p>
+<p>Let $a$ and $b$ both be integers.</p>
 
 <ul>
-  <li>The quotient <span class="kdmath">$q$</span> of <span class="kdmath">$a\div b$</span> is the number of multiples of <span class="kdmath">$b$</span> that go into <span class="kdmath">$a$</span>, and</li>
-  <li>The remainder <span class="kdmath">$r$</span> of <span class="kdmath">$a\div b$</span> is what ever is left from subtracting <span class="kdmath">$qb$</span> from <span class="kdmath">$a$</span>.</li>
+  <li>The quotient $q$ of $a\div b$ is the number of multiples of $b$ that go into $a$, and</li>
+  <li>The remainder $r$ of $a\div b$ is what ever is left from subtracting $qb$ from $a$.</li>
 </ul>
 
-<p>And can express <span class="kdmath">$a$</span> as the sum:</p>
+<p>And can express $a$ as the sum:</p>
 
 <div class="kdmath">$$
 a = qb + r.
@@ -127,35 +145,35 @@ $$</div>
 
 <div class="thm">
 <p>As an aside on notation, mathematicians are often lazy. The “let” statement above could be
-alternatively expressed “fix <span class="kdmath">$a,b\in\Z$</span>”, where the symbol <span class="kdmath">$\in$</span> means that <span class="kdmath">$a$</span> and <span class="kdmath">$b$</span> are
-variables with values taken from <span class="kdmath">$\Z$</span>, where <span class="kdmath">$\Z=\{\ldots,-2,-1,0,1,2,\ldots\}$</span> is the set
+alternatively expressed “fix $a,b\in\Z$”, where the symbol $\in$ means that $a$ and $b$ are
+variables with values taken from $\Z$, where $\Z=\{\ldots,-2,-1,0,1,2,\ldots\}$ is the set
 containing all integers.</p>
-<p>The <span class="kdmath">$\{\ldots\}$</span> notation is called set-builder notation, and is a way to group things, in this case
-integers, without repetition. A set can be finite or infinite, for example: <span class="kdmath">$\{0,1,2\}$</span> is a finite
-set containing only the integers 0, 1 and 2; <span class="kdmath">$\{1,2,3,\ldots\}$</span> is an infinite set containing all of
-the positive integers, commonly denoted <span class="kdmath">$\Z^+$</span> or <span class="kdmath">$\N$</span>. We can also define sets using rules, as for
-example the positive integers can also be expressed as <span class="kdmath">$\{d\in\Z:d&gt;0\}$</span>, meaning the set of any
-integer <span class="kdmath">$d$</span> as long as <span class="kdmath">$d$</span> is greater than zero.</p>
+<p>The $\{\ldots\}$ notation is called set-builder notation, and is a way to group things, in this case
+integers, without repetition. A set can be finite or infinite, for example: $\{0,1,2\}$ is a finite
+set containing only the integers 0, 1 and 2; $\{1,2,3,\ldots\}$ is an infinite set containing all of
+the positive integers, commonly denoted $\Z^+$ or $\N$. We can also define sets using rules, as for
+example the positive integers can also be expressed as $\{d\in\Z:d&gt;0\}$, meaning the set of any
+integer $d$ as long as $d$ is greater than zero.</p>
 <p>Also to note is the <em>without repetition</em> part, meaning sets expressed as containing multiple of the
 same element (multiple, not multiples of!) can be reduced to include it only once, e.g.:
-<span class="kdmath">$\{1,1\}=\{1\}$</span>.</p>
+$\{1,1\}=\{1\}$.</p>
 </div>
 
-<p>Here’s a few example of quotient-remainder theorem when <span class="kdmath">$b=12$</span> for a few different values of <span class="kdmath">$a$</span>:</p>
+<p>Here’s a few example of quotient-remainder theorem when $b=12$ for a few different values of $a$:</p>
 
 <ul>
-  <li>If <span class="kdmath">$a=12$</span>, then <span class="kdmath">$12=(1)12+(0)$</span>.</li>
-  <li>If <span class="kdmath">$a=1$</span>, then <span class="kdmath">$1=(0)12+(1)$</span>.</li>
-  <li>If <span class="kdmath">$a=-5$</span>, then <span class="kdmath">$-5=(0)12+(-5)=(-1)12+(7)$</span>.</li>
+  <li>If $a=12$, then $12=(1)12+(0)$.</li>
+  <li>If $a=1$, then $1=(0)12+(1)$.</li>
+  <li>If $a=-5$, then $-5=(0)12+(-5)=(-1)12+(7)$.</li>
 </ul>
 
-<h3 id="modular-congruence">
-<a class="anchor" href="#modular-congruence" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modular congruence</h3>
+<h3 id="modular-congruence-and-congruence-classes">
+<a class="anchor" href="#modular-congruence-and-congruence-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modular congruence and congruence classes</h3>
 
 <p>With the last of the examples above you might notice that there were written two different ways to
 express -5 as a sum of a multiple of 12 and a remainder. But these aren’t the only ways, in-fact
 there is an infinite number of ways to express -5 using quotient remainder theorem since for any
-arbitrary quotient <span class="kdmath">$q$</span> there is a unique remainder <span class="kdmath">$r$</span> such that <span class="kdmath">$a=qb+r$</span>:</p>
+arbitrary quotient $q$ there is a unique remainder $r$ such that $a=qb+r$:</p>
 
 <div class="kdmath">$$
 \begin{alignedat}{3}
@@ -172,7 +190,7 @@ and we call these remainders <em>congruent/equivalent</em> to one-another <em>mo
 
 <div class="thm thm-definition">
 <h4 class="no_toc">Definition (Congruence/equivalence)</h4>
-<p>Fix <span class="kdmath">$a$</span>, <span class="kdmath">$b$</span> and <span class="kdmath">$n$</span> all be integers where <span class="kdmath">$a$</span> and <span class="kdmath">$b$</span> are congruent modulo <span class="kdmath">$n$</span>.
+<p>Fix $a$, $b$ and $n$ all be integers where $a$ and $b$ are congruent modulo $n$.
 We express this congruence:</p>
 <div class="kdmath">$$
 a\equiv b\bmod n.
@@ -180,20 +198,37 @@ $$</div>
 </div>
 
 <div class="thm">
-<p>The <span class="kdmath">$\equiv$</span> symbol means equivalence/congruence and is not the same as equality. For example, -5
+<p>The $\equiv$ symbol means equivalence/congruence and is not the same as equality. For example, -5
 and 7 are not equal to one-another, but they are congruent to one-another modulo 12:</p>
 <div class="kdmath">$$
 -5 \ne 7 \text{, but } -5 \equiv 7\bmod 12.
 $$</div>
 <p>Also note that whenever we “fix” variables, they are completely new meanings to the variables, and
-no other variables are assumed to exist. In the definition of congruence, the variables <span class="kdmath">$a$</span> and
-<span class="kdmath">$b$</span> are unrelated to the <span class="kdmath">$a$</span> and <span class="kdmath">$b$</span> used in the definition of the quotient-remainder theorem.</p>
+no other variables are assumed to exist. In the definition of congruence, the variables $a$ and
+$b$ are unrelated to the $a$ and $b$ used in the definition of the quotient-remainder theorem.</p>
 </div>
 
-<p>In the example above we saw that there is an infinite amount of remainders congruent
-to -5 modulo 12. Instead of listing them out (which might take a while, since there’s an infinite
-number of them), we call this set of congruent integers the <em>congruence class</em> of 5 modulo 12, and
-denote it:</p>
+<p>Here are a couple examples of modular equivalence over the divisor $2$:</p>
+
+<ul>
+  <li>$0 \equiv 0 \bmod 2$ since $2$ divides $1$ zero times with a remainder of $0$,</li>
+  <li>$1 \equiv 1 \bmod 2$ since $2$ divides $1$ zero times with a remainder of $1$,</li>
+  <li>$2 \equiv 0 \bmod 2$ since $2$ divides $2$ once with a remainder of $0$,</li>
+  <li>$3 \equiv 1 \bmod 2$ since $2$ divides $2$ once with a remainder of $1$.</li>
+</ul>
+
+<p>And here are a couple examples of modular equivalence over the divisor $12$:</p>
+
+<ul>
+  <li>$11 \equiv 11 \bmod 12$ since $12$ divides $11$ zero times with a remainder of $11$,</li>
+  <li>$12 \equiv 0 \bmod 12$ since $12$ divides $12$ once with a remainder of $0$,</li>
+  <li>$13 \equiv 1 \bmod 12$ since $12$ divides $12$ once with a remainder of $1$.</li>
+</ul>
+
+<p>In the example with $-5=(0)12+(-5)=(-1)12+(7)$ we saw that there is an infinite amount of
+remainders congruent to $7 \bmod 12$. Instead of listing them out (which might take a while, since
+there’s an infinite number of them), we call this set of congruent integers the <em>congruence class</em>
+of 5 modulo 12, and denote it:</p>
 
 <div class="kdmath">$$
 [5]_{12} = \{\ldots,19,7,-5,-17,-29,\ldots\}.
@@ -201,8 +236,8 @@ $$</div>
 
 <div class="thm thm-definition">
 <h4 class="no_toc">Definition (Congruence class)</h4>
-<p>Fix an integer <span class="kdmath">$a$</span>, and another integer <span class="kdmath">$n$</span> the divisor
-We call <span class="kdmath">$[a]_n$</span> the congruence class of <span class="kdmath">$a$</span> modulo <span class="kdmath">$n$</span>, and denote it:</p>
+<p>Fix an integer $a$, and another integer $n$ the divisor.
+We call $[a]_n$ the congruence class of $a$ modulo $n$, and denote it:</p>
 <div class="kdmath">$$
 [a]_n
 = \{\ldots,-1\cdot n+a,0\cdot n+a,1\cdot n+a,\ldots\}
@@ -210,12 +245,33 @@ We call <span class="kdmath">$[a]_n$</span> the congruence class of <span class=
 $$</div>
 </div>
 
+<p>What is important to see though is that there is a finite number of congruence classes with respect
+to equivalence. For example, when 12 is our divisor, there’s exactly 12 distinct congruence classes:</p>
+
+<div class="kdmath">$$
+[0]_{12},[1]_{12},\ldots,[10]_{12},[11]_{12}.
+$$</div>
+
+<p>And while there are an infinite number of ways to denote congruence classes:</p>
+
+<div class="kdmath">$$
+\begin{gathered}
+\ldots = [-12]_{12} = [0]_{12} = [12]_{12} = [24]_{12} = \ldots \\
+\ldots = [-11]_{12} = [1]_{12} = [13]_{12} = [25]_{12} = \ldots \\
+\ldots = [-10]_{12} = [2]_{12} = [14]_{12} = [26]_{12} = \ldots \\
+\vdots
+\end{gathered}
+$$</div>
+
+<p>We stick with the <em>canonical</em> representations of them, which is $[a]_n$ where $0\le a &lt; n$.</p>
+
 <div class="thm">
-<p>As a bonus, <span class="kdmath">$\Z_n$</span> is the set of congruence classes of integers modulo <span class="kdmath">$n$</span>, which is a finite set
-of <span class="kdmath">$n$</span> elements where every element is itself an infinite set:</p>
+<p>As a bonus, $\Z_n$ is the set of congruence classes of integers modulo $n$, which is a finite
+with respect to equivalence set of $n$ elements where every element is itself an infinite set:</p>
 <div class="kdmath">$$
 \Z_n = \{[0]_n,[1]_n,[2]_n,\ldots,[n-1]_n\} = \{[a]_n:0\le a\lt n\}.
 $$</div>
+<p>Math is neat 🤯</p>
 </div>
 
 <p>But how does modular arithmetic relate to music?</p>
@@ -245,55 +301,105 @@ equal to 12.</p>
 <p>A pitch class is a collection of pitches related by octave and/or enharmonic equivalence.</p>
 </div>
 
-<p>With this definition we can draw a relation between music and modular arithmetic by associating
-each pitch class with a congruence class over the integers modulus 12
-(pitch class, congruence class, notice the naming similarities here):</p>
+<p>With this definition we can draw a relation between music and modular arithmetic by associating each
+pitch class with a congruence class over the integers modulus 12. But since, as far as music is
+concerned, we will always be working over the integers modulus 12. Thus we can simplify notation
+going forward by writing $0$ instead of $[0]_{12}$, $1$ instead of $[1]_{12}$, etc. (values of
+$\Z_{12}$), <strong>with the express understanding that these values, as well as the value resulting from
+any operation on these values, is equivalent to some canonical representation</strong>. We may also
+<em>mangle</em> notation by using the equality operator $=$ in place of the equivalence operator $\equiv$.</p>
+
+<table>
+<colgroup>
+<col span="2">
+<col class="left-border">
+</colgroup>
+<thead>
+<tr>
+<th>Pitch class</th>
+<th>Congruence class/value </th>
+<th>Pitch class</th>
+<th>Congruence class/value </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\text C$</td>
+<td>$[0]_{12} \Rightarrow 0$</td>
+<td>$\text F\sharp/\text G\flat$</td>
+<td>$[6]_{12} \Rightarrow 6$</td>
+</tr>
+<tr>
+<td>$\text C\sharp/\text D\flat$</td>
+<td>$[1]_{12} \Rightarrow 1$</td>
+<td>$\text G$</td>
+<td>$[7]_{12} \Rightarrow 7$</td>
+</tr>
+<tr>
+<td>$\text D$</td>
+<td>$[2]_{12} \Rightarrow 2$</td>
+<td>$\text G\sharp/\text A\flat$</td>
+<td>$[8]_{12} \Rightarrow 8$</td>
+</tr>
+<tr>
+<td>$\text D\sharp/\text E\flat$</td>
+<td>$[3]_{12} \Rightarrow 3$</td>
+<td>$\text A$</td>
+<td>$[9]_{12} \Rightarrow 9$</td>
+</tr>
+<tr>
+<td>$\text E$</td>
+<td>$[4]_{12} \Rightarrow 4$</td>
+<td>$\text A\sharp/\text B\flat$</td>
+<td>$[10]_{12} \Rightarrow 10$</td>
+</tr>
+<tr>
+<td>$\text F$</td>
+<td>$[5]_{12} \Rightarrow 5$</td>
+<td>$\text B$</td>
+<td>$[11]_{12} \Rightarrow 11$</td>
+</tr>
+</tbody>
+</table>
+
+<p>Here are a few examples of values, either on their own or resulting from an operation,
+and their corresponding pitch classes:</p>
 
 <table>
   <thead>
     <tr>
+      <th>Value</th>
       <th>Pitch class</th>
-      <th>Congruence class</th>
-      <th>Pitch class</th>
-      <th>Congruence class</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><span class="kdmath">$\text C$</span></td>
-      <td><span class="kdmath">$[0]_{12}$</span></td>
-      <td><span class="kdmath">$\text F\sharp/\text G\flat$</span></td>
-      <td><span class="kdmath">$[6]_{12}$</span></td>
+      <td>$1=1$</td>
+      <td>$\text C\sharp$</td>
     </tr>
     <tr>
-      <td><span class="kdmath">$\text C\sharp/\text D\flat$</span></td>
-      <td><span class="kdmath">$[1]_{12}$</span></td>
-      <td><span class="kdmath">$\text G$</span></td>
-      <td><span class="kdmath">$[7]_{12}$</span></td>
+      <td>$12=0$ since $12\equiv 0\bmod 12$)</td>
+      <td>$\text C$</td>
     </tr>
     <tr>
-      <td><span class="kdmath">$\text D$</span></td>
-      <td><span class="kdmath">$[2]_{12}$</span></td>
-      <td><span class="kdmath">$\text G\sharp/\text A\flat$</span></td>
-      <td><span class="kdmath">$[8]_{12}$</span></td>
+      <td>$13=1$ (since $13\equiv 1\bmod 12$)</td>
+      <td>$\text C\sharp$</td>
     </tr>
     <tr>
-      <td><span class="kdmath">$\text D\sharp/\text E\flat$</span></td>
-      <td><span class="kdmath">$[3]_{12}$</span></td>
-      <td><span class="kdmath">$\text A$</span></td>
-      <td><span class="kdmath">$[9]_{12}$</span></td>
+      <td>$1+1=2$</td>
+      <td>$\text D$</td>
     </tr>
     <tr>
-      <td><span class="kdmath">$\text E$</span></td>
-      <td><span class="kdmath">$[4]_{12}$</span></td>
-      <td><span class="kdmath">$\text A\sharp/\text B\flat$</span></td>
-      <td><span class="kdmath">$[10]_{12}$</span></td>
+      <td>$1+10=11$</td>
+      <td>$\text B$</td>
     </tr>
     <tr>
-      <td><span class="kdmath">$\text F$</span></td>
-      <td><span class="kdmath">$[5]_{12}$</span></td>
-      <td><span class="kdmath">$\text B$</span></td>
-      <td><span class="kdmath">$[11]_{12}$</span></td>
+      <td>$1+11=0$ (since $12\equiv 0 \bmod 12$)</td>
+      <td>$\text C$</td>
+    </tr>
+    <tr>
+      <td>$3-8=7$ (since $-5\equiv 7 \bmod 12$)</td>
+      <td>$\text G$</td>
     </tr>
   </tbody>
 </table>
@@ -303,13 +409,13 @@ each pitch class with a congruence class over the integers modulus 12
 by defining a <em>map</em>.</p>
 <div class="thm thm-definition">
 <h4 class="no_toc">Definition (Map)</h4>
-<p>A map <span class="kdmath">$f:A\mapsto B$</span> is a function <span class="kdmath">$f$</span> such that for every <span class="kdmath">$a\in A$</span> there is a unique <span class="kdmath">$f(a)\in B$</span>,
-and the sets <span class="kdmath">$B$</span> and <span class="kdmath">$A$</span> are called the image and preimage (or range and domain) respectively.
+<p>A map $f:A\mapsto B$ is a function $f$ such that for every $a\in A$ there is a unique $f(a)\in B$,
+and the sets $B$ and $A$ are called the image and preimage (or range and domain) respectively.
 The names map and function are largely used interchangeably.</p>
 </div>
-<p>Fix <span class="kdmath">$\mathcal P$</span> the set of musical pitch classes.
-Let <span class="kdmath">$g:\mathcal P\mapsto\Z$</span> be the map from the pitch classes to congruence classes over the
-integers modulus, which we define:</p>
+<p>Fix $P$ the set of musical pitch classes.
+Let $g:P\mapsto\Z$ be the map from the pitch classes to congruence classes over the
+integers modulus 12, which we define:</p>
 <div class="kdmath">$$
 \begin{gathered}
 g(\text{C}) = [0]_{12} \\
@@ -322,17 +428,17 @@ $$</div>
 <p>It is worth pointing out that this map is <em>bijective</em>.</p>
 <div class="thm thm-definition">
 <h4 class="no_toc">Definition (Injective, surjective, bijective)</h4>
-<p>A map <span class="kdmath">$f:A\mapsto B$</span> is called injective, or “one-to-one”, if whenever <span class="kdmath">$f(a)=f(b)$</span> also <span class="kdmath">$a=b$</span>.
+<p>A map $f:A\mapsto B$ is called injective, or “one-to-one”, if whenever $f(a)=f(b)$ also $a=b$.
 In other words, every element in the preimage is mapped to a unique value in the image.</p>
-<p>A map <span class="kdmath">$f:A\mapsto B$</span> is called surjective, or “onto”, if for every <span class="kdmath">$b\in B$</span> there is an element
-<span class="kdmath">$a\in A$</span> such that <span class="kdmath">$f(a)=b$</span>.
-In other words, every element in the image is mapped to by <span class="kdmath">$f$</span>, from at least one element in the
+<p>A map $f:A\mapsto B$ is called surjective, or “onto”, if for every $b\in B$ there is an element
+$a\in A$ such that $f(a)=b$.
+In other words, every element in the image is mapped to by $f$, from at least one element in the
 preimage.</p>
 <p>A map is called bijective if it is both injective and surjective
 (a bijective map is also called a bijection).
-A function <span class="kdmath">$f$</span> admits an inverse function <span class="kdmath">$f^{-1}$</span> if and only if it is bijective.</p>
+A function $f$ admits an inverse function $f^{-1}$ if and only if it is bijective.</p>
 </div>
-<p>Since <span class="kdmath">$g$</span> is a bijection, we can map freely between the pitch classes and the congruence classes.
+<p>Since $g$ is a bijection, we can map freely between the pitch classes and the congruence classes.
 In fact this map is an <em>isomorphism</em> between the two sets, but I’ll leave it at that and skip
 the necessary definitions and explanations for some other time.</p>
 </div>
@@ -346,7 +452,7 @@ the necessary definitions and explanations for some other time.</p>
 
 <!--Unordered pitch interval is the absolute value of ordered pitch interval.-->
 
-<p>Apply <span class="kdmath">$T_{10}$</span> to the pitch set <span class="kdmath">$[3~4~7]$</span>.</p>
+<p>Apply $T_{10}$ to the pitch set $[3~4~7]$.</p>
 
 <div class="kdmath">$$
 \begin{array}{c} 3 \\ 4 \\ 7 \end{array}
@@ -358,7 +464,7 @@ the necessary definitions and explanations for some other time.</p>
 \end{array}
 $$</div>
 
-<p>Apply <span class="kdmath">$I_6$</span> to the pitch set <span class="kdmath">$[10~11~2]$</span>.</p>
+<p>Apply $I_6$ to the pitch set $[10~11~2]$.</p>
 
 <div class="kdmath">$$
 \begin{array}{c} 10 \\ 11 \\ 2 \end{array}
@@ -403,16 +509,16 @@ $$</div>
    -f_x = f_R \cdot 2^x, \quad x \in \mathbb{Z}
    -$$
    -
-   -Where $$f_R$$ is the frequency of the reference pitch, $$x$$ is the number
+   -Where $f_R$ is the frequency of the reference pitch, $x$ is the number
    -of octaves above or below the reference pitch (and is an element of the set of
-   -all integers [$$\mathbb{Z}$$)][integers], and $$f_x$$ is the frequency of
-   -the pitch that is $$x$$ octaves above or below the reference pitch. Examples
+   -all integers [$\mathbb{Z}$)][integers], and $f_x$ is the frequency of
+   -the pitch that is $x$ octaves above or below the reference pitch. Examples
    -of integers are 0, 2, 4, and -1.
    -
    -[integers]: https://en.wikipedia.org/wiki/Integer
    -
    -Frequencies of different octaves of A starting with
-   -reference frequency $$f_R = 440$$ (also known as A4 and concert A):
+   -reference frequency $f_R = 440$ (also known as A4 and concert A):
    -
    -$$
    -\begin{array}{ll}
@@ -426,7 +532,7 @@ $$</div>
    -
    -Any distance between two pitches make an interval, even if those pitches are the
    -same (unison) or an octave apart. But for these other intervals, we need to
-   -extend this formula to [$$\mathbb{R}$$][real], the set real numbers: of
+   -extend this formula to [$\mathbb{R}$][real], the set real numbers: of
    -numbers in beyond just integers, and thus intervals between and beyond unisons
    -and octaves:
    -
@@ -436,8 +542,8 @@ $$</div>
    -f_x = f_R \cdot 2^x, \quad x \in \mathbb{R}
    -$$
    -
-   -Where the variable $$x$$ is now an element of the set of all real numbers
-   -$$\mathbb{R}$$, not just integers.
+   -Where the variable $x$ is now an element of the set of all real numbers
+   -$\mathbb{R}$, not just integers.
    -->
 
 <hr>

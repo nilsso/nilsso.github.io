@@ -14,13 +14,16 @@ nav, .nav, h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6 {
   color: #1a334c;
-  line-height: 1.1; }
+  width: max-content; }
+
+h1, h2, h3 {
+  border-bottom: solid 1px #E5E5E5; }
+
+h1, h2 {
+  margin: 0.3em auto;
+  padding-bottom: 0.3em; }
 
 h1 {
-  width: max-content;
-  margin: 2em auto;
-  padding-bottom: 1em;
-  border-bottom: solid 1px #E5E5E5;
   font-size: 200%; }
 
 h2 {
@@ -113,10 +116,17 @@ th, td {
   border-bottom: 1px solid #E5E5E5; }
 
 th {
-  font-family: "Roboto Mono", monospace; }
+  font-family: "Roboto Mono", monospace;
+  text-align: center; }
 
 tr:last-child th, tr:last-child td {
   border-bottom: none; }
+
+.left-align {
+  text-align: left; }
+
+.left-border {
+  border-left: 1px solid #E5E5E5; }
 
 .float-right {
   float: right; }
