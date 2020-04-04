@@ -14,8 +14,10 @@
     import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.mjs";
     renderMathInElement(document.body, {
         delimiters: [
-            {right: "$$", left: "$$", display: true},
-            {right: "$", left: "$", display: false},
+            <!--{ right: "$$", left: "$$",  display: true  },-->
+            <!--{ right: "$",  left: "$",   display: false },-->
+            <!--{ right: "\)", left: "\(", display: false },-->
+            <!--{ left: "\[", right: "\]",  display: true  },-->
         ]
     });
 </script>
@@ -59,6 +61,8 @@
 </li>
 <li class="toc-entry toc-h2"><a href="#pitch-class">Pitch class</a></li>
 <li class="toc-entry toc-h2"><a href="#pitch-intervals">Pitch intervals</a></li>
+<li class="toc-entry toc-h2"><a href="#normal-and-prime-forms">Normal and prime forms</a></li>
+<li class="toc-entry toc-h2"><a href="#normal-form-and-prime-forms">Normal form and prime forms</a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#resources">Resources</a>
@@ -443,6 +447,14 @@ the necessary definitions and explanations for some other time.</p>
 <h2 id="pitch-intervals">
 <a class="anchor" href="#pitch-intervals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pitch intervals</h2>
 
+<h2 id="normal-and-prime-forms">
+<a class="anchor" href="#normal-and-prime-forms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Normal and prime forms</h2>
+
+<div class="thm thm-definition">
+<h4 class="no_toc">Definition (Prime form)</h4>
+<p>OCPI’s ordered least to greatest</p>
+</div>
+
 <!--Unordered pitch interval is the absolute value of ordered pitch interval.-->
 
 <p>Apply $T_{10}$ to the pitch set $[3~4~7]$.</p>
@@ -468,6 +480,24 @@ $$</div>
     6-2  = 4
 \end{array}
 $$</div>
+
+<h2 id="normal-form-and-prime-forms">
+<a class="anchor" href="#normal-form-and-prime-forms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Normal form and prime forms</h2>
+
+<p>([10,0,2,3,5])</p>
+
+<p>[
+(10,0,2,3,5)
+]</p>
+
+<!--
+   -\((0~2~4~5~7)\)
+   -
+   -But the PCI's of this list are 2, 2, 1, 2.
+   -Reversing this list is preferable, as the smallest intervals are at the left: 2, 1, 2, 2.
+   -
+   -\((0~2~3~5~7)\)
+   -->
 
 <!--
    -# Physics of sound
