@@ -14,10 +14,8 @@
     import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.mjs";
     renderMathInElement(document.body, {
         delimiters: [
-            <!--{ right: "$$", left: "$$",  display: true  },-->
-            <!--{ right: "$",  left: "$",   display: false },-->
-            <!--{ right: "\)", left: "\(", display: false },-->
-            <!--{ left: "\[", right: "\]",  display: true  },-->
+            { right: "$$", left: "$$",  display: true  },
+            { right: "$",  left: "$",   display: false }
         ]
     });
 </script>
@@ -51,16 +49,16 @@
     <article>
         <div id="content">
             <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#fundamentals-of-atonal-music">Fundamentals of atonal music</a>
+<li class="toc-entry toc-h1"><a href="#abstract-algebra-and-modular-arithmetic">Abstract Algebra and Modular arithmetic</a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#modular-arithmetic">Modular arithmetic</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#quotient-remainder-theorem">Quotient-remainder theorem</a></li>
-<li class="toc-entry toc-h3"><a href="#modular-congruence-and-congruence-classes">Modular congruence and congruence classes</a></li>
+<li class="toc-entry toc-h2"><a href="#quotient-remainder-theorem">Quotient-remainder theorem</a></li>
+<li class="toc-entry toc-h2"><a href="#modular-congruence-and-congruence-classes">Modular congruence and congruence classes</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#pitch-class">Pitch class</a></li>
-<li class="toc-entry toc-h2"><a href="#pitch-intervals">Pitch intervals</a></li>
+<li class="toc-entry toc-h1"><a href="#atonal-theory">Atonal-Theory</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#pitch-classes">Pitch classes</a></li>
+<li class="toc-entry toc-h2"><a href="#intervals">Intervals</a></li>
 <li class="toc-entry toc-h2"><a href="#normal-and-prime-forms">Normal and prime forms</a></li>
 <li class="toc-entry toc-h2"><a href="#normal-form-and-prime-forms">Normal form and prime forms</a></li>
 </ul>
@@ -77,8 +75,8 @@
 
 <div class="vf helper" data="random-3-2"></div>
 
-<h1 id="fundamentals-of-atonal-music">
-<a class="anchor" href="#fundamentals-of-atonal-music" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fundamentals of atonal music</h1>
+<h1 id="abstract-algebra-and-modular-arithmetic">
+<a class="anchor" href="#abstract-algebra-and-modular-arithmetic" aria-hidden="true"><span class="octicon octicon-link"></span></a>Abstract Algebra and Modular arithmetic</h1>
 
 <div class="vf simple-score" params='{ "width": 860 }' music="
 F4q F4q | R4qr Ab4q | Ab4q G3q | G3q F#4q | R48r Bb3qd |
@@ -98,8 +96,12 @@ ourselves with this math that will be in the background of all of post-tonal ana
 modular arithmetic, a subject in abstract algebra. Fortunately, following this math setup
 everything will be simplified notationally.</p>
 
-<h2 id="modular-arithmetic">
-<a class="anchor" href="#modular-arithmetic" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modular arithmetic</h2>
+<p>We’re only going to try to understand what is meant by the following:</p>
+
+<ul>
+  <li>“$a$ is congruent/equivalent to $b$ modulo $n$”,</li>
+  <li>“$[a]_n$ is the congruence class of $a$ modulo $n$.”</li>
+</ul>
 
 <!--
    -<div class='thm'>
@@ -110,16 +112,14 @@ everything will be simplified notationally.</p>
 </div>
 
    -->
+<div class="thm">
+<p>Whenever I set text with a gray border to the left, like this, I’ll either be summarizing some
+mathematical notation and what it means, or going deeper into some of the math previously
+introduced.</p>
+</div>
 
-<p>In this section we’ll try to understand what is meant by the following statements or expressions:</p>
-
-<ul>
-  <li>“$a$ is congruent/equivalent to $b$ modulo $n$”,</li>
-  <li>“$[a]_n$ is the congruence class of $a$ modulo $n$”,</li>
-</ul>
-
-<h3 id="quotient-remainder-theorem">
-<a class="anchor" href="#quotient-remainder-theorem" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quotient-remainder theorem</h3>
+<h2 id="quotient-remainder-theorem">
+<a class="anchor" href="#quotient-remainder-theorem" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quotient-remainder theorem</h2>
 
 <p>Chances are you know about Euclidean division.
 For example, $1\div 2$ is 1 divided by 2 (or 2 dividing 1) and represents symbolically the number of
@@ -164,8 +164,8 @@ $\{1,1\}=\{1\}$.</p>
   <li>If $a=-5$, then $-5=(0)12+(-5)=(-1)12+(7)$.</li>
 </ul>
 
-<h3 id="modular-congruence-and-congruence-classes">
-<a class="anchor" href="#modular-congruence-and-congruence-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modular congruence and congruence classes</h3>
+<h2 id="modular-congruence-and-congruence-classes">
+<a class="anchor" href="#modular-congruence-and-congruence-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modular congruence and congruence classes</h2>
 
 <p>With the last of the examples above you might notice that there were written two different ways to
 express -5 as a sum of a multiple of 12 and a remainder. But these aren’t the only ways, in-fact
@@ -275,8 +275,11 @@ $$</div>
 
 <hr>
 
-<h2 id="pitch-class">
-<a class="anchor" href="#pitch-class" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pitch class</h2>
+<h1 id="atonal-theory">
+<a class="anchor" href="#atonal-theory" aria-hidden="true"><span class="octicon octicon-link"></span></a>Atonal-Theory</h1>
+
+<h2 id="pitch-classes">
+<a class="anchor" href="#pitch-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pitch classes</h2>
 
 <p>If you are familiar with music, then you know that there are 12 distinct pitches, each with various
 octaves. For example, middle C lies at the center of a piano and is also the note called C4, and C3
@@ -295,7 +298,8 @@ equal to 12.</p>
 
 <div class="thm thm-definition">
 <h4 class="no_toc">Definition (Pitch class)</h4>
-<p>A pitch class is a collection of pitches related by octave and/or enharmonic equivalence.</p>
+<p>A pitch class is a collection of pitches related by an integer multiple of an octave and/or
+enharmonic equivalence.</p>
 </div>
 
 <p>With this definition we can draw a relation between music and modular arithmetic by associating each
@@ -440,12 +444,83 @@ In fact this map is an <em>isomorphism</em> between the two sets, but I’ll lea
 the necessary definitions and explanations for some other time.</p>
 </div>
 
+<p>Pitch classes will allow us to study music in a mathematical way, where we will quantify distances
+between notes (intervals), and look at relations between set of notes in terms of operations, i.e.
+transposition and inversion.</p>
+
 <hr>
 
 <div class="vf helper" data="random-3-2"></div>
 
-<h2 id="pitch-intervals">
-<a class="anchor" href="#pitch-intervals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pitch intervals</h2>
+<h2 id="intervals">
+<a class="anchor" href="#intervals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Intervals</h2>
+
+<p>Intervals are nothing new to anyone learned in music theory. However, instead of identifying them by
+names like “major third”, “perfect fourth”, “minor sixth”, we’ll identify them by the value of the
+semitone distance between pitches.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Interval name</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Unison</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Minor second/augmented unison</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Major second</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Minor third</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Major third</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Perfect fourth</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Augmented fourth/diminished fifth</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Perfect fifth</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Minor sixth</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Major sixth</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Minor seventh</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Major seventh</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Octave</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="normal-and-prime-forms">
 <a class="anchor" href="#normal-and-prime-forms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Normal and prime forms</h2>
@@ -483,12 +558,6 @@ $$</div>
 
 <h2 id="normal-form-and-prime-forms">
 <a class="anchor" href="#normal-form-and-prime-forms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Normal form and prime forms</h2>
-
-<p>([10,0,2,3,5])</p>
-
-<p>[
-(10,0,2,3,5)
-]</p>
 
 <!--
    -\((0~2~4~5~7)\)
