@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: shalzz/zola-deploy-action
-      uses: shalzz/zola-deploy-action@master
+      with:
+        ref: code
+    - uses: shalzz/zola-deploy-action@master
       env:
-        BUILD_ONLY: true
         PAGES_BRANCH: master
         TOKEN: ${{ secrets.TOKEN }}
