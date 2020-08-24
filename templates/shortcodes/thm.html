@@ -1,0 +1,10 @@
+{% if type == "t" %}
+{% set_global type="Theorem" %}
+{% elif type == "d" %}
+{% set_global type="Definition" %}
+{% endif %}
+<div class="box {{ type | lower }}">
+    <h4>{{ type }}: {{ name }}</h4>
+    {{ body | markdown() | safe }}
+</div>
+

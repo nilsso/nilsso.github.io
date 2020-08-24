@@ -1,0 +1,52 @@
+{% extends "page.html" %}
+
+{% block custom_styles %}
+{% set data = load_data(path="public/style.css", format="plain") -%}
+<style>{{ data | safe }}</style>
+<style>
+    .wave {
+        display: inline-block;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count:infinite;
+        animation-name: wave;
+    }
+
+    @keyframes wave {
+        from { rotate: 0.10turn; }
+        to { rotate: 0; }
+    }
+</style>
+{% endblock custom_styles %}
+
+{% block nav %}
+{{ page_macros::nav(links=config.extra.home_links) }}
+{% endblock nav %}
+
+{% block content %}
+<h1>Hi <span class="wave">👋</span>, I'm Nils</h1>
+<p>
+And I'm a music student, math student, programmer, singer, and game enthusiast.
+</p>
+<p>
+I have two
+associates degrees; one in Mathematics and Pre-Engineering Studies: Computer Science, and the other
+in Arts Music Studies.
+</p>
+<p>
+I am currently an undergraduate student at San Diego State University,
+double majoring in the Bachelor of Arts in Music, and Bachelor of Science in Applied Mathematics:
+Computational Science programs. I sing bass/baritone for SDSU Chamber Singers and a local church.
+</p>
+<p>
+I'm also a staunch Vim enthusiast.
+</p>
+<p>
+I built this website with
+<a href="https://www.getzola.org">Zola</a>, using
+<a href="https://katex.org">KaTeX</a> for math, and
+<a href="http://vexflow.com">VexFlow</a> for music.
+</p>
+</center>
+{% endblock content %}

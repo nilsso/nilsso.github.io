@@ -1,0 +1,44 @@
+{% macro nav(links="") %}
+<nav>
+    <a href="{{ config.extra.github }}">{{ config.extra.user }}</a> /
+    <a href="{{ config.base_url }}">home</a>
+    {% if links %}
+        {% for link in links %}
+            / <a href="{{ link }}">{{ link }}</a>
+        {% endfor %}
+    {% else %}
+        {% if section %}
+            {% set components = section.components %}
+        {% else %}
+            {% set components = page.components %}
+        {% endif %}
+        {% set n = components | length %}
+
+        {% for i in range(end=n) %}
+            {% set c = components[i] %}
+            {% if i < n - 1 %}
+                 {% set path = components | slice(end=i+1) | join(sep='/') %}
+                 / <a href="{{ config.base_url }}/{{ path }}">{{ c }}</a>
+            {% else %}
+                / {{ c }}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</nav>
+{% endmacro nav %}
+
+{% macro page_listing(page) %}
+<article class="page-list">
+    <header> 
+        <h3>
+            <a href="{{ page.permalink }}">{{ page.title }}</a>
+        </h3>
+    </header>
+
+    {% if page.summary %}
+    <div class="content post-summary">
+        {{ page.summary | markdown | safe }}
+    </div>
+    {% endif %}
+</article>
+{% endmacro page_listing %}

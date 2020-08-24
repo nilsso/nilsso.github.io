@@ -1,0 +1,19 @@
+base_url = "https://nilsso.github.io"
+
+compile_sass = true
+
+build_search_index = false
+
+highlight_code = true
+highlight_theme = "demain"
+extra_syntaxes = ["syntaxes"]
+
+taxonomies = [
+    { name = "categories" },
+    { name = "tags" },
+]
+
+[extra]
+user = "nilsso"
+github = "https://github.com/nilsso"
+home_links = ["programming", "math", "music", "games"]

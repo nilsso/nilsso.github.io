@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Mono&display=swap');
+$font-normal: 'Merriweather', serif;
+$font-code: 'Roboto Mono', monospace;
+$font-header: $font-code;
+
+@import "_colors";
+$gray-dark: Color("muted", "shade-70");
+$gray-light: Color("muted", "shade-20");
+
+$font-size-normal: 16px;
+$font-size-small: 80%;
+$font-size-big: 120%;
+$font-size-Big: 160%;
+$font-size-BIG: 200%;
+$font-size-code: 100%;
+
+html, body {
+    color: $gray-dark;
+    font-family: $font-normal;
+    font-size: $font-size-normal;
+    line-height: 1.8;
+}
+
+body {
+    margin: 0;
+}
+
+a, a:visited {
+    color: Color("bright", "base");
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: Color("bright", "complement");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-header;
+    line-height: 1.2;
+}
+
+h1, h2 {
+    margin: 1em 0;
+}
+
+hr {
+    background: $gray-dark;
+    border: 0;
+    height: 1px;
+    margin: 1em 0;
+}
+
+img {
+    width: 100%;
+}
+
+pre {
+    padding: 0.5em;
+}
+
+$quote-padding: 1rem;
+$quote-border-width: 3px;
+
+blockquote {
+    margin: 1em 0;
+    padding-left: $quote-padding;
+    border-left: $quote-border-width solid $gray-light;
+}
+
+.box {
+    @extend blockquote;
+    //nav, h1, h2, h3, h4, h5, h6 {
+        //text-align: left;
+    //}
+    &.theorem {
+        border-color: map-get($bright, "base");
+    }
+
+    & .proposition {
+        border-color: map-get($bright, "complement");
+    }
+
+    &.lemma {
+        border-color: map-get($bright, "split-complementary-1");
+    }
+
+    &.corollary {
+        border-color: map-get($bright, "split-complementary-2");
+    }
+
+    &.definition {
+        border-color: map-get($bright, "analogous-1");
+    }
+}
+
+nav {
+    margin: 2em 0;
+    font-family: $font-code;
+}
+
+article:not(:last-of-type) {
+    border-bottom: thin solid $gray-dark;
+}
+
+main {
+    margin: auto;
+    max-width: 38rem;
+    padding-bottom: 20vh;
+}
