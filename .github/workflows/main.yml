@@ -9,7 +9,6 @@ jobs:
     - name: shalzz/zola-deploy-action
       uses: shalzz/zola-deploy-action@master
       env:
+        BUILD_ONLY: true
         PAGES_BRANCH: master
-        BUILD_DIR: .
-        BUILD_FLAGS: --drafts
         TOKEN: ${{ secrets.TOKEN }}
