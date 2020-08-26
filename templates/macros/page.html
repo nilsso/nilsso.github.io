@@ -9,19 +9,21 @@
     {% else %}
         {% if section %}
             {% set components = section.components %}
-        {% else %}
+        {% elif page %}
             {% set components = page.components %}
         {% endif %}
-        {% set n = components | length %}
-        {% for i in range(start=1, end=n) %}
-            {% set c = components[i] %}
-            {% if i < n - 1 %}
-                 {% set path = components | slice(end=i+1) | join(sep='/') %}
-                 / <a href="{{ config.base_url }}/{{ path }}">{{ c }}</a>
-            {% else %}
-                / {{ c }}
-            {% endif %}
-        {% endfor %}
+        {% if components %}
+            {% set n = components | length %}
+            {% for i in range(start=1, end=n) %}
+                {% set c = components[i] %}
+                {% if i < n - 1 %}
+                    {% set path = components | slice(end=i+1) | join(sep='/') %}
+                    / <a href="{{ config.base_url }}/{{ path }}">{{ c }}</a>
+                {% else %}
+                    / {{ c }}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
     {% endif %}
 </nav>
 {% endmacro nav %}
