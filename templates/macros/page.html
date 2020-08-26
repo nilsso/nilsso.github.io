@@ -37,14 +37,14 @@
         {% if page.taxonomies.categories %}
         <ul class="article-categories">
             {% for c in page.taxonomies.categories %}
-            <li><a class="gray-light" href="{{ get_taxonomy_url(kind="categories", name=c) | safe }}">{{ c }}</a></li>
+            <li><a href="{{ get_taxonomy_url(kind="categories", name=c) | safe }}">{{ c }}</a></li>
             {% endfor %}
         </ul>
         {% endif %}
         {% if page.taxonomies.tags %}
         <ul class="article-tags">
             {% for t in page.taxonomies.tags %}
-            <li><a class="gray-light" href="{{ get_taxonomy_url(kind="tags", name=t) | safe }}">#{{ t }}</a></li>
+            <li><a href="{{ get_taxonomy_url(kind="tags", name=t) | safe }}">#{{ t }}</a></li>
             {% endfor %}
         </ul>
         {% endif %}
@@ -62,12 +62,12 @@
     {% if page.description or page.summary %}
     <div class="content">
         {% if page.description %}
-        <div class="post-description">
+        <div class="article-description">
             {{ page.description | markdown | safe }}
         </div>
         {% endif %}
         {% if page.summary %}
-        <div class="post-summary box gray-light">
+        <div class="article-summary box">
             {{ page.summary | striptags | markdown | safe }}
         </div>
         {% endif %}

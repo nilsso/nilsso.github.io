@@ -107,6 +107,9 @@ article:not(:last-of-type) {
 
 .article-info {
     font-size: $font-size-small;
+}
+
+.article-summary {
     color: $gray-light;
 }
 
@@ -116,16 +119,16 @@ article:not(:last-of-type) {
     li {
         display: inline;
         margin-right: 1em;
+
+        a {
+            color: $gray-light;
+        }
     }
 }
 
 .article-categories, .article-tags {
     list-style-type: none;
     padding: 0;
-}
-
-.gray-light {
-    color: $gray-light;
 }
 
 main {
