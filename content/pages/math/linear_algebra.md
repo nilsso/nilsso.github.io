@@ -1,18 +1,20 @@
 +++
 title = "Linear algebra"
+description = "Some linear algebra notes."
+
+[taxonomies]
+tags = ["math", "notes"]
 
 [extra]
 math = true
 +++
 
-Some linear algebra notes.
-
-<!-- more -->
-
 # Linear systems
 
 A *linear equation* is simply an equation involving variables/indeterminates with highest power one
 (or zero). For example, the equation $x=4$ is linear while $x^2=4$ is not linear but quadratic.
+
+<!-- more -->
 
 Linear equations take the form:
 

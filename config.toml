@@ -16,4 +16,4 @@ taxonomies = [
 [extra]
 user = "nilsso"
 github = "https://github.com/nilsso"
-home_links = ["programming", "math", "music", "games"]
+home_links = ["pages/programming", "pages/math", "pages/music", "pages/games"]

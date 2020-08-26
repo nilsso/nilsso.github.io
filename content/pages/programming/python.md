@@ -1,5 +1,9 @@
 +++
-title = "Python notes"
+title = "Python"
+description = "A primer for Python that I wrote."
+
+[taxonomies]
+tags = ["programming", "python", "primer"]
 +++
 
 I wrote this because many classmates and friends had little to no experience

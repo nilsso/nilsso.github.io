@@ -1,5 +1,9 @@
 +++
-title = "Atonal muic theory"
+title = "Atonal music theory"
+description = "An introduction to atonal music theory through abstract algebra."
+
+[taxonomies]
+tags = ["music", "math", "primer"]
 
 [extra]
 math = true

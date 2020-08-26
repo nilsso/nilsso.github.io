@@ -1,5 +1,9 @@
 +++
-title = "Rust notes"
+title = "Rust"
+description = "Various notes on Rust."
+
+[taxonomies]
+tags = ["programming", "rust"]
 +++
 
 These days, Rust is hands down my favorite programming language. I think [traits][] are a vast

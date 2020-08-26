@@ -1,5 +1,8 @@
 +++
 title = "World of Warcraft"
+
+[taxonomies]
+tags = ["games", "programming"]
 +++
 
 These days I don't play much WoW,

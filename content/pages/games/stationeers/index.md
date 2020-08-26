@@ -1,5 +1,11 @@
 +++
 title = "Stationeers"
+
+[taxonomies]
+tags = ["games", "notes", "tutorial"]
+
+[extra]
+math = true
 +++
 
 Stationeers (on [steam](https://store.steampowered.com/app/544550/Stationeers/)) is a pretty complex
