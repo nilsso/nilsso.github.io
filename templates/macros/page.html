@@ -1,12 +1,12 @@
 {% macro nav(links="") %}
 <nav>
-    <a href="{{ config.extra.github }}">{{ config.extra.user }}</a> /
-    <a href="{{ config.base_url }}">home</a>
+    <a href="{{ config.extra.github }}">{{ config.extra.user }}</a>
     {% if links %}
         {% for link in links %}
         / <a href="{{ config.base_url }}/{{ link }}">{{ link | split(pat="/") | last }}</a>
         {% endfor %}
     {% else %}
+        / <a href="{{ config.base_url }}">home</a>
         {% if section %}
             {% set components = section.components %}
         {% elif page %}
