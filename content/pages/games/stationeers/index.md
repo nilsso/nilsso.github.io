@@ -12,9 +12,16 @@ Stationeers (on [steam](https://store.steampowered.com/app/544550/Stationeers/))
 space engineering game; much more so than a lot of what else is out there. Constructing a single
 structure involves several steps. For example, constructing an autolathe involves welding on iron
 sheets, fixing cables, welding on plastic sheets, and then using a wrench. Here I've compiled some
-of my own notes and tutorials.
+of my own resources, notes and tutorials.
 
 <!-- more -->
+
+# Resources
+
+- [Stationeering](stationeering.com/) is a database of the entities in Stationeers, but most
+  impressive is its MIPS simulator.
+- [Stationeers MIPS Sublime Syntax](mips.sublime-syntax), a bare
+  basic Sublime syntax file to support highlighting MIPS code on Zola sites (like this one).
 
 # Notes
 
