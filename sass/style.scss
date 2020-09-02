@@ -25,38 +25,10 @@ body {
     margin: 0;
 }
 
-p {
-    margin: 1em 0;
-}
-
-a {
-    color: Color("bright", "base");
-    text-decoration: none;
-}
-
-a:hover, a:focus {
-    color: Color("bright", "complement");
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-header;
-    line-height: 1.2;
-    margin: 1em 0;
-}
-
-hr {
-    background: $gray-dark;
-    border: 0;
-    height: 1px;
-    margin: 2em 0;
-}
-
-img {
-    width: 100%;
-}
-
-pre {
-    padding: 1em;
+main {
+    max-width: 38rem;
+    margin: auto;
+    padding: 0 5vw 20vh 5vw;
 }
 
 $quote-padding: 1rem;
@@ -131,10 +103,39 @@ article:not(:last-of-type) {
     padding: 0;
 }
 
-main {
-    max-width: 38rem;
-    margin: auto;
-    padding: 0 5vw 20vh 5vw;
+p {
+    margin: 1em 0;
+}
+
+a {
+    color: Color("bright", "base");
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: Color("bright", "complement");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-header;
+    line-height: 1.2;
+    margin: 1em 0;
+}
+
+hr {
+    background: $gray-dark;
+    border: 0;
+    height: 1px;
+    margin: 2em 0;
+}
+
+img {
+    width: 100%;
+}
+
+pre {
+    padding: 1em;
+    border-radius: 3px;
 }
 
 @media (max-width: 840px) {

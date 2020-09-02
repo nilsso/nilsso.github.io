@@ -5,4 +5,5 @@
 *.out
 *.tex
 
+node_modules
 public
