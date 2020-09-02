@@ -6,5 +6,5 @@
 *.tex
 
 public
-apps
+/apps
 node_modules
