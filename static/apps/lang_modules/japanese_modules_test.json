@@ -13,7 +13,7 @@
             ["わ", "wa"], ["を", "wo/o"],
             ["ん", "n" ]
         ],
-        "vocabulary": []
+        "vocabulary": {}
     },
     {
         "name": "Numbers",
