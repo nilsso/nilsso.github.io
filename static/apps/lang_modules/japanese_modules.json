@@ -1,32 +1,89 @@
 [
     {
-        "name": "Lesson 1",
+        "name": "Alphabet (Hiragana)",
         "sentences": [
-            "はじめました。",
-            "よろしくおねがいします。",
-            "おはよう。",
-            "おはようございます。",
-            "こんにちは。",
-            "こんばんは。",
-            "おやすみなさい。",
-            "ありがとう。",
-            "ありがとうございます。",
-            "しつれいします。",
-
-            "しゅっしんは{{place}}です。",
-            "せんこうは{{major}}です。",
-            "{{studentyear}}です。"
+            ["あ", "a" ], ["い", "i"   ], ["う", "u"  ], ["え", "e" ], ["お", "o" ],
+            ["か", "ka"], ["き", "ki"  ], ["く", "ku" ], ["け", "ke"], ["こ", "ko"],
+            ["さ", "sa"], ["し", "shi" ], ["す", "su" ], ["せ", "se"], ["そ", "so"],
+            ["た", "ta"], ["ち", "chi" ], ["つ", "tsu"], ["て", "te"], ["と", "to"],
+            ["な", "na"], ["に", "ni"  ], ["ぬ", "nu" ], ["ね", "ne"], ["の", "no"],
+            ["ま", "ma"], ["み", "mi"  ], ["む", "mu" ], ["め", "me"], ["も", "mo"],
+            ["や", "ya"],                 ["ゆ", "yu" ],               ["よ", "yo"],
+            ["ら", "ra"], ["り", "ri"  ], ["る", "ru" ], ["れ", "re"], ["ろ", "ro"],
+            ["わ", "wa"], ["を", "wo/o"],
+            ["ん", "n" ]
         ],
-        "vocabulary": {
-            "{{place}}": ["San Diego", "Tokyo", "San Jose"],
-            "{{major}}": ["びじゅつ", "かがく", "すうがく", "おんがく"],
-            "{{studentyear}}": ["いちねんせい", "にねんせい", "さんえんせい", "よねんせい", "だいがくいんせい"]
-        }
+        "vocabulary": {}
     },
     {
-        "name": "Lesson 2",
-        "sentences": [],
+        "name": "Numbers",
+        "sentences": [
+            ["いち", "One"],
+            ["に", "Two"],
+            ["さん", "Three"],
+            ["し/よん", "Four"],
+            ["ご", "Five"],
+            ["ろく", "Six"],
+            ["なな/しち", "Seven"],
+            ["はち", "Eight"],
+            ["きゅう", "Nine"],
+            ["じゅう", "Ten"]
+        ],
         "vocabulary": {}
+    },
+    {
+        "name": "Lesson 1",
+        "sentences": [
+            ["はじめまして。", "How do you do?"],
+            ["よろしくおねがいします。", "Pleased to meet you."],
+            ["おはよう。", "Good morning"],
+            ["おはようございます。", "Good morning (polite.)"],
+            ["こんにちは。", "Good day."],
+            ["こんばんは。", "Good evening."],
+            ["おやすみなさい。", "Good night."],
+            ["さようなら。", "Goodbye."],
+            ["ありがとう。", "Thank you."],
+            ["ありがとうございます。", "Thank you very much."],
+            ["すみません。", "Excuse me."],
+            ["しつれいします。", "Excuse me (upon entering)."],
+
+            ["いってきます。", "I'm leaving"],
+            ["いってらっしゃい。", "Have a good day."],
+            ["ただいま。", "I'm back."],
+            ["おかえりなさい。", "Welcome back."],
+            ["いただきます。", "Thank you for the meal (just served)."],
+            ["ごちそうさまでした。", "Thank you for the meal."],
+
+            ["しゅっしんは{{place}}です。", "My hometown is {{1}}."],
+            ["せんこうは{{major}}です。", "My major is {{1}}."],
+            ["{{studentyear}}です。", "I am a {{1}}."],
+
+            ["げんきですか。", "Are you okay?"],
+            ["げんきです。", "I am fine."],
+            ["まあまあです。", "I'm so-so."]
+        ],
+        "vocabulary": {
+            "{{place}}": [
+                ["とうきょう", "Tokyo"],
+                ["きょうと", "Kyoto"],
+                ["サンディエゴ", "San Diego"],
+                ["サンノゼ", "San Jose"]
+            ],
+            "{{major}}": [
+                ["びじゅつ", "Art"],
+                ["かがく", "Chemistry"],
+                ["すうがく", "Math"],
+                ["おんがく", "Music"],
+                ["おんがくきょういく", "Music education"]
+            ],
+            "{{studentyear}}": [
+                ["いちねんせい", "Freshman"],
+                ["にねんせい", "Sophomore"],
+                ["さんえんせい", "Junior"],
+                ["よねんせい", "Senior"],
+                ["だいがくいんせい", "Graduate student"]
+            ]
+        }
     }
 ]
 
