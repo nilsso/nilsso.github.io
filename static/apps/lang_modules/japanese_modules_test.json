@@ -13,7 +13,7 @@
             ["わ", "wa"], ["を", "wo/o"],
             ["ん", "n" ]
         ],
-        "vocabulary": []
+        "vocabulary": {}
     },
     {
         "name": "Numbers",
@@ -34,7 +34,7 @@
     {
         "name": "Lesson 1",
         "sentences": [
-            ["はじめました。", "How do you do?"],
+            ["はじめまして。", "How do you do?"],
             ["よろしくおねがいします。", "Pleased to meet you."],
             ["おはよう。", "Good morning"],
             ["おはようございます。", "Good morning (polite.)"],
