@@ -10,7 +10,7 @@ Gist as you're pleased. Then to contribute see below.
 # Contributing directly to language modules
 
 Currently the language module for Japanese is stored [here][lang_modules], and pull requests would
-be accepted, but if you're not Git savy (and I know you, i.e. from class) you can just pass me your
+be accepted, but if you're not Git savvy (and I know you, i.e. from class) you can just pass me your
 additions and I'll put them in manually.
 
 [lang_modules]: https://github.com/nilsso/nilsso.github.io/blob/code/static/apps/lang_modules/japanese_modules.json
