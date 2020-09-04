@@ -92,7 +92,7 @@
             "{{studentyear}}": [
                 ["いちねんせい", "Freshman"],
                 ["にねんせい", "Sophomore"],
-                ["さんえんせい", "Junior"],
+                ["さんねんせい", "Junior"],
                 ["よねんせい", "Senior"],
                 ["だいがくいんせい", "Graduate student"]
             ]
