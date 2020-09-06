@@ -141,24 +141,40 @@ article:not(:last-of-type) {
     display: none;
 }
 
+.katex-display {
+    overflow-x: auto;
+}
+
 #whitespace {
     height: 50vh;
 }
 
 @media (max-width: 520px) {
+    html, body {
+        font-size: 16px;
+    }
+
     .navbar {
-        font-size: medium;
+        //font-size: medium;
     }
 }
 
 @media (max-width: 460px) {
+    html, body {
+        font-size: 14px;
+    }
+
     .navbar {
-        font-size: small;
+        //font-size: small;
     }
 }
 
 @media (max-width: 380px) {
+    html, body {
+        font-size: 12px;
+    }
+
     .navbar {
-        font-size: smaller;
+        //font-size: smaller;
     }
 }
