@@ -4,18 +4,19 @@
 {% set data = load_data(path="public/style.css", format="plain") -%}
 <style>{{ data | safe }}</style>
 <style>
-    .wave {
-        display: inline-block;
-        animation-duration: 1s;
-        animation-direction: alternate;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count:infinite;
-        animation-name: wave;
-    }
-
-    @keyframes wave {
+    @-webkit-keyframes wave {
         from { rotate: 0.10turn; }
         to { rotate: 0; }
+    }
+
+    .wave {
+        display: inline-block;
+
+        -webkit-animation-name: wave;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count:infinite;
     }
 </style>
 {% endblock custom_styles %}
