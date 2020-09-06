@@ -1,17 +1,15 @@
 base_url = "https://nilsso.github.io"
-
-compile_sass = true
-
-build_search_index = false
-
+title = "nilsso"
+description = "Personal site"
+default_language = "en"
 highlight_code = true
 highlight_theme = "nord"
-extra_syntaxes = ["syntaxes"]
-
 taxonomies = [
     { name = "categories" },
     { name = "tags" },
 ]
+compile_sass = true
+extra_syntaxes = ["syntaxes"]
 
 [extra]
 user = "nilsso"

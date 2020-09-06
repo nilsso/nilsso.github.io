@@ -18,7 +18,7 @@ A *linear equation* is simply an equation involving variables/indeterminates wit
 
 Linear equations take the form:
 
-{% katex() %}
+{% math() %}
 a_1 x_1+a_2 x_2+\cdots+a_n x_n = d
 {% end %}
 
@@ -30,7 +30,7 @@ equation.
 A *linear system* is when we consider several equations to be related. A linear
 system has the form (where rows/equations are labeled $p_1,\ldots,p_j$)
 
-{% katex() %}
+{% math() %}
 \begin{gathered}
 p_1: a_{1,1}x_1+a_{1,2}x_2+\cdots+a_{1,n}x_n = d_1 \\
 \vdots \\

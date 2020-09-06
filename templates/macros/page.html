@@ -1,5 +1,5 @@
 {% macro nav(links="") %}
-<nav>
+<div class="navbar">
     <a href="{{ config.extra.github }}">{{ config.extra.user }}</a>
     {% if links %}
         {% for link in links %}
@@ -25,7 +25,7 @@
             {% endfor %}
         {% endif %}
     {% endif %}
-</nav>
+</div>
 {% endmacro nav %}
 
 {% macro page_info(page) %}

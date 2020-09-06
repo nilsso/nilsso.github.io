@@ -1,0 +1,7 @@
+{% if preable %}
+<div id="katex-preamble">
+{{ body | safe }}
+</div>
+{% else %}
+<script type="math/tex">{{body | safe}}</script>
+{% endif %}

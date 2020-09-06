@@ -80,7 +80,7 @@ express -5 as a sum of a multiple of 12 and a remainder. But these aren't the on
 there is an infinite number of ways to express -5 using quotient remainder theorem since for any
 arbitrary quotient $q$ there is a unique remainder $r$ such that $a=qb+r$:
 
-{% katex() %}
+{% math() %}
 \begin{alignedat}{3}
     -5 &= & (-2)12 &+ & ( 19)& \\
     -5 &= & (-1)12 &+ &   (7)& \\
@@ -129,7 +129,7 @@ remainders congruent to $7 \bmod 12$. Instead of listing them out (which might t
 there's an infinite number of them), we call this set of congruent integers the *congruence class*
 of 5 modulo 12, and denote it:
 
-{% katex() %}
+{% math() %}
 [5]_{12} = \{\ldots,19,7,-5,-17,-29,\ldots\}.
 {% end %}
 
@@ -147,13 +147,13 @@ We call $[a]_n$ the congruence class of $a$ modulo $n$, and denote it:
 What is important to see though is that there is a finite number of congruence classes with respect
 to equivalence. For example, when 12 is our divisor, there's exactly 12 distinct congruence classes:
 
-{% katex() %}
+{% math() %}
 [0]_{12},[1]_{12},\ldots,[10]_{12},[11]_{12}.
 {% end %}
 
 And while there are an infinite number of ways to denote congruence classes:
 
-{% katex() %}
+{% math() %}
 \begin{gathered}
 \ldots = [-12]_{12} = [0]_{12} = [12]_{12} = [24]_{12} = \ldots \\
 \ldots = [-11]_{12} = [1]_{12} = [13]_{12} = [25]_{12} = \ldots \\
@@ -287,7 +287,7 @@ Fix $P$ the set of musical pitch classes.
 Let $g:P\mapsto\Z$ be the map from the pitch classes to congruence classes over the
 integers modulus 12, which we define:
 
-{% katex() %}
+{% math() %}
 \begin{gathered}
 g(\text{C}) = [0]_{12} \\
 g(\text{C}\sharp/\text{D}\flat) = [1]_{12} \\
