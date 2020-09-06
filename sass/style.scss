@@ -22,7 +22,7 @@ html, body {
 body {
     max-width: 9in;
     margin: 2rem auto;
-    padding: 0 5rem;
+    padding: 0 1rem;
 }
 
 p {
@@ -79,13 +79,12 @@ blockquote {
     margin: 2rem 0;
     padding: 0;
     font-family: $font-code;
+    font-size: medium;
 }
 
 .box {
     @extend blockquote;
-    //nav, h1, h2, h3, h4, h5, h6 {
-        //text-align: left;
-    //}
+
     &.theorem {
         border-color: map-get($bright, "base");
     }
