@@ -105,7 +105,7 @@ $$
     <ul class="list-group list-group-flush">
         <li class="list-group-item">
             <div class="form-row">
-                <div class="col col-3">
+                <div class="col">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">$a$</span>
@@ -113,7 +113,7 @@ $$
                         <input id="acm-checker-a" class="form-control" type="text">
                     </div>
                 </div>
-                <div class="col col-3">
+                <div class="col">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">$b$</span>
@@ -121,7 +121,7 @@ $$
                         <input id="acm-checker-b" class="form-control" type="text">
                     </div>
                 </div>
-                <div class="col col-4">
+                <div class="col">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">$l$</span>
@@ -129,8 +129,8 @@ $$
                         <input id="acm-checker-l" class="form-control" type="text" placeholder="4">
                     </div>
                 </div>
-                <div class="col col-2">
-                    <button id="acm-checker-btn" class="btn btn-primary btn-block">Check</button>
+                <div class="col">
+                    <button id="acm-checker-btn" class="btn btn-primary btn-block">Go</button>
                 </div>
             </div>
         </li>
