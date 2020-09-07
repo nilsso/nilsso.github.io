@@ -2,7 +2,7 @@
     {
         "name": "Alphabet (Hiragana)",
         "fragments": [
-            ["{{character}}", "{{1}}"]
+            ["{{character}}", "{{1}}", 66]
         ],
         "vocabulary": {
             "{{character}}": [
@@ -27,7 +27,7 @@
     {
         "name": "Numbers",
         "fragments": [
-            ["{{number}}", "{{1}}"]
+            ["{{number}}", "{{1}}", 11]
         ],
         "vocabulary": {
             "{{number}}": [

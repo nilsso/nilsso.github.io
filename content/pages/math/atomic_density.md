@@ -39,7 +39,7 @@ const acm_string = (a, b, l) => {
         valid = true;
         s = String.raw`
             M_{${a},${b}}
-        = \{n\in\N:n\equiv ${a}\bmod ${b}\}\cup\{1\}
+        = \{n\in\N:n\equiv ${a}\bmod ${b}\}${a != 1 ? String.raw`\cup\{1\}` : ""}
         = \{${acm_elements(a, b, l).join()},\ldots\}`;
     };
     return [valid, s];
@@ -49,51 +49,56 @@ const acm_string = (a, b, l) => {
 # Preliminary Algebra Notes
 
 For a non-empty set $S$ and associative binary operation $\ast$, the association $M=(S,\ast)$
-is called a **monoid** if $S$ is closed under the operation $\ast$, and there exists an
+is called a *monoid* if $S$ is closed under the operation $\ast$, and there exists an
 identity element $e\in S$ such that for all $a\in S$, $a\ast e=e=e\ast a$.
 
-A monoid is called **commutative**/**abelian** if its operation is commutative.
+A monoid is called *commutative/abelian* if its operation is commutative.
 
-A **submonoid** is a subset of the elements of a monoid that in themselves form a monoid under the
+A *submonoid* is a subset of the elements of a monoid that in themselves form a monoid under the
 same operation.
 
-A monoid $(M,\ast)$ is **cancellative** if for all $a,b,c\in M$ we have:
+A monoid $(M,\ast)$ is *cancellative* if for all $a,b,c\in M$ we have:
 - $a\ast b=a\cdot c$ always implies $b=c$, and
 - $b\ast a=c\cdot a$ always implies $b=c$.
 
-For a **commutative cancellative** monoid $M$,
+For a *commutative cancellative* monoid $M$,
 if for some $x,y\in M$ we have $x|y$ ($x$ divides $y$),
 then there must exist a $z\in M$ such that $xz=y$.
 
-A **unit** of a monoid is... (FIND OUT!)
+A *unit* of a monoid $M$, similar to a unit of a ring, is an element $x\in M$ for which there
+exists an $x'\in M$ such that $x\ast x'=e$.
 
-*Going forward,
-fix $M$ a commutative cancellative monoid, and
-$\unitsof M$ the set of units of $M$.*
+**Going forward, we'll assume $M$ to be a commutative cancellative monoid, and let $\unitsof M$ be
+the set of units of $M$.**
 
 A non-unit $x\in M$ (that is $x\in M\setminus\unitsof M$)
-is **irreducible**/an **atom** if whenever $x=yz$ then either $y\in\unitsof M$
+is *irreducible*/an *atom* if whenever $x=yz$ then either $y\in\unitsof M$
 or $z\in\unitsof M$ (one is a unit, but not both).
 
-A non-unit $x\in M$ is **prime** if whenever $x|yz$ for some $y,z\in M$, either $x|y$ or $x|z$
-(divides one, but not the other).
+A non-unit $x\in M$ is *prime* if whenever $x|yz$ for some $y,z\in M$, either $x|y$ or $x|z$
+(divides one, but not the other). An element being prime implies it is irreducible.
 
-A monoid $M$ is **atomic** if every non-unit $x$ can be written as a product of irreducibles of $M$.
+A monoid $M$ is *atomic* if every non-unit $x$ can be written as a product of irreducibles of $M$.
 
-The **unique factorization monoid** $(\N,\times)$ is atomic in that every integer greater than 2 can
-be written as a product of irreducibles (or more specifically here primes), as in the Fundamental
-Theorem of Arithmetic.
+The *unique factorization monoid* $(\N,\times)$ is atomic in that every integer greater than 1 can
+be written as a product of powers of irreducibles (or more specifically here primes) that is unique
+up to the order of the irreducibles, as in the Fundamental Theorem of Arithmetic.
 
-*Going forward, all monoids will be assumed to be atomic.*
+Since $M_{a,b}$ is a submonoid of $(\N,\times)$, it is also atomic.
+
+**Going forward, all monoids will be assumed to be atomic.**
+
+A monoid $M$ is *factorial* if every non-unit $x\in M$ has a unique factorization into
+irreducibles of $M$.
 
 ## Arithmetic congruence monoids
 
-- Given $a,b\in\N$ with $0<a\le b$ and $a^2\equiv a\bmod b$, the **arithmetic congruence monoid**
-defined by $a$ and $b$ is:
+Given $a,b\in\N$ with $0<a\le b$ and $a^2\equiv a\bmod b$,
+define the *arithmetic congruence monoid* of $a$ and $b$:
 {% math() %}
 $$
 M_{a,b}
-:= \{n\in\N: n\equiv a\bmod b\}\cup{1}
+:= \{n\in\N: n\equiv a\bmod b\}\cup\{1\}
 = \{1,a,a+b,a+2b,\ldots\}.
 $$
 {% end %}
