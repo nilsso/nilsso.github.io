@@ -1,0 +1,3 @@
+[submodule "apps_dev/LanguageFragmentGenerator"]
+	path = apps_dev/LanguageFragmentGenerator
+	url = https://github.com/nilsso/LanguageFragmentGenerator

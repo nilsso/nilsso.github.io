@@ -1,3 +1,3 @@
-(cd apps/japanese; yarn build)
+(cd apps_dev/LanguageFragmentGenerator; yarn build)
 rm -rf static/apps/japanese
-cp -r apps/japanese/build static/apps/japanese
+cp -r apps_dev/LanguageFragmentGenerator/build static/apps/japanese
