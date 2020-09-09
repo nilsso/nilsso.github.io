@@ -39,6 +39,10 @@ p {
     margin: 1rem 0;
 }
 
+code {
+    font-family: $font-code;
+}
+
 a {
     color: $color-link;
     text-decoration: none;
