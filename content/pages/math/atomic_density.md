@@ -9,6 +9,19 @@ tags = ["math", "notes", "research"]
 math = true
 +++
 
+# Preliminary Algebra Notes
+
+For a non-empty set $S$ and associative binary operation $\ast$, the association $M=(S,\ast)$
+is called a **monoid** if $S$ is closed under the operation $\ast$, and there exists an
+identity element $e\in S$ such that for all $a\in S$, $a\ast e=e=e\ast a$.
+
+A monoid is called **commutative/abelian** if its operation is commutative.
+
+A **submonoid** is a subset of the elements of a monoid that in themselves form a monoid under the
+same operation.
+
+<!-- more -->
+
 {% math(preable=true) %}
 $$
 \gdef\lengthset{\mathscr{L}}
@@ -48,19 +61,6 @@ const acm_string = (a, b, l) => {
     return [valid, s];
 }
 </script>
-
-# Preliminary Algebra Notes
-
-For a non-empty set $S$ and associative binary operation $\ast$, the association $M=(S,\ast)$
-is called a **monoid** if $S$ is closed under the operation $\ast$, and there exists an
-identity element $e\in S$ such that for all $a\in S$, $a\ast e=e=e\ast a$.
-
-A monoid is called **commutative/abelian** if its operation is commutative.
-
-A **submonoid** is a subset of the elements of a monoid that in themselves form a monoid under the
-same operation.
-
-<!-- more -->
 
 A monoid $(M,\ast)$ is **cancellative** if for all $a,b,c\in M$ we have:
 - $a\ast b=a\cdot c$ always implies $b=c$, and
