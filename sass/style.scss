@@ -8,6 +8,8 @@ $font-header: $font-code;
 @import "_colors";
 $gray-dark: Color("muted", "shade-70");
 $gray-light: Color("muted", "shade-20");
+$color-link: Color("bright", "base");
+$color-link-hover: Color("bright", "complement");
 
 $box-padding: 1rem;
 $box-border-width: 3px;
@@ -28,7 +30,7 @@ html, body {
 }
 
 body {
-    max-width: 7in;
+    max-width: 8in;
     margin: 2rem auto;
     padding: 0 1rem;
 }
@@ -38,18 +40,22 @@ p {
 }
 
 a {
-    color: Color("bright", "base");
+    color: $color-link;
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: Color("bright", "complement");
+    color: $color-link-hover;
 }
 
 // Header common
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-header;
     line-height: 1.2;
+
+    &:before {
+        content: "〉";
+    }
 }
 
 // Header margins
@@ -57,14 +63,16 @@ h1, h2, h3 { margin: 2rem 0; }
 h4, h5, h6 { margin: 1.5rem 0; }
 
 // Header sizes
-h1, h2, h3 { font-size: xx-large; }
-h4, h5, h6 { font-size: x-large; }
+h1 { font-size: 200%; }
+h2 { font-size: 180%; }
+h3 { font-size: 160%; }
+h4, h5, h6 { font-size: 140%; }
 
 hr {
     background: $gray-dark;
     border: 0;
     height: 1px;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
 }
 
 img {
@@ -82,67 +90,73 @@ blockquote {
     border-left: $box-border-width solid $gray-light;
 }
 
-.navbar {
-    display: block;
-    margin: 2rem 0;
-    padding: 0;
-    font-family: $font-code;
-}
-
 .box {
     @extend blockquote;
-
-    &.theorem {
-        border-color: map-get($bright, "base");
-    }
-
-    & .proposition {
-        border-color: map-get($bright, "complement");
-    }
-
-    &.lemma {
-        border-color: map-get($bright, "split-complementary-1");
-    }
-
-    &.corollary {
-        border-color: map-get($bright, "split-complementary-2");
-    }
-
-    &.definition {
-        border-color: map-get($bright, "analogous-1");
-    }
+    &.theorem      { border-color: map-get($bright, "base"                 ); }
+    & .proposition { border-color: map-get($bright, "complement"           ); }
+    &.lemma        { border-color: map-get($bright, "split-complementary-1"); }
+    &.corollary    { border-color: map-get($bright, "split-complementary-2"); }
+    &.definition   { border-color: map-get($bright, "analogous-1"          ); }
 }
 
-article:not(:last-of-type) {
-    margin: 1rem 0;
-    padding-bottom: 0.5rem;
-    border-bottom: thin solid $gray-dark;
-}
+.nav {
+    margin: 2.5rem 0;
 
-.article-info {
-    font-size: small;
-}
-
-.article-summary {
-    color: $gray-light;
-}
-
-.article-taxonomies {
-    margin: 1rem 0;
-
-    li {
+    .nav-link {
         display: inline;
-        margin-right: 1rem;
+        padding: 0 0.5em;
+    }
 
-        a {
-            color: $gray-light;
+    .nav-item:first-of-type a {
+        padding-left: 0;
+    }
+
+    .dropdown-menu {
+        min-width: 0;
+        margin: 0;
+        padding: 0.25rem 0;
+
+        .dropdown-item {
+            padding: 0.25rem 0.5rem;
+            color: $color-link;
         }
     }
 }
 
-.article-categories, .article-tags {
-    list-style-type: none;
-    padding: 0;
+.listing {
+    margin-bottom: 3rem;
+
+    .listing-header, .listing-content {
+        padding: 0;
+    }
+}
+
+.listing-summary {
+    color: $gray-light;
+
+    * { font-size: 100%; }
+
+    h1, h2, h3 h4, h5, h6 { margin: 1rem 0; }
+}
+
+.listing-info {
+    font-size: 90%;
+
+    .listing-categories, .listing-tags {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul {
+        li, a {
+            color: $gray-light;
+        }
+
+        li {
+            display: inline;
+            margin-right: 1rem;
+        }
+    }
 }
 
 #katex-preamble {

@@ -1,0 +1,39 @@
+{% macro navlink(text, href) %}
+    <li class="nav-item">
+        <a class="nav-link" href={{ href }}>
+            {{ text }}
+        </a>/
+    </li>
+{% endmacro %}
+
+{% macro navbar(links="") %}
+<ul class="nav">
+    {{ self::navlink(text="github", href="{{ config.extra.github }}") }}
+    {{ self::navlink(text="home", href="/") }}
+    {{ self::navlink(text="projects", href="/projects") }}
+    <li class="nav-item dropdown">
+        <a
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+        >
+            content
+        </a>
+        <div class="dropdown-menu">
+            {% set pages = get_section(path="pages/_index.md") %}
+            {% for path in pages.subsections %}
+            {% set subsection = get_section(path=path) %}
+            <a class="dropdown-item" href="{{ subsection.permalink }}">
+                {{ subsection.title | lower }}
+            </a>
+            {% endfor %}
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/tags">tags</a>
+        </div>
+    </li>
+</ul>
+{% endmacro %}
+

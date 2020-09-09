@@ -1,18 +1,11 @@
-{% import "macros/page.html" as page_macros %}
-{% extends "index.html" %}
+{% extends "page.html" %}
 
-{% block title %}Tags{% endblock title%}
+{% import "macros/tags.html" as tag_macros %}
 
 {% block content %}
 <h1>Tags</h1>
-
+<p>List of all tags used by content across my website.</p>
 <ul class="terms">
-    {% for term in terms %}
-    <li>
-        <a href="{{ term.permalink }}">
-        #{{ term.name }}
-        </a>
-    </li>
-    {% endfor %}
+    {{ tag_macros::all_tags() }}
 </ul>
 {% endblock content %}

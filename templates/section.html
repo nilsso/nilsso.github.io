@@ -1,15 +1,1 @@
-{% import "macros/page.html" as page_macros %}
-
-{% extends "page.html" %}
-
-{% block content %}
-{% if paginator.pages %}
-{% set pages = paginator.pages %}
-{% else %}
-{% set pages = section.pages %}
-{% endif %}
-
-{% for page in pages %}
-    {{ page_macros::page_listing(page=page) }}
-{% endfor %}
-{% endblock content %}
+{% extends "list.html" %}

@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% import "macros/listing.html" as listing_macros %}
+
+{% block content %}
+{#  Object is either a section or a taxonomy term #}
+{% set object = section | default(value=term) %}
+{# Content #}
+{% if object.content %}
+<p>
+    {{ object.content | markdown | safe }}
+</p>
+<hr/>
+{% endif %}
+{# Subsections #}
+{% if object.subsections %}
+<h1>Sections</h1>
+<hr/>
+{% endif %}
+{# Pages #}
+{% if object.pages %}
+{{ listing_macros::listings(object=object) }}
+{% endif %}
+{% endblock content %}

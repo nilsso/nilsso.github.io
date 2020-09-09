@@ -1,5 +1,7 @@
 {% extends "page.html" %}
 
+{% import "macros/tags.html" as tag_macros %}
+
 {% block custom_styles %}
 {% set data = load_data(path="public/style.css", format="plain") -%}
 <style>{{ data | safe }}</style>
@@ -20,10 +22,6 @@
     }
 </style>
 {% endblock custom_styles %}
-
-{% block nav %}
-{{ page_macros::nav(links=config.extra.home_links) }}
-{% endblock nav %}
 
 {% block content %}
 <h1>Hi <span class="wave">👋</span>, I'm Nils</h1>
@@ -49,5 +47,7 @@ I built this website with
 <a href="https://katex.org">KaTeX</a> for math, and
 <a href="http://vexflow.com">VexFlow</a> for music.
 </p>
-</center>
+<ul>
+    {{ tag_macros::all_tags() }}
+</ul>
 {% endblock content %}

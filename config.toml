@@ -5,8 +5,7 @@ default_language = "en"
 highlight_code = true
 highlight_theme = "nord"
 taxonomies = [
-    { name = "categories" },
-    { name = "tags" },
+    { name = "tags" }
 ]
 compile_sass = true
 extra_syntaxes = ["syntaxes"]
@@ -14,4 +13,5 @@ extra_syntaxes = ["syntaxes"]
 [extra]
 user = "nilsso"
 github = "https://github.com/nilsso"
-home_links = ["pages/programming", "pages/math", "pages/music", "pages/games"]
+#home_links = ["pages/programming", "pages/math", "pages/music", "pages/games"]
+home_links = ["pages", "projects"]

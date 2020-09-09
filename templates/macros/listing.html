@@ -1,0 +1,61 @@
+{# Utilities for listing sections or pages #}
+{% import "macros/tags.html" as tag_macros %}
+
+{% macro listing_info(object) %}
+<div class="listing-info">
+    {% if object.date %}
+    <div class="listing-date">{{ object.date }}</div>
+    {% endif %}
+    <div class="listing-taxonomies">
+        {% if object.taxonomies.categories %}
+        <ul class="listing-categories">
+            {% for c in object.taxonomies.categories %}
+            <li><a href="{{ get_taxonomy_url(kind="categories", name=c) | safe }}">{{ c }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% if object.taxonomies.tags %}
+        <ul class="listing-tags">
+            <li>tags:</li>
+            {{ tag_macros::tags(terms=object.taxonomies.tags) }}
+        </ul>
+        {% endif %}
+    </div>
+</div>
+{% endmacro %}
+
+{% macro listing(object) %}
+<div class="listing">
+    <p class="listing-header">
+    <a href="{{ object.permalink }}">{{ object.title }}</a>
+    {% if object.description %}
+    /
+    {{ object.description }}
+    {% endif %}
+    </p>
+    {% if object.summary %}
+    <blockquote class="listing-summary">
+        {{ object.summary | markdown | safe }}
+    </blockquote>
+    {% endif %}
+    <div class="listing-info">
+        {{ self::listing_info(object=object) }}
+    </div>
+</div>
+{% endmacro %}
+
+{% macro listings(object) %}
+{% if object.pages %}
+{% if object.title %}
+{% set title = object.title %}
+{% else %}
+{% set title = "#" ~ object.name ~ " tag"%}
+{% endif %}
+<h1>{{ title }} pages</h1>
+<div class="listings">
+    {% for object in object.pages %}
+    {{ listing_macros::listing(object=object) }}
+    {% endfor %}
+</div>
+{% endif %}
+{% endmacro %}
