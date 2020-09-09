@@ -8,7 +8,7 @@
 
 {% macro navbar(links="") %}
 <ul class="nav">
-    {{ self::navlink(text="github", href="{{ config.extra.github }}") }}
+    {{ self::navlink(text="github", href=config.extra.github) }}
     {{ self::navlink(text="home", href="/") }}
     {{ self::navlink(text="projects", href="/projects") }}
     <li class="nav-item dropdown">
