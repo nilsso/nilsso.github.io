@@ -67,7 +67,7 @@
             ["いただきます。", "Thank you for the meal (just served)."],
             ["ごちそうさまでした。", "Thank you for the meal."],
 
-            ["しゅっしんは{{place}}です。", "My hometown is {{1}}."],
+            ["しゅっしんは{{city}}です。", "My hometown is {{1}}."],
             ["せんこうは{{major}}です。", "My major is {{1}}."],
             ["{{studentyear}}です。", "I am a {{1}}."],
 
@@ -76,7 +76,7 @@
             ["まあまあです。", "I'm so-so."]
         ],
         "vocabulary": {
-            "{{place}}": [
+            "{{city}}": [
                 ["とうきょう", "Tokyo"],
                 ["きょうと", "Kyoto"],
                 ["サンディエゴ", "San Diego"],
@@ -95,6 +95,117 @@
                 ["さんねんせい", "Junior"],
                 ["よねんせい", "Senior"],
                 ["だいがくいんせい", "Graduate student"]
+            ]
+        }
+    },
+    {
+        "name": "Lesson 2",
+        "fragments": [
+            [
+                "{{i}}は{{country}}じんです。",
+                "{{1}} am from {{2}}."
+            ],
+            [
+                "{{country}}のかたですか。",
+                "Are you from {{1}}?"
+            ],
+            [
+                "はい、{{country}}じんです。",
+                "Yes, I'm from {{1}}."
+            ],
+            [
+                "いいえ、{{country}}じんではありません。",
+                "No, I'm not from {{1}}."
+            ],
+            [
+                "いいえ、{{country}}じんです。",
+                "No, I'm from {{1}}."
+            ],
+            [
+                "{{surname}}さんは{{country}}のかたです。",
+                "Mr./Mrs. {{1}} is from {{2}}."
+            ],
+            [
+                "{{surname}}さんは{{country}}のかたですか。",
+                "Is Mr./Mrs. {{1}} from {{2}}?"
+            ],
+            [
+                "はい、{{surname}}さんは{{country}}のかたです。",
+                "Yes, Mr./Mrs. {{1}} is from {{2}}."
+            ],
+            [
+                "いいえ、{{surname}}さんは{{country}}のかたではありません。",
+                "No, Mr./Mrs. {{1}} is not from {{2}}."
+            ],
+            [
+                "いいえ、{{surname}}さんは{{country}}のかたです。",
+                "No, Mr./Mrs. {{1}} is from {{2}}."
+            ],
+            [
+                "だいがくせいです。",
+                "I am/[he/she] is a college student."
+            ],
+            [
+                "だいがくせいですか。",
+                "Are you/is [he/she] a college student?"
+            ],
+            [
+                "はい、だいがくせいです。",
+                "Yes, I am/[he/she] is a college student."
+            ],
+            [
+                "いいえ、だいがくせいではありません。",
+                "No, I am/[he/she] is not a college student."
+            ],
+            [
+                "{{surname}}さんはだいがくせいです。",
+                "Mr./Mrs. {{1}} is a college student."
+            ],
+            [
+                "{{surname}}さんはだいがくせいですか。",
+                "Is Mr./Mrs. {{1}} a college student?"
+            ],
+            [
+                "はい、{{surname}}さんはだいがくせいです。",
+                "Yes, Mr./Mrs. {{1}} is a college student."
+            ],
+            [
+                "いいえ、{{surname}}さんはだいがくせいではありません。",
+                "No, Mr./Mrs. {{1}} is not a college student."
+            ]
+        ],
+        "vocabulary": {
+            "{{i}}": [
+                ["わたし", "I (formal, male/female)"],
+                ["わたくし", "I (very formal, male/female)"],
+                ["ぼく", "I (casual, male)"],
+                ["おれ", "I (very casual, male)"]
+            ],
+            "{{surname}}": [
+                ["ほし", "Hoshi"],
+                ["ほそかわ", "Hosokawa"],
+                ["いしはら", "Ishihara"],
+                ["くさの", "Kusano"],
+                ["もり", "Mori"],
+                ["たけむら", "Takemura"],
+                ["たなか", "Tanaka"],
+
+                ["バーンゾ", "Barnes"],
+                ["チャン", "Chang"],
+                ["ドヌーブ", "Deneuve"],
+                ["ドミンゴ", "Domingo"],
+                ["ガルシア", "Garcia"],
+                ["ジョンソn", "Johnson"],
+                ["キム", "Kim"],
+                ["リー", "Lee"],
+                ["マルチェロ", "Marcello"],
+                ["ウェン", "Nguyen"],
+                ["オルソン", "Olsson"],
+                ["サンチェス", "Sanchez"],
+                ["シュミット", "Schmidt"]
+            ],
+            "{{country}}": [
+                ["アメリカ", "America"]
             ]
         }
     }

@@ -45,7 +45,7 @@
         }
     },
     {
-        "name": "Lesson 1",
+        "name": "Lesson 2",
         "fragments": [
             ["はじめまして。", "How do you do?"],
             ["よろしくおねがいします。", "Pleased to meet you."],
@@ -95,6 +95,17 @@
                 ["さんねんせい", "Junior"],
                 ["よねんせい", "Senior"],
                 ["だいがくいんせい", "Graduate student"]
+            ]
+        }
+    },
+    {
+        "name": "Lesson 1",
+        "fragments": [
+            ["{{name}}は{{country}}じんです。", "{{1}} is from {{2}}"]
+        ],
+        "vocabulary": {
+            "{{country}}": [
+                ["アメリカ", "America"]
             ]
         }
     }
