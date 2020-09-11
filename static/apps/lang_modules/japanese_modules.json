@@ -106,7 +106,7 @@
         "fragments": [
             ["はい、そうです。", "Yes, that's right."],
             ["そうですか。", "Is that so?"],
-            ["いいえ、そうではありません。", "No, that' snot right."],
+            ["いいえ、そうではありません。", "No, that's not right."],
             ["それは、しつれいしました。", "I am sorry about that."],
             [
                 "{{i}}は{{country}}じんです。",
