@@ -83,11 +83,14 @@
                 ["サンノゼ", "San Jose"]
             ],
             "{{major}}": [
-                ["びじゅつ", "Art"],
-                ["かがく", "Chemistry"],
-                ["すうがく", "Math"],
-                ["おんがく", "Music"],
-                ["おんがくきょういく", "Music education"]
+                ["おうようすうがく", "applied math"],
+                ["びじゅつ", "art"],
+                ["かがく", "chemistry"],
+                ["こうがく", "engineering"],
+                ["すうがく", "math"],
+                ["いがく", "medicine"],
+                ["おんがく", "music"],
+                ["おんがくきょういく", "music education"]
             ],
             "{{studentyear}}": [
                 ["いちねんせい", "Freshman"],
@@ -101,85 +104,73 @@
     {
         "name": "Lesson 2",
         "fragments": [
+            ["はい、そうです。", "Yes, that's right."],
+            ["そうですか。", "Is that so?"],
+            ["いいえ、そうではありません。", "No, that' snot right."],
+            ["それは、しつれいしました。", "I am sorry about that."],
             [
                 "{{i}}は{{country}}じんです。",
                 "{{1}} am from {{2}}."
             ],
             [
-                "{{country}}のかたですか。",
-                "Are you from {{1}}?"
+                "{{country}}のかた{{is}}か。",
+                "You {{2}} from {{1}}?"
             ],
             [
-                "はい、{{country}}じんです。",
-                "Yes, I'm from {{1}}."
+                "{{y-n}}、{{country}}じん{{is}}。",
+                "{{1}}, I {{3}} from {{2}}."
             ],
             [
-                "いいえ、{{country}}じんではありません。",
-                "No, I'm not from {{1}}."
+                "{{y-n}}、{{i}}は{{country}}じん{{is}}。",
+                "{{1}}, {{2}} {{4}} from {{2}}."
             ],
             [
-                "いいえ、{{country}}じんです。",
-                "No, I'm from {{1}}."
+                "{{surname}}さんは{{country}}のかた{{is}}{{.?}}",
+                "Mr./Mrs. {{1}} {{3}} from {{2}}{{4}}"
             ],
             [
-                "{{surname}}さんは{{country}}のかたです。",
-                "Mr./Mrs. {{1}} is from {{2}}."
+                "{{y-n}}、{{surname}}さんは{{country}}のかた{{is}}。",
+                "{{1}}, Mr./Mrs. {{2}} {{4}} from {{3}}."
             ],
             [
-                "{{surname}}さんは{{country}}のかたですか。",
-                "Is Mr./Mrs. {{1}} from {{2}}?"
+                "{{occupation}}{{is}}。",
+                "I/he/she {{2}} a {{1}}."
             ],
             [
-                "はい、{{surname}}さんは{{country}}のかたです。",
-                "Yes, Mr./Mrs. {{1}} is from {{2}}."
+                "{{occupation}}{{is}}か。",
+                "You/he/she {{2}} a {{1}}?"
             ],
             [
-                "いいえ、{{surname}}さんは{{country}}のかたではありません。",
-                "No, Mr./Mrs. {{1}} is not from {{2}}."
+                "{{y-n}}、{{occupation}}{{is}}。",
+                "{{1}}, I/he/she {{3}} a {{2}}."
             ],
             [
-                "いいえ、{{surname}}さんは{{country}}のかたです。",
-                "No, Mr./Mrs. {{1}} is from {{2}}."
+                "{{surname}}さんは{{occupation}}{{is}}{{.?}}",
+                "Mr./Mrs. {{1}} {{3}} a {{2}}{{4}}"
             ],
             [
-                "だいがくせいです。",
-                "I am/[he/she] is a college student."
-            ],
-            [
-                "だいがくせいですか。",
-                "Are you/is [he/she] a college student?"
-            ],
-            [
-                "はい、だいがくせいです。",
-                "Yes, I am/[he/she] is a college student."
-            ],
-            [
-                "いいえ、だいがくせいではありません。",
-                "No, I am/[he/she] is not a college student."
-            ],
-            [
-                "{{surname}}さんはだいがくせいです。",
-                "Mr./Mrs. {{1}} is a college student."
-            ],
-            [
-                "{{surname}}さんはだいがくせいですか。",
-                "Is Mr./Mrs. {{1}} a college student?"
-            ],
-            [
-                "はい、{{surname}}さんはだいがくせいです。",
-                "Yes, Mr./Mrs. {{1}} is a college student."
-            ],
-            [
-                "いいえ、{{surname}}さんはだいがくせいではありません。",
-                "No, Mr./Mrs. {{1}} is not a college student."
+                "{{y-n}}、{{surname}}さんは{{occupation}}{{is}}。",
+                "{{1}}, Mr./Mrs. {{2}} {{4}} a {{3}}."
             ]
         ],
         "vocabulary": {
+            "{{.?}}": [
+                ["。", "."],
+                ["か。", "?"]
+            ],
+            "{{y-n}}": [
+                ["はい", "yes"],
+                ["いいえ", "no"]
+            ],
             "{{i}}": [
                 ["わたし", "I (formal, male/female)"],
                 ["わたくし", "I (very formal, male/female)"],
                 ["ぼく", "I (casual, male)"],
                 ["おれ", "I (very casual, male)"]
+            ],
+            "{{is}}": [
+                ["です", "is/am/are"],
+                ["ではありません", "is/am/are not"]
             ],
             "{{surname}}": [
                 ["ほし", "Hoshi"],
@@ -189,6 +180,7 @@
                 ["もり", "Mori"],
                 ["たけむら", "Takemura"],
                 ["たなか", "Tanaka"],
+                ["やまだ", "Yamada"],
 
                 ["バーンゾ", "Barnes"],
                 ["チャン", "Chang"],
@@ -199,13 +191,61 @@
                 ["キム", "Kim"],
                 ["リー", "Lee"],
                 ["マルチェロ", "Marcello"],
+                ["ムーア", "Moore"],
                 ["ウェン", "Nguyen"],
                 ["オルソン", "Olsson"],
                 ["サンチェス", "Sanchez"],
-                ["シュミット", "Schmidt"]
+                ["シュミット", "Schmidt"],
+                ["スミス", "Smith"]
             ],
             "{{country}}": [
-                ["アメリカ", "America"]
+                ["アメリカ", "America"],
+                ["アーストラリア", "Australia"],
+                ["カナダ", "Canada"],
+                ["ちゅうごく", "China"],
+                ["コスタリカ", "Costa Rica"],
+                ["キューバ", "Cuba"],
+                ["イギリス", "England"],
+                ["フランス", "France"],
+                ["ドイツ", "Germany"],
+                ["インド", "India"],
+                ["イタリア", "Italy"],
+                ["マレーシア", "Malaysia"],
+                ["メキシコ", "Mexico"],
+                ["オランダ", "the Netherlands"],
+                ["フィリピン", "the Philippines"],
+                ["ロシア", "Russia"],
+                ["かんこく", "South Korea"],
+                ["スパイン", "Spain"],
+                ["たいわん", "Taiwan"],
+                ["ベトナム", "Vietnam"]
+            ],
+            "{{language}}": [
+            ],
+            "{{occupation}}": [
+                ["がくせい", "student"],
+                ["だいがくせい", "college student"],
+                ["クラスメート", "classmate"],
+
+                ["ビジネスマン", "businessman"],
+                ["しゃちょう", "company president"],
+                ["はいしゃ", "dentist"],
+                ["いしゃ", "doctor"],
+                ["ちゅうざいいん", "employee in residence"],
+                ["てんちょう", "general manager"],
+                ["だいがくいんせい", "graduate student"],
+                ["ジャーナリスト", "journalist"],
+                ["べんごし", "lawyer"],
+                ["てんいん", "sales clerk"],
+                ["ひしょ", "secretary"],
+                ["せんせい", "teacher/professor"],
+                ["じゅうい", "veterinarian"]
+            ],
+            "{{school}}": [
+                ["ハーバードだいがく", "Harvard University"],
+                ["とうきょうだいがく", "University of Tokyo"],
+                ["さくらだいがく", "Sakura University"],
+                ["きょうとだいがく", "University of Kyoto"]
             ]
         }
     }
