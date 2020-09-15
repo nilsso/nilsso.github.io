@@ -151,6 +151,33 @@
             [
                 "{{y-n}}、{{surname}}さんは{{occupation}}{{is}}。",
                 "{{1}}, Mr./Mrs. {{2}} {{4}} a {{3}}."
+            ],
+            ["{{understand}}。", "I {{1}}."],
+            ["{{y-n}}、{{understand}}。", "{{1}}, I {{2}}."],
+            ["{{understand}}か。", "Do you {{1}}?"],
+            [
+                "{{language}}が{{understand}}か。",
+                "Do you {{2}} {{1}}?"
+            ],
+            [
+                "{{language}}が{{understand}}。",
+                "I {{2}} {{1}}."
+            ],
+            [
+                "{{surname}}さんは、まだ、{{occupation}}です。",
+                "Mr./Mrs. {{1}} is still a {{2}}."
+            ],
+            [
+                "せんこうは、{{major}}と{{major}}です。",
+                "I'm majoring in both {{1}} and {{2}}."
+            ],
+            [
+                "せんこうは、まだ、わかりません。",
+                "I haven't decided my major yet."
+            ],
+            [
+                "{{language}}が、まだ、わかりません。",
+                "I don't know {{1}} yet."
             ]
         ],
         "vocabulary": {
@@ -221,6 +248,18 @@
                 ["ベトナム", "Vietnam"]
             ],
             "{{language}}": [
+                ["えいご", "English"],
+                ["ちゅうごくご", "Chinese"],
+                ["スペインご", "Spanish"],
+                ["フランスご", "French"],
+                ["ドイツご", "German"],
+                ["イタリアご", "Italian"],
+                ["ロシアご", "Russian"],
+                ["かんこくご", "Korean"],
+                ["オランダご", "Dutch"],
+                ["タガログご", "Tagalog"],
+                ["たいわんご", "Taiwanese"],
+                ["ベトナムご", "Vietnamese"]
             ],
             "{{occupation}}": [
                 ["がくせい", "student"],
@@ -246,6 +285,10 @@
                 ["とうきょうだいがく", "University of Tokyo"],
                 ["さくらだいがく", "Sakura University"],
                 ["きょうとだいがく", "University of Kyoto"]
+            ],
+            "{{understand}}": [
+                ["わかります", "understand"],
+                ["わかりません", "don't understand"]
             ]
         }
     }
