@@ -48,7 +48,9 @@
         "name": "Lesson 1",
         "fragments": [
             ["はじめまして。", "How do you do?"],
-            ["よろしくおねがいします。", "Pleased to meet you."],
+            ["どうぞよろしく", "Nice to meet you. (polite)"],
+            ["よろしくおねがいします。", "Pleased to meet you. (very polite)"],
+            ["どうぞよろしくおねがいします。", "Pleased to meet you. (super polite)"],
             ["おはよう。", "Good morning"],
             ["おはようございます。", "Good morning (polite.)"],
             ["こんにちは。", "Good day."],
@@ -110,6 +112,7 @@
             ["そうですか。", "Is that so?"],
             ["いいえ、そうではありません。", "No, that's not right."],
             ["それは、しつれいしました。", "I am sorry about that."],
+            ["こちらこそ", "Me too"],
             [
                 "{{i}}は{{country}}じんです。",
                 "{{1}} am from {{2}}."
