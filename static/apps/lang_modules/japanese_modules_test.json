@@ -291,6 +291,72 @@
                 ["わかりません", "don't understand"]
             ]
         }
+    },
+    {
+        "name": "Lesson 3",
+        "fragments": [
+            ["{{pointing}}は、わたしの{{thing}}です{{.?}}", "{{1}} is my {{2}}{{3}}"],
+            ["{{pointing}}は、{{surname}}さんの{{thing}}です{{.?}}", "{{1}} is {{2}}'s {{3}}{{4}}"],
+            ["{{small-thing}}{{small-counter}}", "{{2}} {{1}}(s)"]
+        ],
+        "vocabulary": {
+            "{{pointing}}": [
+                ["これ", "this"],
+                ["それ", "that"],
+                ["あれ", "that (over there)"],
+                ["どれ", "which"]
+            ],
+            "{{small-thing}}": [
+                ["かぎ", "key"],
+                ["おかね", "money"],
+                ["クレジットカード", "credit card"],
+                ["こぎって", "check"],
+                ["がくせいしょう", "driver's licence"],
+                ["めんきょしょう", "ID"],
+                ["ペン", "pen"],
+                ["えんぴつ", "pencil"],
+                ["シャープペン", "mechanical pencil"],
+                ["ほん", "book"],
+                ["ノート", "notebook"],
+                ["しんぶん", "newspaper"],
+                ["ざっし", "magazine"],
+                ["とけい", "watch/clock"],
+                ["でんわ", "phone"],
+                ["てちょう", "planner"],
+                ["ソフト", "CD/DVD"],
+                ["けいさんき", "calculator"],
+                ["めいし", "business card"],
+                ["かばん", "bag"]
+            ],
+            "{{other-thing}}": [
+                ["くるま", "car"],
+                ["じてんしゃ", "bicycle"],
+                ["しゅくだい", "homework"],
+                ["しけん", "test"],
+                ["つくえ", "desk"],
+                ["いす", "chair"],
+                ["いぬ", "dog"],
+                ["ねこ", "cat"],
+                ["コンピューター", "computer"],
+                ["ファックス", "fax machine"]
+            ],
+            "{{thing}}": [
+                ["{{small-thing}}"],
+                ["{{other-thing}}"]
+            ],
+            "{{small-counter}}": [
+                ["ひとつ", "one"],
+                ["ふたつ", "two"],
+                ["みっつ", "three"],
+                ["よっつ", "four"],
+                ["いつつ", "five"],
+                ["むっつ", "six"],
+                ["ななつ", "seven"],
+                ["やっつ", "eight"],
+                ["ここのつ", "nine"],
+                ["とう", "ten"]
+            ]
+        }
     }
 ]
 
