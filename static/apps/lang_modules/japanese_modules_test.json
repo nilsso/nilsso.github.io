@@ -295,16 +295,24 @@
     {
         "name": "Lesson 3",
         "fragments": [
-            ["{{pointing}}は、わたしの{{thing}}です{{.?}}", "{{1}} is my {{2}}{{3}}"],
-            ["{{pointing}}は、{{surname}}さんの{{thing}}です{{.?}}", "{{1}} is {{2}}'s {{3}}{{4}}"],
+            ["{{pointing-general}}は{{thing}}です{{.?}}", "{{1}} is a {{2}}{{3}}"],
+            ["{{pointing-general}}は、わたしの{{thing}}です{{.?}}", "{{1}} is my {{2}}{{3}}"],
+            ["{{pointing-general}}は、{{surname}}さんの{{thing}}です{{.?}}", "{{1}} is Mr./Mrs. {{2}}'s {{3}}{{4}}"],
+            ["{{pointing-thing}}{{thing}}は、わたしの{{2}}です{{.?}}", "{{1}} {{2}} is my {{2}}{{3}}"],
             ["{{small-thing}}{{small-counter}}", "{{2}} {{1}}(s)"]
         ],
         "vocabulary": {
-            "{{pointing}}": [
+            "{{pointing-general}}": [
                 ["これ", "this"],
                 ["それ", "that"],
                 ["あれ", "that (over there)"],
                 ["どれ", "which"]
+            ],
+            "{{pointing-thing}}": [
+                ["この", "this"],
+                ["その", "that"],
+                ["あの", "that (over there)"],
+                ["どの", "which"]
             ],
             "{{small-thing}}": [
                 ["かぎ", "key"],
