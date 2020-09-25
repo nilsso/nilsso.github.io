@@ -48,9 +48,7 @@
         "name": "Lesson 1",
         "fragments": [
             ["はじめまして。", "How do you do?"],
-            ["どうぞよろしく", "Nice to meet you. (polite)"],
-            ["よろしくおねがいします。", "Pleased to meet you. (very polite)"],
-            ["どうぞよろしくおねがいします。", "Pleased to meet you. (super polite)"],
+            ["よろしくおねがいします。", "Pleased to meet you."],
             ["おはよう。", "Good morning"],
             ["おはようございます。", "Good morning (polite.)"],
             ["こんにちは。", "Good day."],
@@ -89,8 +87,6 @@
                 ["びじゅつ", "art"],
                 ["かがく", "chemistry"],
                 ["こうがく", "engineering"],
-                ["えいご", "English"],
-                ["にほんご", "Japanese"],
                 ["すうがく", "math"],
                 ["いがく", "medicine"],
                 ["おんがく", "music"],
@@ -112,7 +108,6 @@
             ["そうですか。", "Is that so?"],
             ["いいえ、そうではありません。", "No, that's not right."],
             ["それは、しつれいしました。", "I am sorry about that."],
-            ["こちらこそ", "Me too"],
             [
                 "{{i}}は{{country}}じんです。",
                 "{{1}} am from {{2}}."
@@ -296,5 +291,81 @@
                 ["わかりません", "don't understand"]
             ]
         }
+    },
+    {
+        "name": "Lesson 3",
+        "fragments": [
+            ["{{small-thing}}{{small-counter}}", "{{2}} {{1}}(s)"],
+            ["{{pointing-general}}は{{thing}}です{{.?}}", "{{1}} is a {{2}}{{3}}"],
+            ["{{pointing-general}}は、わたしの{{thing}}です{{.?}}", "{{1}} is my {{2}}{{3}}"],
+            ["{{pointing-general}}は、{{surname}}さんの{{thing}}です{{.?}}", "{{1}} is Mr./Mrs. {{2}}'s {{3}}{{4}}"],
+            ["{{pointing-thing}}{{thing}}は、わたしの{{2}}です{{.?}}", "{{1}} {{2}} is my {{2}}{{3}}"],
+            ["{{pointing-thing}}{{thing}}は、いくらですか。", "How much is {{1}} {{2}}."]
+        ],
+        "vocabulary": {
+            "{{pointing-general}}": [
+                ["これ", "this"],
+                ["それ", "that"],
+                ["あれ", "that (over there)"],
+                ["どれ", "which"]
+            ],
+            "{{pointing-thing}}": [
+                ["この", "this"],
+                ["その", "that"],
+                ["あの", "that (over there)"],
+                ["どの", "which"]
+            ],
+            "{{small-thing}}": [
+                ["かぎ", "key"],
+                ["おかね", "money"],
+                ["クレジットカード", "credit card"],
+                ["こぎって", "check"],
+                ["がくせいしょう", "driver's licence"],
+                ["めんきょしょう", "ID"],
+                ["ペン", "pen"],
+                ["えんぴつ", "pencil"],
+                ["シャープペン", "mechanical pencil"],
+                ["ほん", "book"],
+                ["ノート", "notebook"],
+                ["しんぶん", "newspaper"],
+                ["ざっし", "magazine"],
+                ["とけい", "watch/clock"],
+                ["でんわ", "phone"],
+                ["てちょう", "planner"],
+                ["ソフト", "CD/DVD"],
+                ["けいさんき", "calculator"],
+                ["めいし", "business card"],
+                ["かばん", "bag"]
+            ],
+            "{{other-thing}}": [
+                ["くるま", "car"],
+                ["じてんしゃ", "bicycle"],
+                ["しゅくだい", "homework"],
+                ["しけん", "test"],
+                ["つくえ", "desk"],
+                ["いす", "chair"],
+                ["いぬ", "dog"],
+                ["ねこ", "cat"],
+                ["コンピューター", "computer"],
+                ["ファックス", "fax machine"]
+            ],
+            "{{thing}}": [
+                ["{{small-thing}}"],
+                ["{{other-thing}}"]
+            ],
+            "{{small-counter}}": [
+                ["ひとつ", "one"],
+                ["ふたつ", "two"],
+                ["みっつ", "three"],
+                ["よっつ", "four"],
+                ["いつつ", "five"],
+                ["むっつ", "six"],
+                ["ななつ", "seven"],
+                ["やっつ", "eight"],
+                ["ここのつ", "nine"],
+                ["とう", "ten"]
+            ]
+        }
     }
 ]
+
