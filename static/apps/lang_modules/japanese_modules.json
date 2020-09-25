@@ -296,23 +296,38 @@
         "name": "Lesson 3",
         "fragments": [
             ["{{small-thing}}{{small-counter}}", "{{2}} {{1}}(s)"],
+
             ["{{pointing-general}}は{{thing}}です{{.?}}", "{{1}} is a {{2}}{{3}}"],
+            ["{{pointing-general+?}}は{{thing}}ですか。", "{{1}} is a {{2}}?"],
+
             ["{{pointing-general}}は、わたしの{{thing}}です{{.?}}", "{{1}} is my {{2}}{{3}}"],
+            ["{{pointing-general+?}}は、わたしの{{thing}}ですか。", "{{1}} is my {{2}}?"],
+
             ["{{pointing-general}}は、{{surname}}さんの{{thing}}です{{.?}}", "{{1}} is Mr./Mrs. {{2}}'s {{3}}{{4}}"],
+            ["{{pointing-general+?}}は、{{surname}}さんの{{thing}}ですか。", "{{1}} is Mr./Mrs. {{2}}'s {{3}}?"],
+
             ["{{pointing-thing}}{{thing}}は、わたしの{{2}}です{{.?}}", "{{1}} {{2}} is my {{2}}{{3}}"],
-            ["{{pointing-thing}}{{thing}}は、いくらですか。", "How much is {{1}} {{2}}."]
+            ["{{pointing-thing+?}}{{thing}}は、わたしの{{2}}ですか。", "{{1}} {{2}} is my {{2}}?"],
+
+            ["{{pointing-thing}}{{thing}}は、いくらですか。", "How much is {{1}} {{2}}?"]
         ],
         "vocabulary": {
             "{{pointing-general}}": [
                 ["これ", "this"],
                 ["それ", "that"],
-                ["あれ", "that (over there)"],
+                ["あれ", "that (over there)"]
+            ],
+            "{{pointing-general+?}}": [
+                ["{{pointing-general}}"],
                 ["どれ", "which"]
             ],
             "{{pointing-thing}}": [
                 ["この", "this"],
                 ["その", "that"],
-                ["あの", "that (over there)"],
+                ["あの", "that (over there)"]
+            ],
+            "{{pointing-thing+?}}": [
+                ["{{pointing-thing}}"],
                 ["どの", "which"]
             ],
             "{{small-thing}}": [
