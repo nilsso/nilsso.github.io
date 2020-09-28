@@ -1,3 +1,6 @@
 [submodule "apps_dev/LanguageFragmentGenerator"]
 	path = apps_dev/LanguageFragmentGenerator
 	url = https://github.com/nilsso/LanguageFragmentGenerator
+[submodule "apps_dev/chord_solver"]
+	path = apps_dev/chord_solver
+	url = https://github.com/nilsso/chord_solver
