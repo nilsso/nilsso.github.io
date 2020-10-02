@@ -4,6 +4,7 @@ title = "Projects"
 
 A collection of some of my projects that I like to show-off:
 
+- [ACM Data Dump](/apps/acm)
 - [Japanese Fragment Generator](/apps/japanese) /
   A React web application I wrote to help myself and other students study for Japanese language
   classes. Lists of sentences, expressions and vocabulary are stored as modules in a [Json
