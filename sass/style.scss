@@ -43,6 +43,22 @@ code {
     font-family: $font-code;
 }
 
+fg {
+    display: inline-block;
+    text-indent: 0px;
+    line-height: normal;
+    -webkit-text-emphasis: none;
+    text-align: center;
+    line-height: 1;
+
+    &:before {
+        content: attr(t);
+        display: block;
+        font-size: 50%;
+        line-height: 1.5;
+    }
+}
+
 a {
     color: $color-link;
     text-decoration: none;
@@ -56,9 +72,11 @@ a:hover, a:focus {
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-header;
     line-height: 1.2;
+}
 
+h1, h2, h3 {
     &:before {
-        content: "〉";
+        //content: "〉";
     }
 }
 
