@@ -59,6 +59,17 @@ fg {
     }
 }
 
+cb1 { color: map-get($bright, "base"); }
+cb2 { color: map-get($bright, "complement"); }
+cb3 { color: map-get($bright, "split-complementary-1"); }
+cb4 { color: map-get($bright, "split-complementary-2"); }
+cb5 { color: map-get($bright, "analogous-1"); }
+
+//& .proposition { border-color: map-get($bright, "complement"           ); }
+//&.lemma        { border-color: map-get($bright, "split-complementary-1"); }
+//&.corollary    { border-color: map-get($bright, "split-complementary-2"); }
+//&.definition   { border-color: map-get($bright, "analogous-1"          ); }
+
 a {
     color: $color-link;
     text-decoration: none;
@@ -104,6 +115,12 @@ img {
 pre {
     padding: 1rem;
     border-radius: 3px;
+}
+
+.cq {
+    display: block;
+    text-align: center;
+    color: gray;
 }
 
 blockquote {
