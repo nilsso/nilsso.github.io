@@ -174,7 +174,7 @@ to Japanese people and how it is different from/similar to your own culture.
 
 ## City Pop
 
-In the landscape of modern Japanese music, City Pop (シちぃ・ポップ) was a glitzy, short-lived
+In the landscape of modern Japanese music, City Pop (シチィ・ポップ) was a glitzy, short-lived
 and fairly loosely defined genre of music which reflected the optimistic state of
 Japanese metropolitan life in the eighties.
 Throughout the years, city pop has been criticized for being vapid, adored for being optimistic,
