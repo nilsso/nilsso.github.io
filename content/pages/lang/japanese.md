@@ -79,95 +79,71 @@ I return home.
 
 <center style="text-align:left;">
 <ol>
-<li><!-- 1 -->
+<li>
 ありがといことに、
-<fg t="わたし">私</fg>の<fg t="がっき">学期</fg>は
-それほど<fg t="むずか">難</fg>しくではありません。
+<fg t="わたし">私</fg>の<fg t="がっき">学期</fg>はそれほど<fg t="むずか">難</fg>しくではありません。
 </li>
-<li><!-- 2 -->
+<li>
 でも、
-<fg t="げつようび">月曜日</fg>から<fg t="きにょうび">金曜日</fg>までクラスがあります。
+<fg t="げつようび">月曜日</fg>から<fg t="きんようび">金曜日</fg>までクラスがあります。
 </li>
-<li><!-- 3 -->
+<li>
 <fg t="げつようび">月曜日</fg>と<fg t="かようび">火曜日</fg>と<fg t="すいようび">水曜日</fg>に、
 <fg t="にほんご">日本語</fg>と<fg t="しき">指揮</fg>と<fg t="すうがく">数学</fg>のクラスがあります。
 </li>
-<!-- 4 -->
 <li>
-<fg t="かようび">火曜日</fg>の<fg t="くじはん">九時半</fg>に、
-<fg t="にほんご">日本語</fg>おがあります。
-</li>
-<!-- 5 -->
-<li>
-でも、
-<fg t="げつようび">月曜日</fg>と<fg t="すいようび">水曜日</fg>の
-<fg t="くじ">九時</fg>に、
+<fg t="かようび">火曜日</fg>のこぜん<fg t="くじはん">九時半</fg>に、
 <fg t="にほんご">日本語</fg>があります。
 </li>
-<!-- 6 -->
+<li>
+でも、
+<fg t="げつようび">月曜日</fg>と<fg t="すいようび">水曜日</fg>のごぜん<fg t="くじ">九時</fg>にあります。
+</li>
 <li>
 それに、
-<fg t="じゅういちじ">十一時</fg>に、
-<fg t="しき">指揮</fg>があります、
+ごぜん<fg t="じゅういちじ">十一時</fg>に、<fg t="しき">指揮</fg>があります、
+それから、ごご<fg t="じゅうにじ">十二時</fg>に、<fg t="すうがく">数学</fg>があります。
 </li>
-<!-- 7 -->
-<li>それから、
-<fg t="じゅうにじ">十二時</fg>に、
-<fg t="すうがく">数学</fg>があります。
-</li>
-<!-- 8 -->
 <li>
 オンラインで、
 これらのクラスズームがあります。
 </li>
-<!-- 9 -->
 <li>
-でも、
-それに、<fg t="げつようび">月曜日</fg>に、
-キャンパスでクワイアがあります。
+でも、それに、
+<fg t="げつようび">月曜日</fg>に、キャンパスでクワイアがあります。
 </li>
-<!-- 10 -->
 <li>
 <fg t="すうがく">数学</fg>の<fg t="あと">後</fg>にキャンパスへ<fg t="い">行</fg>きます。
 </li>
-<!-- 11 -->
 <li>
-キャンパスへ<fg t="い">行</fg>くのに<fg t="さんじゅっぷん">三十分</fg>ぐらいかかります。
+キャンパスへ<fg t="い">行</fg>くのに<fg t="さんじゅうぷん">三十分</fg>ぐらいかかります。
 </li>
-<!-- 12 -->
 <li>
 そして、<fg t="なな">七</fg>ぐらいマイルがあります。
 </li>
-<!-- 13 -->
 <li>
 <fg t="たび">旅</fg>はとても<fg t="むずか">難</fg>しくありません、
 でも、<fg t="くるま">車</fg>が<fg t="こわ">怖</fg>いですね。
 </li>
-<!-- 14 -->
 <li>
-そして、
-<fg t="げつようび">月曜日</fg>の<fg t="ばん">晩</fg>のズームに、
+そして、<fg t="げつようび">月曜日</fg>の<fg t="ばん">晩</fg>のズームに、
 <fg t="すうがくけんきゅう">数学研究</fg>のパートナーとアドバイザーに<fg t="あ">会</fg>います。
 </li>
-<!-- 15 -->
 <li>
-それに、
-<fg t="すいようび">水曜日</fg>の<fg t="ばん">晩</fg>のズームに、
-すべて<fg t="すうがくけんきゅう">数学研究</fg>のグループは<fg t="あ">会</fg>います。
+それに、<fg t="すいようび">水曜日</fg>の<fg t="ばん">晩</fg>のズームに、
+すべて<fg t="すうがくけんきゅう">数学研究</fg>のグループに<fg t="あ">会</fg>います。
 </li>
-<!-- 16 -->
 <li>
-でも、
-とても<fg t="べんきょう">勉強</fg>するのいりません、
-だから<fg t="">私</fg>は<fg t="だいじょうぶ">大丈夫</fg>です。
+でも、とても<fg t="べんきょう">勉強</fg>するの<fg t="い">要</fg>りません、
+だから<fg t="わたし">私</fg>は<fg t="だいじょうぶ">大丈夫</fg>です。
 </li>
 </ol>
 </center>
 
 <center style="text-align:left;">
 <ol>
-<li>In general, I am lucky this semester and do not have much school work.</li>
-<li>But I have class everyday, besides the weekend.</li>
+<li>Thankfully, my semester isn't very hard.</li>
+<li>But I have class Monday through Friday.</li>
 <li>Monday, Tuesday and Wednesday I have Japanese, conducting and math.</li>
 <li>Tuesday I have Japanese at 9:30 AM.
 <li>But Monday and Wednesday I have Japanese at 9:00 AM.</li>
