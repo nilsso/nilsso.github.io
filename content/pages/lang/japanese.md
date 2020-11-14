@@ -72,6 +72,119 @@ I return home.
 
 ---
 
+# Homework
+
+## L5 Script
+
+
+<center style="text-align:left;">
+<ol>
+<li><!-- 1 -->
+ありがといことに、
+<fg t="わたし">私</fg>の<fg t="がっき">学期</fg>は
+それほど<fg t="むずか">難</fg>しくではありません。
+</li>
+<li><!-- 2 -->
+でも、
+<fg t="げつようび">月曜日</fg>から<fg t="きにょうび">金曜日</fg>までクラスがあります。
+</li>
+<li><!-- 3 -->
+<fg t="げつようび">月曜日</fg>と<fg t="かようび">火曜日</fg>と<fg t="すいようび">水曜日</fg>に、
+<fg t="にほんご">日本語</fg>と<fg t="しき">指揮</fg>と<fg t="すうがく">数学</fg>のクラスがあります。
+</li>
+<!-- 4 -->
+<li>
+<fg t="かようび">火曜日</fg>の<fg t="くじはん">九時半</fg>に、
+<fg t="にほんご">日本語</fg>おがあります。
+</li>
+<!-- 5 -->
+<li>
+でも、
+<fg t="げつようび">月曜日</fg>と<fg t="すいようび">水曜日</fg>の
+<fg t="くじ">九時</fg>に、
+<fg t="にほんご">日本語</fg>があります。
+</li>
+<!-- 6 -->
+<li>
+それに、
+<fg t="じゅういちじ">十一時</fg>に、
+<fg t="しき">指揮</fg>があります、
+<!-- 7 -->
+<li>それから、
+<fg t="じゅうにじ">十二時</fg>に、
+<fg t="すうがく">数学</fg>があります。</li>
+<!-- 8 -->
+<li>
+オンラインで、
+これらのクラスズームがあります。
+</li>
+<!-- 9 -->
+<li>
+でも、
+それに、<fg t="げつようび">月曜日</fg>に、
+キャンパスでクワイアがあります。
+</li>
+<!-- 10 -->
+<li>
+<fg t="すうがく">数学</fg>の<fg t="あと">後</fg>にキャンパスへ<fg t="い">行</fg>きます。
+</li>
+<!-- 11 -->
+<li>
+キャンパスへ<fg t="い">行</fg>くのに<fg t="さんじゅっぷん">三十分</fg>ぐらいかかります。
+</li>
+<!-- 12 -->
+<li>
+そして、<fg t="なな">七</fg>ぐらいマイルがあります。
+</li>
+<!-- 13 -->
+<li>
+<fg t="たび">旅</fg>はとても<fg t="むずか">難</fg>しくありません、
+でも、<fg t="くるま">車</fg>が<fg t="こわ">怖</fg>いですね。
+</li>
+<!-- 14 -->
+<li>
+そして、
+<fg t="げつようび">月曜日</fg>の<fg t="ばん">晩</fg>のズームに、
+<fg t="すうがくけんきゅう">数学研究</fg>のパートナーとアドバイザーに<fg t="あ">会</fg>います。
+</li>
+<!-- 15 -->
+<li>
+それに、
+<fg t="すいようび">水曜日</fg>の<fg t="ばん">晩</fg>のズームに、
+すべて<fg t="すうがくけんきゅう">数学研究</fg>のグループは<fg t="あ">会</fg>います。
+</li>
+<!-- 16 -->
+<li>
+でも、
+とても<fg t="べんきょう">勉強</fg>するのいりません、
+だから<fg t="">私</fg>は<fg t="だいじょうぶ">大丈夫</fg>です。
+</li>
+</ol>
+</center>
+
+<center style="text-align:left;">
+<ol>
+<li>In general, I am lucky this semester and do not have much school work.</li>
+<li>But I have class everyday, besides the weekend.</li>
+<li>Monday, Tuesday and Wednesday I have Japanese, conducting and math.</li>
+<li>Tuesday I have Japanese at 9:30 AM.
+<li>But Monday and Wednesday I have Japanese at 9:00 AM.</li>
+<li>In addition I have conducting at 11:00 AM.
+<li>Then math at 12:00 PM.</li>
+<li>All of these classes are online.</li>
+<li>But on Monday I also have choir on campus  at 2:00.</li>
+<li>After my math class I ride my bike to get to school.</li>
+<li>It takes around thirty minutes to go to campus.</li>
+<li>And it's around seven miles.</li>
+<li>The trip isn't too hard, but cars are scary.</li>
+<li>Additionally, Monday night I have a Zoom meeting with my math research partner and advisor.</li>
+<li>Wednesday I have a Zoom meeting with all the math research groups.</li>
+<li>But, I don't need to study much, so (therefore) I'm fine.</li>
+</ol>
+</center>
+
+---
+
 # Japanese culture notes
 
 ## City Pop
