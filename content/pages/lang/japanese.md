@@ -236,7 +236,7 @@ reducing in growth demographically (see Japan's drop in birth rates and rapidly 
 As such the genre faded into obscurity; a relic of the eighties which symbolized capitalist
 frivolity and decadence, at odds with the hard reality of economic decline.
 Given its identical kana pronunciation,
-シちぃ・ポップ became "shitty pop".
+シチィ・ポップ became "shitty pop".
 
 But as years have passed, and the economic situation has generally stabilized (although growth has
 stagnated), eighties nostalgia has led to a return in the popularity of city pop. As distinct
