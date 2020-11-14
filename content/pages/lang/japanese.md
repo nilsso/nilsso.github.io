@@ -208,7 +208,7 @@ capability in turning this fairly new American sound into a distinctly Japanese 
 influential upon the burgeoning landscape of Japanese music.
 In the late seventies, city pop songs would become more expansive in their songwriting and
 instrumentation, drawing especially from jazz (in particular jazz-fusion) and soul genres in their
-use of major seventh harmonizations and progressions, and instruments like jazz guitar, organ,
+use of dominant seventh and major seventh harmonizations and progressions, and use of instruments like jazz guitar, organ,
 percussion (kit, bongos, tambourine, shakers, etc.) and electronically synthesized sounds.
 
 Perhaps a bit ahead of her time, Taeko Ohnuki began to produce [jazz-fusion soul ballads](https://www.youtube.com/watch?v=tg5vbUZUuqI)
@@ -229,18 +229,31 @@ However, the good times were not to last.
 ### The lost generation, and what's followed
 
 In 1991 Japan saw the burst of its asset price bubble, and the decade which followed is now
-referred to as the lost decade/generation (<fg t="うしな">失</fg>れた<fg
+referred to as the lost decade/generation (<fg t="うしな">失</fg>われた<fg
 t="じゅうねん">十年</fg>). The overly optimistic city pop sound no longer reflected the general
 outlook of the Japanese population, reeling from the downturn both economically and in a drastic
 reducing in growth demographically (see Japan's drop in birth rates and rapidly aging population).
 As such the genre faded into obscurity; a relic of the eighties which symbolized capitalist
-frivolity and decadence. Given its identical kana pronunciation,
+frivolity and decadence, at odds with the hard reality of economic decline.
+Given its identical kana pronunciation,
 シちぃ・ポップ became "shitty pop".
+
 But as years have passed, and the economic situation has generally stabilized (although growth has
 stagnated), eighties nostalgia has led to a return in the popularity of city pop. As distinct
 products of our ever evolving internet culture and nostalgia for all things eighties,
 genres like vapor-wave and outrun harken back to the effortlessly optimistic,
 albeit largely imaginary and rose-tinted, music and visual styles of the eighties.
+Modern bands like Lamp, Kirinji and Tricot utilize a lot of the same expansive song writing
+techniques as the city pop bands of the eighties. The music by Lamp especially has a nostalgic
+quality to it; see the music video for their song 1998 below.
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/bl9Cb063TmI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+As such, a lot of modern music which draws inspiration from city pop is coated with a layer of
+skepticism; remembering and longing for decades past, while recognizing where we are today and
+how far we've come.
+But sometimes taking a pure, unadulterated nostalgia trip is fun,
+and as such city pop lives on in popularity throughout the niches of the internet.
 The old city pop sound has become new again, and in its image is much of the music, movies, and
 TV programs of modern popular culture which we enjoy to this day.
 
