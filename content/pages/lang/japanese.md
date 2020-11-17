@@ -79,85 +79,87 @@ I return home.
 
 <center style="text-align:left;">
 <ol>
-<li>
-ありがといことに、
-<fg t="わたし">私</fg>の<fg t="がっき">学期</fg>はそれほど<fg t="むずか">難</fg>しくではありません。
+<li><!-- 01 -->
+ありがたいことに、
+<fg t="わたし">私</fg>の<fg t="がっき">学期</fg>はそれほど<fg t="むずか">難</fg>しくありません。
 </li>
-<li>
+<li><!-- 02 -->
 でも、
 <fg t="げつようび">月曜日</fg>から<fg t="きんようび">金曜日</fg>までクラスがあります。
 </li>
-<li>
+<li><!-- 03 -->
 <fg t="げつようび">月曜日</fg>と<fg t="かようび">火曜日</fg>と<fg t="すいようび">水曜日</fg>に、
 <fg t="にほんご">日本語</fg>と<fg t="しき">指揮</fg>と<fg t="すうがく">数学</fg>のクラスがあります。
 </li>
-<li>
+<li><!-- 04 -->
 <fg t="かようび">火曜日</fg>のこぜん<fg t="くじはん">九時半</fg>に、
 <fg t="にほんご">日本語</fg>があります。
 </li>
-<li>
+<li><!-- 05 -->
 でも、
 <fg t="げつようび">月曜日</fg>と<fg t="すいようび">水曜日</fg>の<fg t="ごぜん">午前</fg><fg t="くじ">九時</fg>にあります。
 </li>
-<li>
+<li><!-- 06 -->
 それに、
-<fg t="ごぜん">午前</fg><fg t="じゅういちじ">十一時</fg>に、<fg t="しき">指揮</fg>があります、
+<fg t="ごぜん">午前</fg><fg t="じゅういちじ">十一時</fg>に、<fg t="しき">指揮</fg>があります。
+</li>
+<li><!-- 07 -->
 それから、<fg t="ごご">午後</fg><fg t="じゅうにじ">十二時</fg>に、<fg t="すうがく">数学</fg>があります。
 </li>
-<li>
+<li><!-- 08 -->
 オンラインで、
 これらのクラスズームがあります。
 </li>
-<li>
+<li><!-- 09 -->
 でも、それに、
 <fg t="げつようび">月曜日</fg>に、キャンパスでクワイアがあります。
 </li>
-<li>
-<fg t="すうがく">数学</fg>の<fg t="あと">後</fg>にキャンパスへ<fg t="い">行</fg>きます。
+<li><!-- 10 -->
+<fg t="すうがく">数学</fg>の<fg t="あと">後</fg>でキャンパスへ<fg t="い">行</fg>きます。
 </li>
-<li>
+<li><!-- 11 -->
 キャンパスへ<fg t="い">行</fg>くのに<fg t="さんじゅうぷん">三十分</fg>ぐらいかかります。
 </li>
-<li>
-そして、<fg t="なな">七</fg>ぐらいマイルがあります。
+<li><!-- 12 -->
+そして、<fg t="なな">七</fg>マイルぐらいあります。
 </li>
-<li>
+<li><!-- 13 -->
 <fg t="たび">旅</fg>はとても<fg t="むずか">難</fg>しくありません、
 でも、<fg t="くるま">車</fg>が<fg t="こわ">怖</fg>いですね。
 </li>
-<li>
-そして、<fg t="げつようび">月曜日</fg>の<fg t="ばん">晩</fg>のズームに、
+<li><!-- 14 -->
+そして、<fg t="げつようび">月曜日</fg>に<fg t="ばん">晩</fg>のズームで、
 <fg t="すうがくけんきゅう">数学研究</fg>のパートナーとアドバイザーに<fg t="あ">会</fg>います。
 </li>
-<li>
-それに、<fg t="すいようび">水曜日</fg>の<fg t="ばん">晩</fg>のズームに、
-すべて<fg t="すうがくけんきゅう">数学研究</fg>のグループに<fg t="あ">会</fg>います。
+<li><!-- 15 -->
+それに、<fg t="すいようび">水曜日</fg>に<fg t="ばん">晩</fg>のズームで、
+<fg t="すうがくけんきゅう">数学研究</fg>のグループのみなさんに<fg t="あ">会</fg>います。
 </li>
-<li>
-でも、とても<fg t="べんきょう">勉強</fg>するの<fg t="い">要</fg>りません、
-だから<fg t="わたし">私</fg>は<fg t="だいじょうぶ">大丈夫</fg>です。
+<li><!-- 16 -->
+でも、たくさんの<fg t="べんきょう">勉強</fg>が<fg t="い">要</fg>りません。
+だから、<fg t="わたし">私</fg>は<fg t="だいじょうぶ">大丈夫</fg>です。
 </li>
 </ol>
 </center>
 
 <center style="text-align:left;">
 <ol>
-<li>Thankfully, my semester isn't very hard.</li>
-<li>But I have class Monday through Friday.</li>
-<li>Monday, Tuesday and Wednesday I have Japanese, conducting and math.</li>
-<li>Tuesday I have Japanese at 9:30 AM.
-<li>But Monday and Wednesday I have Japanese at 9:00 AM.</li>
-<li>In addition I have conducting at 11:00 AM.
-<li>Then math at 12:00 PM.</li>
-<li>All of these classes are online.</li>
-<li>But on Monday I also have choir on campus  at 2:00.</li>
-<li>After my math class I ride my bike to get to school.</li>
-<li>It takes around thirty minutes to go to campus.</li>
-<li>And it's around seven miles.</li>
-<li>The trip isn't too hard, but cars are scary.</li>
-<li>Additionally, Monday night I have a Zoom meeting with my math research partner and advisor.</li>
-<li>Wednesday I have a Zoom meeting with all the math research groups.</li>
-<li>But, I don't need to study much, so (therefore) I'm fine.</li>
+<li><!-- 01 --> Thankfully, my semester isn't very hard.</li>
+<li><!-- 02 --> But I have class Monday through Friday.</li>
+<li><!-- 03 --> Monday, Tuesday and Wednesday I have Japanese, conducting and math.</li>
+<li><!-- 04 --> Tuesday I have Japanese at 9:30 AM.
+<li><!-- 05 --> But Monday and Wednesday I have Japanese at 9:00 AM.</li>
+<li><!-- 06 --> In addition I have conducting at 11:00 AM.
+<li><!-- 07 --> Then math at 12:00 PM.</li>
+<li><!-- 08 --> All of these classes are online.</li>
+<li><!-- 09 --> But on Monday I also have choir on campus  at 2:00.</li>
+<li><!-- 10 --> After my math class I ride my bike to get to school.</li>
+<li><!-- 11 --> It takes around thirty minutes to go to campus.</li>
+<li><!-- 12 --> And it's around seven miles.</li>
+<li><!-- 13 --> The trip isn't too hard, but cars are scary.</li>
+<li><!-- 14 --> Additionally, Monday night I have a Zoom meeting with my math research partner and advisor.</li>
+<li><!-- 15 --> Wednesday I have a Zoom meeting with all the math research groups.</li>
+<li><!-- 16 --> But, I don't need to study much, so (therefore) I'm fine.</li>
 </ol>
 </center>
 
