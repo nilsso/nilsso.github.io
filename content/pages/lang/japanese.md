@@ -98,92 +98,133 @@ I think my aunt will like the apartment too, but can we show it to her?
 
 ## L5 Script
 
-
-<center style="text-align:left;">
 <ol>
 <li><!-- 01 -->
 ありがたいことに、
 <fg t="わたし">私</fg>の<fg t="がっき">学期</fg>はそれほど<fg t="むずか">難</fg>しくありません。
+</br>
+<span class="gray">
+Thankfully, my semester isn't very hard.
+</span>
 </li>
 <li><!-- 02 -->
 でも、
 <fg t="げつようび">月曜日</fg>から<fg t="きんようび">金曜日</fg>までクラスがあります。
+</br>
+<span class="gray">
+But I have class Monday through Friday.
+</span>
 </li>
 <li><!-- 03 -->
 <fg t="げつようび">月曜日</fg>と<fg t="かようび">火曜日</fg>と<fg t="すいようび">水曜日</fg>に、
 <fg t="にほんご">日本語</fg>と<fg t="しき">指揮</fg>と<fg t="すうがく">数学</fg>のクラスがあります。
+</br>
+<span class="gray">
+Monday, Tuesday and Wednesday I have Japanese, conducting and math.
+</span>
 </li>
 <li><!-- 04 -->
 <fg t="かようび">火曜日</fg>の<fg t="ごぜん">午前</fg><fg t="くじはん">九時半</fg>に、
-<fg t="にほんご">日本語</fg>があります。</br>
-<span class="gray">Tuesday I have Japanese at 9:30 AM.</span>
+<fg t="にほんご">日本語</fg>があります。
+</br>
+<span class="gray">
+Tuesday I have Japanese at 9:30 AM.
+</span>
 </li>
 <li><!-- 05 -->
 でも、
-<fg t="げつようび">月曜日</fg>と<fg t="すいようび">水曜日</fg>の<fg t="ごぜん">午前</fg><fg t="くじ">九時</fg>にあります。
+<fg t="げつようび">月曜日</fg>と<fg t="すいようび">水曜日</fg>の
+<fg t="ごぜん">午前</fg><fg t="くじ">九時</fg>にあります。
+</br>
+<span class="gray">
+But Monday and Wednesday I have Japanese at 9:00 AM.
+</span>
 </li>
 <li><!-- 06 -->
 それに、
 <fg t="ごぜん">午前</fg><fg t="じゅういちじ">十一時</fg>に、<fg t="しき">指揮</fg>があります。
-</li>
+</br>
+<span class="gray">
+In addition I have conducting at 11:00 AM.
+</span>
 <li><!-- 07 -->
-それから、<fg t="ごご">午後</fg><fg t="じゅうにじ">十二時</fg>に、<fg t="すうがく">数学</fg>があります。
+それから、
+<fg t="ごご">午後</fg><fg t="じゅうにじ">十二時</fg>に、<fg t="すうがく">数学</fg>があります。
+</br>
+<span class="gray">
+Then math at 12:00 PM.
+</span>
 </li>
 <li><!-- 08 -->
 オンラインで、
 これらのクラスズームがあります。
+</br>
+<span class="gray">
+All of these classes are online.
+</span>
 </li>
 <li><!-- 09 -->
 でも、それに、
 <fg t="げつようび">月曜日</fg>に、キャンパスでクワイアがあります。
+</br>
+<span class="gray">
+But on Monday I also have choir on campus  at 2:00.
+</span>
 </li>
 <li><!-- 10 -->
 <fg t="すうがく">数学</fg>の<fg t="あと">後</fg>でキャンパスへ<fg t="い">行</fg>きます。
+</br>
+<span class="gray">
+After my math class I ride my bike to get to school.
+</span>
 </li>
 <li><!-- 11 -->
 キャンパスへ<fg t="い">行</fg>くのに<fg t="さんじゅうぷん">三十分</fg>ぐらいかかります。
+</br>
+<span class="gray">
+It takes around thirty minutes to go to campus.
+</span>
 </li>
 <li><!-- 12 -->
 そして、<fg t="なな">七</fg>マイルぐらいあります。
+</br>
+<span class="gray">
+And it's around seven miles.
+</span>
 </li>
 <li><!-- 13 -->
 <fg t="たび">旅</fg>はとても<fg t="むずか">難</fg>しくありません、
 でも、<fg t="くるま">車</fg>が<fg t="こわ">怖</fg>いですね。
+</br>
+<span class="gray">
+The trip isn't too hard, but cars are scary.
+</span>
 </li>
 <li><!-- 14 -->
 そして、<fg t="げつようび">月曜日</fg>に<fg t="ばん">晩</fg>のズームで、
 <fg t="すうがくけんきゅう">数学研究</fg>のパートナーとアドバイザーに<fg t="あ">会</fg>います。
+</br>
+<span class="gray">
+Additionally, Monday night I have a Zoom meeting with my math research partner and advisor.
+</span>
 </li>
 <li><!-- 15 -->
 それに、<fg t="すいようび">水曜日</fg>に<fg t="ばん">晩</fg>のズームで、
 <fg t="すうがくけんきゅう">数学研究</fg>のグループのみなさんに<fg t="あ">会</fg>います。
+</br>
+<span class="gray">
+Wednesday I have a Zoom meeting with all the math research groups.
+</span>
 </li>
 <li><!-- 16 -->
 でも、たくさんの<fg t="べんきょう">勉強</fg>が<fg t="い">要</fg>りません。
 だから、<fg t="わたし">私</fg>は<fg t="だいじょうぶ">大丈夫</fg>です。
+</br>
+<span class="gray">
+But, I don't need to study much, so (therefore) I'm fine.
+</span>
 </li>
 </ol>
-</center>
-
-<center style="text-align:left;">
-<ol>
-<li><!-- 01 --> Thankfully, my semester isn't very hard.</li>
-<li><!-- 02 --> But I have class Monday through Friday.</li>
-<li><!-- 03 --> Monday, Tuesday and Wednesday I have Japanese, conducting and math.</li>
-<li><!-- 05 --> But Monday and Wednesday I have Japanese at 9:00 AM.</li>
-<li><!-- 06 --> In addition I have conducting at 11:00 AM.
-<li><!-- 07 --> Then math at 12:00 PM.</li>
-<li><!-- 08 --> All of these classes are online.</li>
-<li><!-- 09 --> But on Monday I also have choir on campus  at 2:00.</li>
-<li><!-- 10 --> After my math class I ride my bike to get to school.</li>
-<li><!-- 11 --> It takes around thirty minutes to go to campus.</li>
-<li><!-- 12 --> And it's around seven miles.</li>
-<li><!-- 13 --> The trip isn't too hard, but cars are scary.</li>
-<li><!-- 14 --> Additionally, Monday night I have a Zoom meeting with my math research partner and advisor.</li>
-<li><!-- 15 --> Wednesday I have a Zoom meeting with all the math research groups.</li>
-<li><!-- 16 --> But, I don't need to study much, so (therefore) I'm fine.</li>
-</ol>
-</center>
 
 ---
 
