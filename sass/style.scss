@@ -117,10 +117,17 @@ pre {
     border-radius: 3px;
 }
 
-.cq {
+.center {
     display: block;
     text-align: center;
+}
+
+.gray {
     color: gray;
+}
+
+.cg {
+    @extend .center, .gray;
 }
 
 blockquote {
