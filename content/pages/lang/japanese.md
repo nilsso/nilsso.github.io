@@ -34,63 +34,71 @@ Sunday at 3 PM I watched a movie at a movie theater.
 </div>
 
 ### 「は」 (topic)
-Marks the preceding noun as the topic of discussion.
-For example, to describe oneself, は needs to mark <fg t="わたし">私</fg> (myself).
-<div class="cg">
-<fg t="わたし">私</fg><u>は</u><fg t="だいがく">大学</fg>の<fg t="がくせい">学生</fg>です。</br>
-I am a university student.
+- Marks the preceding noun as the topic of discussion.
+  For example, to describe oneself, は needs to mark <fg t="わたし">私</fg> (myself).
+  <div class="cg">
+  <fg t="わたし">私</fg><u>は</u><fg t="だいがく">大学</fg>の<fg t="がくせい">学生</fg>です。</br>
+  I am a university student.
 </div>
+
+- Is used when contrasting between things that can and cannot be done.
+  <div class="cg">
+  <fg t="えいご">英語</fg>を<fg t="はな">話す</fg>ことは<fg t="でき">出来</fg>ますが、
+  <fg t="か">書</fg>くことは<fg t="でき">出来</fg>ません。</br>
+  I can speak japanese but I cannot write it.
+  </div>
 
 ### 「を」 (object)
-Marks the preceding object (not necessarily tangible) as what an action is being taken or took place
-upon.
-<div class="cg">
-<fg t="きょう">今日</fg>は<fg t="あさ">朝</fg>ごはん<u>を</u><fg t="た">食</fg>べました。</br>
-I ate breakfast this today.</br>
-<fg t="きのう">昨日</fg>は<fg t="にほんご">日本語</fg><u>を</u><fg t="べんきょう">勉強</fg>しました。</br>
-I studied Japanese yesterday.
-</div>
+- Marks the preceding object (not necessarily tangible) as
+  what an action is being taken or took place
+  upon.
+  <div class="cg">
+  <fg t="きょう">今日</fg>は<fg t="あさ">朝</fg>ごはん<u>を</u><fg t="た">食</fg>べました。</br>
+  I ate breakfast this today.</br>
+  <fg t="きのう">昨日</fg>は<fg t="にほんご">日本語</fg><u>を</u><fg t="べんきょう">勉強</fg>しました。</br>
+  I studied Japanese yesterday.
+  </div>
 
 ### 「に」 (time, location)
-Following a time, denotes when a verb occurs.
-<div class="cg">
-<fg t="しちじはん">七時半</fg><u>に</u>おきます。</br>
-I wake up at 7:30.
-</div>
+- Following a time, denotes when a verb occurs.
+  <div class="cg">
+  <fg t="しちじはん">七時半</fg><u>に</u>おきます。</br>
+  I wake up at 7:30.
+  </div>
 
-Following a location, denotes where something is with あります or います.
-<div class="cg">
-デパートのとなり<u>に</u><fg t="えいがかん">映画館</fg>があります。</br>
-Next to the department store is a movie theater.
-</div>
-
-Or following a location, denotes the destination of a movement verb.
-<div class="cg">
-<fg t="いえ">家</fg><u>に</u><fg t="かえ">帰</fg>ります。</br>
-I return home.
-</div>
+- Following a location, denotes where something is with あります or います.
+  <div class="cg">
+  デパートのとなり<u>に</u><fg t="えいがかん">映画館</fg>があります。</br>
+  Next to the department store is a movie theater.
+  </div>
+ 
+- Or following a location, denotes the destination of a movement verb.
+  <div class="cg">
+  <fg t="いえ">家</fg><u>に</u><fg t="かえ">帰</fg>ります。</br>
+  I return home.
+  </div>
 
 ### 「が」 (topic, subject, "but")
-Can replace は as the topic marker of a sentence.
-<div class="cg">
-<fg t="ぼく">僕</fg>がニルスです。</br>
-I'm Nils.
-</div>
+- Can replace は as the topic marker of a sentence.
+  <div class="cg">
+  <fg t="ぼく">僕</fg>がニルスです。</br>
+  I'm Nils.
+  </div>
 
-When following a noun, marks it as the subject for certain verbs.
-<div class="cg">
-コーヒーが<fg t="い">要</fg>るんだ</br>
-I need my coffee.
-</div>
+- When following a noun, marks it as the subject for certain verbs.
+  <div class="cg">
+  コーヒーが<fg t="い">要</fg>るんだ</br>
+  I need my coffee.
+  </div>
 
-Following a sentence (but before a comma or period), functions as "but", joining the sentence
-to whatever sentence follows.
-<div class="cg">
-<fg t="おば">叔母</fg>も、
-<fg t="へや">部屋</fg>が<fg t="き">気</fg>にいると<fg t="おも">思</fg>いますが、
-<fg t="み">見</fg>せることが<fg t="でき">出来</fg>ましょうか。</br>
-I think my aunt will like the apartment too, but can we show it to her?
-</div>
+- Following a sentence (but before a comma or period),
+  functions as "but", joining the sentence to whatever sentence follows.
+  <div class="cg">
+  <fg t="おば">叔母</fg>も、
+  <fg t="へや">部屋</fg>が<fg t="き">気</fg>にいると<fg t="おも">思</fg>いますが、
+  <fg t="み">見</fg>せることが<fg t="でき">出来</fg>ましょうか。</br>
+  I think my aunt will like the apartment too, but can we show it to her?
+  </div>
 
 ---
 
