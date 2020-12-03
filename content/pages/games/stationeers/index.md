@@ -72,7 +72,7 @@ one of three modes, but the *horizontal* and *vertical* modes are the most usefu
 - **Vertical:** Reports the angle between the vector towards the sun projected onto the sensor
   surface and the vector towards the sun.
 
-Setting the mode of a light sensor requires a logic writer to write to the sensor's `Mode` variable,
+Setting the mode of a light sensor requires a logic writer to write to the sensor's `Mode` parameter,
 using either a memory chip or a dial as input, where the values 0, 1 and 2 correspond to the modes
 *Default*, *Horizontal* and *Vertical* respectively. (Alternatively, a MIPS program can set the
 modes.)
@@ -110,12 +110,12 @@ is at 15 degrees and 50% at 90.
 With the light sensors in place (horizontal yaw on a ceiling, vertical pitch on a floor) we can
 implement the automation. First, two logic readers, `hReader` and `vReader`, read the solar angles
 from the sensors. If the sensors and panels were oriented ideally as previously described, the solar
-panel `Horizontal` variable can be set directly by a batch writer `hWriter` using the `hReader`
+panel `Horizontal` parameter can be set directly by a batch writer `hWriter` using the `hReader`
 value. As the vertical angle needs some transformation, we first use a math unit `vShift` to
 translate the measurement by subtracting the vertical reader value from a memory chip `vMemShift`
 with setting 75; then another math unit `vScale` divides the translation by a memory chip
 `vMemScale` with setting 1.5 to give the pitch percentage; lastly the pitch percentage from `vScale`
-is written to the solar panel `Vertical` variable by a second batch writer `vWriter`.
+is written to the solar panel `Vertical` parameter by a second batch writer `vWriter`.
 
 Name | Type | Settings
 --- | :-- | :--
@@ -130,14 +130,14 @@ Name | Type | Settings
 
 ### Tracking with a MIPS program
 
-In total, the non-MIPS solution uses 6 powered chips. Using a MIPS programmed IC10 chip eliminates
-the two logic reader chips, the two math chips and one of the memory chips. This reduces the number
-of powered chips from 6 to 3, so not only is the physical setup simpler (don't need to manually set
-the sensor modes) but its also more energy efficient. However it does require a computer with an IC
-editing motherboard, the later requiring electrum.
+In total, the non-MIPS solution uses 6 powered chips. Using a MIPS programmed IC10 chip reduces
+this to two memory chips and two batch writers, which both is more energy efficient and easy to
+setup. You can also use a single sensor this way, as the IC10 chip can change the `Mode` parameter
+on its own.
 
-The setup of the sensors and the panels is the same as the non-MIPS solution, but the batch writers
-now pull input from their corresponding memory chips. The `Setting` variables for the memory chips
+The setup of the sensors and the panels is the same as the non-MIPS solution, except we only use the
+sensor that's on the ground, and the batch writers
+now pull input from their corresponding memory chips. The `Setting` parameters for the memory chips
 (the horizontal angle and vertical percentage) are written by the MIPS program.
 
 #### Logic chips
@@ -153,35 +153,35 @@ Name | Type | Settings
 #### MIPS program
 
 ``` mips
-# Horizontal devices and register
-alias hSensor d0
+alias sensor d0
+alias angle r0
 alias hMem d1
-alias hAngle r0
+alias vMem d2
 
-# Vertical devices and register
-alias vSensor d3
-alias vMem d4
-alias vAngle r1
+start:
+jal horizontal # set horizontal parameter for solar panels
+jal vertical # set vertical parameter for solar panels
+j start
 
-# Sensor modes
-s hSensor Mode 1
-s vSensor Mode 2
-s d0 Mode 2
+horizontal:
+s sensor Mode 1 # change sensor to horizontal mode
+yield # and wait for this to take effect
+# load the horizontal solar and from
+# the sensor into the angle register
+l angle sensor SolarAngle
+sub angle 0 angle
+s hMem Setting angle # write to horizontal memory
+j ra
 
-loop:
-
-# Get horizontal angle
-l hAngle hSensor SolarAngle
-
-# Calculate vertical angle
-l vAngle vSensor SolarAngle
-sub vAngle 75 vAngle
-div vAngle vAngle 1.5
-
-# Write to memory
-s hMem Setting hAngle
-s vMem Setting vAngle
-
-j loop
+vertical:
+s sensor Mode 2 # change sensor to vertical mode
+yield # and wait for this to take effect
+# load the vertical solar angle from
+# the sensor into the angle register
+l angle sensor SolarAngle
+sub angle 75 angle # transform the angle to a percentage
+div angle angle 1.5
+s vMem Setting angle # write to vertical memory
+j ra
 ```
 
