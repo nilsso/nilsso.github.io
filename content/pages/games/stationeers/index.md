@@ -44,16 +44,14 @@ but modes `1` *horizontal* and `2` *vertical* are what we use.
 
 - **Horizontal:**
   Reports the angle between the reference vector pointing away from the data port (orthogonal to the sensor surface normal)
-  and the projection between the vector pointing towards the sun onto the sensor surface.
-  Angles are measured positively clockwise with respect to the surface normal.
+  and the projection of the vector pointing towards the sun onto the sensor surface.
+  Angles are calculated with right-handedness: positively clockwise with respect to the surface normal.
   Surface orientation of the solar sensor matters in horizontal mode, since the reference vector changes depending on orientation.
 
 - **Vertical:**
   Reports the angle between the vector pointing towards the sun
-  and projection between the vector pointing towards the sun onto the sensor surface.
+  and the projection of the vector pointing towards the sun onto the sensor surface.
   Surface orientation of the solar sensor does not matter in vertical mode.
-  (In other words, when the sun is directly above the sensor the vertical angle is zero,
-  and when the sun is at the horizon the angle is 90.)
 
 The `Mode` parameter of a sensor can be changed using a logic writer or an IC,
 and `SolarAngle` will reflect the mode change.
