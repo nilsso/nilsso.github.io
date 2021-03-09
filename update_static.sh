@@ -4,8 +4,11 @@ curl -s https://api.github.com/repos/KaTeX/KaTeX/releases/latest \
     | tr -d \" \
     | wget -qi -
 unzip -o -qq katex.zip
-mkdir -p static/{css,js}
+mkdir -p static/{css/fonts,js/katex}
 mv katex/katex.min.css static/css/
-mv katex/katex.min.js katex/contrib/mathtex-script-type.min.js static/js/
-mv katex/fonts static/css/
+mv katex/katex.min.js \
+    katex/contrib/mathtex-script-type.min.js \
+    katex/contrib/auto-render.min.js \
+    static/js/katex
+mv katex/fonts/* static/css/fonts
 rm -rf {katex,katex.zip}
