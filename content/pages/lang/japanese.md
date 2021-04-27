@@ -71,7 +71,7 @@ Sunday at 3 PM I watched a movie at a movie theater.
   デパートのとなり<u>に</u><fg t="えいがかん">映画館</fg>があります。</br>
   Next to the department store is a movie theater.
   </div>
- 
+
 - Or following a location, denotes the destination of a movement verb.
   <div class="cg">
   <fg t="いえ">家</fg><u>に</u><fg t="かえ">帰</fg>ります。</br>
@@ -233,6 +233,57 @@ But, I don't need to study much, so (therefore) I'm fine.
 </span>
 </li>
 </ol>
+
+---
+
+- 私は料理するのが大好きです
+- ＜男の人と女の人・男女共同＞が同じ部屋で住んでるのは問題ですか
+
+---
+
+# 102 Presentation
+
+私の<fg t="すねん">数年</fg>がある<fg t="しゅみ">趣味</fg>は<fg t="うた">歌</fg>うことです
+</br>
+<span class="gray">
+The hobby that I have had for several years is singing.
+</span>
+
+メサカレッジで<fg t="にせんにじゅうねん">二千二十年</fg>に
+<fg t="ともだち">友達</fg>と<fg t="いっしょ">一緒</fg>に
+<fg t="うた">歌</fg>うのクラスを<fg t="じゅこう">受講</fg>してから、</br>
+<fg t="うた">歌</fg>うのが<fg t="はじ">始</fg>めました
+（メサカレッジはサンディエゴのコミュニティカレッジです）。
+</br>
+<span class="gray">
+I started singing at Mesa College in 2013 when I took a voice class with some friends
+(Mesa College is a community college here in San Diego).
+</span>
+
+<fg t="にせんじゅうはち">二千十八年</fg>にＳＤＳＵに<fg t="はじ">始</fg>めたので、
+<fg t="なが">長</fg>い<fg t="あい">間</fg><fg t="だいがくせい">大学生</fg>だよ。😅
+</br>
+<span class="gray">
+I started at SDSU in 2018, so I've been a college student for a long time.
+</span>
+
+あのクラスをじゅこう
+<span class="gray">
+After that class the professor asked me to join choir and I did.
+</span>
+
+I sang with the choir until I transfered, and now I sing for a church and in the chamber choir here
+at SDSU.
+
+<fg t="わたし">私</fg>の<fg t="せんこう">専攻</fg>はコンピュータサイエンスでしたが、
+<fg t="てんこう">転校</fg>したとき、のは
+<fg t="おんがく">音楽</fg>と<fg t="おうようすうがく">応用数学</fg>になりました。
+（でも、<fg t="なに">何</fg>よりもまだプログラマーです。）
+</br>
+<span class="gray">
+My major was computer science, but when I transfered it had become music and applied mathematics.
+(But foremost I am a programmer.)
+</span>
 
 ---
 
