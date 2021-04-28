@@ -1,0 +1,34 @@
+%YAML 1.2
+---
+name: Stationeers MIPS
+file_extensions: [mips]
+scope: source.mips
+
+contexts:
+  main:
+    - match: (#\s*(TODO|todo)?).*$\n?
+      comment: A regular comment
+      scope: comment.line.number-sign.comment.mips
+      captures:
+        1: punctuation.definition.comment.mips
+        2: markup.bold.mips
+
+    - match: ^\b[[:alpha:]]+:{1}\b
+      comment: A jump label
+      scope: entity.name.label.mips
+
+    - match: ^\b[[:alpha:]]+(?!:)\b
+      comment: A function
+      scope: entity.name.function.mips
+
+    - match: \b\d+\.?\d*\b
+      comment: A number
+      scope: constant.number.mips
+
+    - match: \b[rd]\d\b
+      comment: A device or register
+      scope: variable.language.mips
+
+    - match: \b([[:upper:]][[:lower:]]+)+\b
+      comment: A device variable
+      scope: constant.other.mips

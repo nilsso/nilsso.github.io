@@ -1,0 +1,411 @@
+[
+    {
+        "name": "Alphabet (Hiragana)",
+        "fragments": [
+            ["{{character}}", "{{1}}", 66]
+        ],
+        "vocabulary": {
+            "{{character}}": [
+                ["あ", "a" ], ["い", "i"   ], ["う", "u"  ], ["え", "e" ], ["お", "o" ],
+                ["か", "ka"], ["き", "ki"  ], ["く", "ku" ], ["け", "ke"], ["こ", "ko"],
+                ["さ", "sa"], ["し", "shi" ], ["す", "su" ], ["せ", "se"], ["そ", "so"],
+                ["た", "ta"], ["ち", "chi" ], ["つ", "tsu"], ["て", "te"], ["と", "to"],
+                ["な", "na"], ["に", "ni"  ], ["ぬ", "nu" ], ["ね", "ne"], ["の", "no"],
+                ["ま", "ma"], ["み", "mi"  ], ["む", "mu" ], ["め", "me"], ["も", "mo"],
+                ["や", "ya"],                 ["ゆ", "yu" ],               ["よ", "yo"],
+                ["ら", "ra"], ["り", "ri"  ], ["る", "ru" ], ["れ", "re"], ["ろ", "ro"],
+                ["わ", "wa"], ["を", "wo/o"],
+                ["ん", "n" ],
+                ["が", "ga"], ["ぎ", "gi"  ], ["ぐ", "gu" ], ["げ", "ge"], ["ご", "go"],
+                ["ざ", "za"], ["じ", "ji"  ], ["ず", "zu" ], ["ぜ", "ze"], ["ぞ", "zo"],
+                ["だ", "da"], ["ぢ", "ji"  ], ["づ", "zu" ], ["で", "de"], ["ど", "do"],
+                ["ば", "ba"], ["び", "bi"  ], ["ぶ", "bu" ], ["べ", "be"], ["ぼ", "bo"],
+                ["ぱ", "pa"], ["ぴ", "pi"  ], ["ぷ", "pu" ], ["ぺ", "pe"], ["ぽ", "po"]
+            ]
+        }
+    },
+    {
+        "name": "Alphabet (Katakana)",
+        "fragments": [
+            ["{{character}}", "{{1}}", 66]
+        ],
+        "vocabulary": {
+            "{{character}}": [
+                ["ア", "a" ], ["イ", "i"   ], ["ウ", "u"  ], ["エ", "e" ], ["オ", "o" ],
+                ["カ", "ka"], ["キ", "ki"  ], ["ク", "ku" ], ["ケ", "ke"], ["コ", "ko"],
+                ["サ", "sa"], ["シ", "shi" ], ["ス", "su" ], ["セ", "se"], ["ソ", "so"],
+                ["タ", "ta"], ["チ", "chi" ], ["ツ", "tsu"], ["テ", "te"], ["ト", "to"],
+                ["ナ", "na"], ["ニ", "ni"  ], ["ヌ", "nu" ], ["ネ", "ne"], ["ノ", "no"],
+                ["マ", "ma"], ["ミ", "mi"  ], ["ム", "mu" ], ["メ", "me"], ["モ", "mo"],
+                ["ヤ", "ya"],                 ["ユ", "yu" ],               ["ヨ", "yo"],
+                ["ラ", "ra"], ["リ", "ri"  ], ["ル", "ru" ], ["レ", "re"], ["ロ", "ro"],
+                ["ワ", "wa"], ["ヲ", "wo/o"],
+                ["ン", "n" ],
+                ["ガ", "ga"], ["ギ", "gi"  ], ["グ", "gu" ], ["ケ", "ge"], ["ゴ", "go"],
+                ["ザ", "za"], ["ジ", "ji"  ], ["ズ", "zu" ], ["ゼ", "ze"], ["ゾ", "zo"],
+                ["ダ", "da"], ["ヂ", "ji"  ], ["ヅ", "zu" ], ["デ", "de"], ["ド", "do"],
+                ["バ", "ba"], ["ビ", "bi"  ], ["ブ", "bu" ], ["ベ", "be"], ["ボ", "bo"],
+                ["パ", "pa"], ["ピ", "pi"  ], ["プ", "pu" ], ["ペ", "pe"], ["ポ", "po"]
+            ]
+        }
+    },
+    {
+        "name": "Numbers",
+        "fragments": [
+            ["{{number}}", "{{1}}", 11]
+        ],
+        "vocabulary": {
+            "{{number}}": [
+                ["いち", "One"],
+                ["に", "Two"],
+                ["さん", "Three"],
+                ["し/よん", "Four"],
+                ["ご", "Five"],
+                ["ろく", "Six"],
+                ["なな/しち", "Seven"],
+                ["はち", "Eight"],
+                ["きゅう", "Nine"],
+                ["じゅう", "Ten"]
+            ]
+        }
+    },
+    {
+        "name": "Lesson 1",
+        "fragments": [
+            ["はじめまして。", "How do you do?"],
+            ["よろしくおねがいします。", "Pleased to meet you."],
+            ["おはよう。", "Good morning"],
+            ["おはようございます。", "Good morning (polite.)"],
+            ["こんにちは。", "Good day."],
+            ["こんばんは。", "Good evening."],
+            ["おやすみなさい。", "Good night."],
+            ["さようなら。", "Goodbye."],
+            ["ありがとう。", "Thank you."],
+            ["ありがとうございます。", "Thank you very much."],
+            ["すみません。", "Excuse me."],
+            ["しつれいします。", "Excuse me (upon entering)."],
+
+            ["いってきます。", "I'm leaving"],
+            ["いってらっしゃい。", "Have a good day."],
+            ["ただいま。", "I'm back."],
+            ["おかえりなさい。", "Welcome back."],
+            ["いただきます。", "Thank you for the meal (just served)."],
+            ["ごちそうさまでした。", "Thank you for the meal."],
+
+            ["しゅっしんは{{city}}です。", "My hometown is {{1}}."],
+            ["せんこうは{{major}}です。", "My major is {{1}}."],
+            ["{{studentyear}}です。", "I am a {{1}}."],
+
+            ["げんきですか。", "Are you okay?"],
+            ["げんきです。", "I am fine."],
+            ["まあまあです。", "I'm so-so."]
+        ],
+        "vocabulary": {
+            "{{city}}": [
+                ["とうきょう", "Tokyo"],
+                ["きょうと", "Kyoto"],
+                ["サンディエゴ", "San Diego"],
+                ["サンノゼ", "San Jose"]
+            ],
+            "{{major}}": [
+                ["おうようすうがく", "applied math"],
+                ["びじゅつ", "art"],
+                ["かがく", "chemistry"],
+                ["こうがく", "engineering"],
+                ["すうがく", "math"],
+                ["いがく", "medicine"],
+                ["おんがく", "music"],
+                ["おんがくきょういく", "music education"]
+            ],
+            "{{studentyear}}": [
+                ["いちねんせい", "Freshman"],
+                ["にねんせい", "Sophomore"],
+                ["さんねんせい", "Junior"],
+                ["よねんせい", "Senior"],
+                ["だいがくいんせい", "Graduate student"]
+            ]
+        }
+    },
+    {
+        "name": "Lesson 2",
+        "fragments": [
+            ["はい、そうです。", "Yes, that's right."],
+            ["そうですか。", "Is that so?"],
+            ["いいえ、そうではありません。", "No, that's not right."],
+            ["それは、しつれいしました。", "I am sorry about that."],
+            [
+                "{{i}}は{{country}}じんです。",
+                "{{1}} am from {{2}}."
+            ],
+            [
+                "{{country}}のかた{{is}}か。",
+                "You {{2}} from {{1}}?"
+            ],
+            [
+                "{{y-n}}、{{country}}じん{{is}}。",
+                "{{1}}, I {{3}} from {{2}}."
+            ],
+            [
+                "{{y-n}}、{{i}}は{{country}}じん{{is}}。",
+                "{{1}}, {{2}} {{4}} from {{3}}."
+            ],
+            [
+                "{{surname}}さんは{{country}}のかた{{is}}{{.?}}",
+                "Mr./Mrs. {{1}} {{3}} from {{2}}{{4}}"
+            ],
+            [
+                "{{y-n}}、{{surname}}さんは{{country}}のかた{{is}}。",
+                "{{1}}, Mr./Mrs. {{2}} {{4}} from {{3}}."
+            ],
+            [
+                "{{occupation}}{{is}}。",
+                "I/he/she {{2}} a {{1}}."
+            ],
+            [
+                "{{occupation}}{{is}}か。",
+                "You/he/she {{2}} a {{1}}?"
+            ],
+            [
+                "{{y-n}}、{{occupation}}{{is}}。",
+                "{{1}}, I/he/she {{3}} a {{2}}."
+            ],
+            [
+                "{{surname}}さんは{{occupation}}{{is}}{{.?}}",
+                "Mr./Mrs. {{1}} {{3}} a {{2}}{{4}}"
+            ],
+            [
+                "{{y-n}}、{{surname}}さんは{{occupation}}{{is}}。",
+                "{{1}}, Mr./Mrs. {{2}} {{4}} a {{3}}."
+            ],
+            ["{{understand}}。", "I {{1}}."],
+            ["{{y-n}}、{{understand}}。", "{{1}}, I {{2}}."],
+            ["{{understand}}か。", "Do you {{1}}?"],
+            [
+                "{{language}}が{{understand}}か。",
+                "Do you {{2}} {{1}}?"
+            ],
+            [
+                "{{language}}が{{understand}}。",
+                "I {{2}} {{1}}."
+            ],
+            [
+                "{{surname}}さんは、まだ、{{occupation}}です。",
+                "Mr./Mrs. {{1}} is still a {{2}}."
+            ],
+            [
+                "せんこうは、{{major}}と{{major}}です。",
+                "I'm majoring in both {{1}} and {{2}}."
+            ],
+            [
+                "せんこうは、まだ、わかりません。",
+                "I haven't decided my major yet."
+            ],
+            [
+                "{{language}}が、まだ、わかりません。",
+                "I don't know {{1}} yet."
+            ]
+        ],
+        "vocabulary": {
+            "{{.?}}": [
+                ["。", "."],
+                ["か。", "?"]
+            ],
+            "{{y-n}}": [
+                ["はい", "yes"],
+                ["いいえ", "no"]
+            ],
+            "{{i}}": [
+                ["わたし", "I (formal, male/female)"],
+                ["わたくし", "I (very formal, male/female)"],
+                ["ぼく", "I (casual, male)"],
+                ["おれ", "I (very casual, male)"]
+            ],
+            "{{is}}": [
+                ["です", "is/am/are"],
+                ["ではありません", "is/am/are not"]
+            ],
+            "{{surname}}": [
+                ["ほし", "Hoshi"],
+                ["ほそかわ", "Hosokawa"],
+                ["いしはら", "Ishihara"],
+                ["くさの", "Kusano"],
+                ["もり", "Mori"],
+                ["たけむら", "Takemura"],
+                ["たなか", "Tanaka"],
+                ["やまだ", "Yamada"],
+
+                ["バーンゾ", "Barnes"],
+                ["チャン", "Chang"],
+                ["ドヌーブ", "Deneuve"],
+                ["ドミンゴ", "Domingo"],
+                ["ガルシア", "Garcia"],
+                ["ジョンソn", "Johnson"],
+                ["キム", "Kim"],
+                ["リー", "Lee"],
+                ["マルチェロ", "Marcello"],
+                ["ムーア", "Moore"],
+                ["ウェン", "Nguyen"],
+                ["オルソン", "Olsson"],
+                ["サンチェス", "Sanchez"],
+                ["シュミット", "Schmidt"],
+                ["スミス", "Smith"]
+            ],
+            "{{country}}": [
+                ["アメリカ", "America"],
+                ["アーストラリア", "Australia"],
+                ["カナダ", "Canada"],
+                ["ちゅうごく", "China"],
+                ["コスタリカ", "Costa Rica"],
+                ["キューバ", "Cuba"],
+                ["イギリス", "England"],
+                ["フランス", "France"],
+                ["ドイツ", "Germany"],
+                ["インド", "India"],
+                ["イタリア", "Italy"],
+                ["マレーシア", "Malaysia"],
+                ["メキシコ", "Mexico"],
+                ["オランダ", "the Netherlands"],
+                ["フィリピン", "the Philippines"],
+                ["ロシア", "Russia"],
+                ["かんこく", "South Korea"],
+                ["スパイン", "Spain"],
+                ["たいわん", "Taiwan"],
+                ["ベトナム", "Vietnam"]
+            ],
+            "{{language}}": [
+                ["えいご", "English"],
+                ["ちゅうごくご", "Chinese"],
+                ["スペインご", "Spanish"],
+                ["フランスご", "French"],
+                ["ドイツご", "German"],
+                ["イタリアご", "Italian"],
+                ["ロシアご", "Russian"],
+                ["かんこくご", "Korean"],
+                ["オランダご", "Dutch"],
+                ["タガログご", "Tagalog"],
+                ["たいわんご", "Taiwanese"],
+                ["ベトナムご", "Vietnamese"]
+            ],
+            "{{occupation}}": [
+                ["がくせい", "student"],
+                ["だいがくせい", "college student"],
+                ["クラスメート", "classmate"],
+
+                ["ビジネスマン", "businessman"],
+                ["しゃちょう", "company president"],
+                ["はいしゃ", "dentist"],
+                ["いしゃ", "doctor"],
+                ["ちゅうざいいん", "employee in residence"],
+                ["てんちょう", "general manager"],
+                ["だいがくいんせい", "graduate student"],
+                ["ジャーナリスト", "journalist"],
+                ["べんごし", "lawyer"],
+                ["てんいん", "sales clerk"],
+                ["ひしょ", "secretary"],
+                ["せんせい", "teacher/professor"],
+                ["じゅうい", "veterinarian"]
+            ],
+            "{{school}}": [
+                ["ハーバードだいがく", "Harvard University"],
+                ["とうきょうだいがく", "University of Tokyo"],
+                ["さくらだいがく", "Sakura University"],
+                ["きょうとだいがく", "University of Kyoto"]
+            ],
+            "{{understand}}": [
+                ["わかります", "understand"],
+                ["わかりません", "don't understand"]
+            ]
+        }
+    },
+    {
+        "name": "Lesson 3",
+        "fragments": [
+            ["{{small-thing}}{{small-counter}}", "{{2}} {{1}}(s)"],
+
+            ["{{pointing-general}}は{{thing}}です{{.?}}", "{{1}} is a {{2}}{{3}}"],
+            ["{{pointing-general+?}}は{{thing}}ですか。", "{{1}} is a {{2}}?"],
+
+            ["{{pointing-general}}は、わたしの{{thing}}です{{.?}}", "{{1}} is my {{2}}{{3}}"],
+            ["{{pointing-general+?}}は、わたしの{{thing}}ですか。", "{{1}} is my {{2}}?"],
+
+            ["{{pointing-general}}は、{{surname}}さんの{{thing}}です{{.?}}", "{{1}} is Mr./Mrs. {{2}}'s {{3}}{{4}}"],
+            ["{{pointing-general+?}}は、{{surname}}さんの{{thing}}ですか。", "{{1}} is Mr./Mrs. {{2}}'s {{3}}?"],
+
+            ["{{pointing-thing}}{{thing}}は、わたしの{{2}}です{{.?}}", "{{1}} {{2}} is my {{2}}{{3}}"],
+            ["{{pointing-thing+?}}{{thing}}は、わたしの{{2}}ですか。", "{{1}} {{2}} is my {{2}}?"],
+
+            ["{{pointing-thing}}{{thing}}は、いくらですか。", "How much is {{1}} {{2}}?"]
+        ],
+        "vocabulary": {
+            "{{pointing-general}}": [
+                ["これ", "this"],
+                ["それ", "that"],
+                ["あれ", "that (over there)"]
+            ],
+            "{{pointing-general+?}}": [
+                ["{{pointing-general}}"],
+                ["どれ", "which"]
+            ],
+            "{{pointing-thing}}": [
+                ["この", "this"],
+                ["その", "that"],
+                ["あの", "that (over there)"]
+            ],
+            "{{pointing-thing+?}}": [
+                ["{{pointing-thing}}"],
+                ["どの", "which"]
+            ],
+            "{{small-thing}}": [
+                ["かぎ", "key"],
+                ["おかね", "money"],
+                ["クレジットカード", "credit card"],
+                ["こぎって", "check"],
+                ["がくせいしょう", "driver's licence"],
+                ["めんきょしょう", "ID"],
+                ["ペン", "pen"],
+                ["えんぴつ", "pencil"],
+                ["シャープペン", "mechanical pencil"],
+                ["ほん", "book"],
+                ["ノート", "notebook"],
+                ["しんぶん", "newspaper"],
+                ["ざっし", "magazine"],
+                ["とけい", "watch/clock"],
+                ["でんわ", "phone"],
+                ["てちょう", "planner"],
+                ["ソフト", "CD/DVD"],
+                ["けいさんき", "calculator"],
+                ["めいし", "business card"],
+                ["かばん", "bag"]
+            ],
+            "{{other-thing}}": [
+                ["くるま", "car"],
+                ["じてんしゃ", "bicycle"],
+                ["しゅくだい", "homework"],
+                ["しけん", "test"],
+                ["つくえ", "desk"],
+                ["いす", "chair"],
+                ["いぬ", "dog"],
+                ["ねこ", "cat"],
+                ["コンピューター", "computer"],
+                ["ファックス", "fax machine"]
+            ],
+            "{{thing}}": [
+                ["{{small-thing}}"],
+                ["{{other-thing}}"]
+            ],
+            "{{small-counter}}": [
+                ["ひとつ", "one"],
+                ["ふたつ", "two"],
+                ["みっつ", "three"],
+                ["よっつ", "four"],
+                ["いつつ", "five"],
+                ["むっつ", "six"],
+                ["ななつ", "seven"],
+                ["やっつ", "eight"],
+                ["ここのつ", "nine"],
+                ["とう", "ten"]
+            ]
+        }
+    }
+]
+
