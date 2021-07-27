@@ -249,7 +249,7 @@ But, I don't need to study much, so (therefore) I'm fine.
 The hobby that I have had for several years is singing.
 </span>
 
-メサカレッジで<fg t="にせんにじゅうねん">二千二十年</fg>に
+メサカレッジで<fg t="にせんにじゅうねん">二千十三年</fg>に
 <fg t="ともだち">友達</fg>と<fg t="いっしょ">一緒</fg>に
 <fg t="うた">歌</fg>うのクラスを<fg t="じゅこう">受講</fg>してから、</br>
 <fg t="うた">歌</fg>うのが<fg t="はじ">始</fg>めました
@@ -267,23 +267,72 @@ I started singing at Mesa College in 2013 when I took a voice class with some fr
 I started at SDSU in 2018, so I've been a college student for a long time.
 </span>
 
-あのクラスをじゅこう
-<span class="gray">
-After that class the professor asked me to join choir and I did.
-</span>
-
-I sang with the choir until I transfered, and now I sing for a church and in the chamber choir here
-at SDSU.
-
-<fg t="わたし">私</fg>の<fg t="せんこう">専攻</fg>はコンピュータサイエンスでしたが、
-<fg t="てんこう">転校</fg>したとき、のは
-<fg t="おんがく">音楽</fg>と<fg t="おうようすうがく">応用数学</fg>になりました。
-（でも、<fg t="なに">何</fg>よりもまだプログラマーです。）
+あのクラスのために、教授で私がクワイアに入るの聞かれて、私はしました。
 </br>
 <span class="gray">
-My major was computer science, but when I transfered it had become music and applied mathematics.
+Because of that class, when I was asked by the professor to join the choir, I did.
+</span>
+
+私は数年にあのクワイアで歌って、たくさんの会った友達はまだ私の友達です。
+</br>
+<span class="gray">
+I sang in that choir for several years, and many of the friends that I met are still my friends.
+</span>
+
+クワイアといしょに、イーストコーストと、メキシコのプエブラと、チェコのピルセンとプラーグと、
+プーランドのクラクフとワルシャワへ行ったことがあります。
+</br>
+<span class="gray">
+With the choir I've been to the east coast, to Puebla Mexico, to Pilsen and Prague Czechia, and to
+Krakow and Warsaw Poland.
+</span>
+
+とくにチェコとポーランドで、私も時々ソロを歌ったことがあります
+</br>
+<span class="gray">
+I've even sung solos from time to time, in particular in Czechia and Poland.
+</span>
+
+転校するまであのクワイアといしょに歌いましたが、そこで会った友達から、私は教会で歌手のアルバイトをもらいました
+</br>
+<span class="gray">
+I sang with the choir until I transfered, but because of a friend I met there I received a part-time
+job as a singer at a church.
+</span>
+
+そして、歌手になることで、私は音楽がさらに大好きいになりました
+</br>
+<span class="gray">
+And, becoming a musician has made me love music even more.
+</span>
+
+だから、大学で音楽を勉強するのが始めることにしました。
+</br>
+<span class="gray">
+That's why I decided to start studying music in college.
+</span>
+
+私はメサカレッジですべての音楽のクラスを受講して、チューターになりました。
+</br>
+<span class="gray">
+I took all the music theory classes at Mesa College and became a tutor.
+</span>
+
+大学を始めに私の専攻はコンピューターサイエンスでしたが、転校時に私の専攻は音楽と応用数学になりました。
+</br>
+<span class="gray">
+When I started college my major was computer science, but
+when I transfered it had become music and applied mathematics.
+</span>
+
+（でも、何よりも私はプログラマーです。）
+</br>
+<span class="gray">
 (But foremost I am a programmer.)
 </span>
+
+これまでに、私はSDSUで全ての私の専攻の音楽のクラスを受講しましたが、私たちのチャンバークワイアといしょにまだ歌っています。
+So far, I have taken all my major music classes at SDSU, but I am still singing with our chamber choir.
 
 ---
 
