@@ -52,7 +52,7 @@
     <hr>
     <content>
         {% block content %}
-        {% if page.toc %}
+        {% if page.showtoc %}
         <ul id="toc">
             {% for h1 in page.toc %}
             <li>
@@ -70,6 +70,9 @@
             {% endfor %}
         </ul>
         <hr>
+        {% endif %}
+        {% if page.title %}
+        <h1>{{ page.title }}</h1>
         {% endif %}
         {{ page.content | safe }}
         <div id=whitespace></div>
