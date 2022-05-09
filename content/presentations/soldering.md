@@ -1,10 +1,11 @@
----
++++
 title: Soldering Workshop
 template: presentation.html
 
 [taxonomies]
 tags = ["presentation", "college"]
----
++++
+
 # Soldering Workshop
 <hr/>
 Nils Olsson
