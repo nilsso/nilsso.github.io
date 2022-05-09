@@ -21,7 +21,9 @@
           data-separator="^---"
           data-separator-vertical="^--">
           <script type="text/template">
+            {% block content %}
             {{ page.content }}
+            {% endblock content %}
           </script>
         </section>
       </div>
