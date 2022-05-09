@@ -17,18 +17,27 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-markdown
+        <section
+          data-markdown
           data-separator="^---"
-          data-separator-vertical="^--">
-          <script type="text/template">
-            {% block content %}
-            {{ page.content }}
-            {% endblock content %}
-          </script>
+          data-separator-vertical="^--"
+        >
+          <textarea data-template>
+{% block content %}
+{{ page.content }}
+{% endblock content %}
+          </textarea>
         </section>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js" integrity="sha512-8Nk/zoTKjNixnM15wXjpF26KR4Ln87cc5Yllc5xP54wwbcKnljAAn2JP+tYAS8+4e7s/XK8XTiDH0Ltw2fmoBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js" integrity="sha512-QYXU3Cojl94ZRiZRjUZpyg1odj9mKTON9MsTMzGNx/L3JqvMA3BQNraZwsZ83UeisO+QMVfFa83SyuYYJzR9hw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.min.js"></script>
+    <script>
+Reveal.initialize({
+  plugins: [RevealMarkdown],
+})
+    </script>
   </body>
 </html>
+
