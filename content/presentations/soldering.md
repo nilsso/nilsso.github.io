@@ -1,9 +1,9 @@
 ---
-layout: presentation
 title: Soldering Workshop
-category: blog
-date: 2017-10-13
-published: true
+template: presentation.html
+
+[taxonomies]
+tags = ["presentation", "college"]
 ---
 # Soldering Workshop
 <hr/>
