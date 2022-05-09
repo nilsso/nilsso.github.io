@@ -1,6 +1,6 @@
 +++
-title: Soldering Workshop
-template: presentation.html
+title = Soldering Workshop
+template = presentation.html
 
 [taxonomies]
 tags = ["presentation", "college"]
