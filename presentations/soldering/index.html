@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" integrity="sha512-V5fKCVKOFy36w8zJmLzPH5R6zU6KvuHOvxfMRczx2ZeqTjKRGSBO9yiZjCKEJS3n6EmENwrH/xvSwXqxje+VVA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/blood.min.css" integrity="sha512-2dlRjIVCeDU4/bmM9E95vl23rdUpwLikkV4lcZYwskBW2hItO04TDbsxbmX68Nyw/eGX9v+I+Srrwst7Qu8J9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/black.min.css" integrity="sha512-5w6AICFraU3+mkD1dTmad4vXyyJ1nZM/KA2TG8oQ5yiyTYAXssxPk930O1upFxeC7ml4CxyXC1QBzthu26ZxZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/presentation.css">
+  </head>
+  <style>
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto !important;
+}
+  </style>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown
+          data-separator="^---"
+          data-separator-vertical="^--"
+        >
+          <textarea data-template>
+
+&lt;h1 id=&quot;soldering-workshop&quot;&gt;Soldering Workshop&lt;&#x2F;h1&gt;
+&lt;hr&#x2F;&gt;
+Nils Olsson
+--
+# Soldering?
+Joining two pieces of metal together by melting and putting a filler
+metal with a lower melting point (solder) into the joint.
+&lt;!-- .element: class=&quot;fragment&quot; --&gt;
+- Jewelry
+&lt;!-- .element: class=&quot;fragment&quot; --&gt;
+- Plumbing
+&lt;!-- .element: class=&quot;fragment&quot; --&gt;
+- Electronics (joining components to create a circuit
+&lt;!-- .element: class=&quot;fragment&quot; --&gt;
+---
+# Materials
+- Soldering iron
+- Solder
+- Flux
+- Accessories
+--
+## Soldering iron
+- Fixed temperature&#x2F;veriable temperature
+- Electric&#x2F;butane
+--
+## Solder
+Filler metal with low melting point (lower than the melting point of
+the metal being joined). Different alloys have different properties.
+- 60&#x2F;40 (60% tin, 39-40% lead)
+- Lead free
+--
+![rosin core
+solder](https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;cc&#x2F;Rosin_core_electrical_solder.JPG)
+&lt;!-- .element: style=&quot;height:90vh;&quot; --&gt;
+--
+## Flux
+Removes oxidation, improves heat transfer, improves solder flow.
+Most consumer solder have a rosin flux core.
+--
+![flux](https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;8&#x2F;89&#x2F;Kolophonium_Loeten.jpg)
+&lt;!-- .element: style=&quot;height:90vh;&quot; --&gt;
+--
+## Accessories
+- Fume extractor
+- Stand (provided 100% of the time, in some form)
+- Tip cleaner (sponge&#x2F;metal wool)
+- Helping hands
+- Other soldering iron tips (conical, screwdriver, chisel)
+---
+# Technique
+--
+## Safety
+- Don&#x27;t touch the iron! (you *will* burn yourself eventually)
+- Soldering fumes
+- Fume extractor
+- Wash your hands after!
+--
+## Soldering
+- Tinning the tip
+- Heating both elements
+- Melting the solder (wetting)
+- Taking the right amount of time
+  - Not enough time&#x2F;heat and you get a bad joint
+  - Too much heat and you damage the components
+- Cleaning the tip
+- Cleaning flux
+--
+## Good and bad solder joints
+![common soldering
+problems](https:&#x2F;&#x2F;cdn-learn.adafruit.com&#x2F;assets&#x2F;assets&#x2F;000&#x2F;001&#x2F;978&#x2F;original&#x2F;tools_Header_Joints.jpg?1396777967)
+[common soldering
+problems](https:&#x2F;&#x2F;learn.adafruit.com&#x2F;adafruit-guide-excellent-soldering&#x2F;common-problems)
+--
+## De-soldering
+- De-soldering wick (a.k.a. solder wick)
+- De-soldering gun
+---
+# Today&#x27;s project
+--
+## Jumbo LED flasher
+![jumbo led
+flasher](https:&#x2F;&#x2F;www.jameco.com&#x2F;Jameco&#x2F;Products&#x2F;MakeImag&#x2F;2216606.jpg)
+&lt;!-- .element: class=&quot;fragment fade-out center&quot; data-fragment-index=&quot;1&quot; --&gt;
+- 1 battery connector
+&lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;
+- 2 transistors
+&lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;
+- 2 potentiometers
+&lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;
+- 2 capacitors
+&lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;
+- 2 huge LEDS
+&lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;
+- 4 resistors
+&lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;
+Total: 16 leads to solder
+&lt;!-- .element: class=&quot;fragment&quot; data-fragment-index=&quot;1&quot; --&gt;
+--
+## Good luck!
+- Apply heat for the right about of time
+- Be careful with the orientation of capacitors and LEDs
+
+
+          </textarea>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/head.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.min.js"></script>
+    <script>
+Reveal.initialize({
+  plugins: [RevealMarkdown],
+})
+    </script>
+  </body>
+</html>
+

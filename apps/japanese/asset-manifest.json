@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/apps/japanese/static/css/main.be0b4c08.chunk.css",
+    "main.js": "/apps/japanese/static/js/main.85f4dba9.chunk.js",
+    "main.js.map": "/apps/japanese/static/js/main.85f4dba9.chunk.js.map",
+    "runtime-main.js": "/apps/japanese/static/js/runtime-main.96c5a55c.js",
+    "runtime-main.js.map": "/apps/japanese/static/js/runtime-main.96c5a55c.js.map",
+    "static/css/2.8b86c1cf.chunk.css": "/apps/japanese/static/css/2.8b86c1cf.chunk.css",
+    "static/js/2.899bdf05.chunk.js": "/apps/japanese/static/js/2.899bdf05.chunk.js",
+    "static/js/2.899bdf05.chunk.js.map": "/apps/japanese/static/js/2.899bdf05.chunk.js.map",
+    "index.html": "/apps/japanese/index.html",
+    "precache-manifest.3566ab6f3c1fea8941293c8a93f47aad.js": "/apps/japanese/precache-manifest.3566ab6f3c1fea8941293c8a93f47aad.js",
+    "service-worker.js": "/apps/japanese/service-worker.js",
+    "static/css/2.8b86c1cf.chunk.css.map": "/apps/japanese/static/css/2.8b86c1cf.chunk.css.map",
+    "static/css/main.be0b4c08.chunk.css.map": "/apps/japanese/static/css/main.be0b4c08.chunk.css.map",
+    "static/js/2.899bdf05.chunk.js.LICENSE.txt": "/apps/japanese/static/js/2.899bdf05.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96c5a55c.js",
+    "static/css/2.8b86c1cf.chunk.css",
+    "static/js/2.899bdf05.chunk.js",
+    "static/css/main.be0b4c08.chunk.css",
+    "static/js/main.85f4dba9.chunk.js"
+  ]
+}

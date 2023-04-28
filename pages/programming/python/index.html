@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/jpg" href="https://avatars1.githubusercontent.com/u/567181?s=60&v=4">
+    <style>@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Mono&display=swap");html,body{color:#35393e;font-family:"Merriweather",serif;line-height:1.8;font-size:18px}@media (max-width: 520px){html,body{font-size:16px}}@media (max-width: 460px){html,body{font-size:14px}}body{max-width:8in;margin:2rem auto;padding:0 1rem}p{margin:1rem 0}code{font-family:"Roboto Mono",monospace}fg{display:inline-block;text-indent:0px;line-height:normal;-webkit-text-emphasis:none;text-align:center;line-height:1}fg:before{content:attr(t);display:block;font-size:50%;line-height:1.5}cb1{color:#4080bf}cb2{color:#bf8040}cb3{color:#bf4040}cb4{color:#bfbf40}cb5{color:#4040bf}a{color:#4080bf;text-decoration:none}a:hover,a:focus{color:#bf8040}h1,h2,h3,h4,h5,h6{font-family:"Roboto Mono",monospace;line-height:1.2}h1,h2,h3{margin:2rem 0}h4,h5,h6{margin:1.5rem 0}h1{font-size:200%}h2{font-size:180%}h3{font-size:160%}h4,h5,h6{font-size:140%}hr{background:#35393e;border:0;height:1px;margin:2.5rem 0}img{width:100%}pre{padding:1rem;border-radius:3px}table{margin:auto;border-spacing:0}td,th{border-left:1px #000 solid;padding:.25em .75em}td:first-child,th:first-child{border-left:0}th{font-weight:bold}.center,.cg{display:block;text-align:center}.gray,.cg{color:gray}blockquote,.box{margin:1rem 0;padding-left:1rem;border-left:3px solid #8c99a6}.box.theorem{border-color:#4080bf}.box .proposition{border-color:#bf8040}.box.lemma{border-color:#bf4040}.box.corollary{border-color:#bfbf40}.box.definition{border-color:#4040bf}.nav{margin:2.5rem 0}.nav .nav-link{display:inline;padding:0 .5em}.nav .nav-item:first-of-type a{padding-left:0}.nav .dropdown-menu{min-width:0;margin:0;padding:.25rem 0}.nav .dropdown-menu .dropdown-item{padding:.25rem .5rem;color:#4080bf}#toc{margin-bottom:0}.listing{margin-bottom:3rem}.listing .listing-header,.listing .listing-content{padding:0}.listing-summary{color:#8c99a6}.listing-summary *{font-size:100%}.listing-summary h1,.listing-summary h2,.listing-summary h3 h4,.listing-summary h5,.listing-summary h6{margin:1rem 0}.listing-info{font-size:90%}.listing-info .listing-categories,.listing-info .listing-tags{list-style-type:none;padding:0}.listing-info ul li,.listing-info ul a{color:#8c99a6}.listing-info ul li{display:inline;margin-right:1rem}#katex-preamble{display:none}.katex-display{overflow-x:auto;overflow-y:hidden}#whitespace{height:50vh}</style>
+    
+    
+    
+    
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    
+    
+<ul class="nav">
+    
+    <li class="nav-item">
+        <a class="nav-link" href=https:&#x2F;&#x2F;github.com&#x2F;nilsso>
+            github
+        </a>/
+    </li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link" href=&#x2F;>
+            home
+        </a>/
+    </li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link" href=&#x2F;projects>
+            projects
+        </a>/
+    </li>
+
+    <li class="nav-item dropdown">
+        <a
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+        >
+            content
+        </a>
+        <div class="dropdown-menu">
+            
+            
+            
+            <a class="dropdown-item" href="https:&#x2F;&#x2F;nilsso.github.io&#x2F;pages&#x2F;lang&#x2F;">
+                languages
+            </a>
+            
+            
+            <a class="dropdown-item" href="https:&#x2F;&#x2F;nilsso.github.io&#x2F;pages&#x2F;programming&#x2F;">
+                programming
+            </a>
+            
+            
+            <a class="dropdown-item" href="https:&#x2F;&#x2F;nilsso.github.io&#x2F;pages&#x2F;music&#x2F;">
+                music
+            </a>
+            
+            
+            <a class="dropdown-item" href="https:&#x2F;&#x2F;nilsso.github.io&#x2F;pages&#x2F;games&#x2F;">
+                games
+            </a>
+            
+            
+            <a class="dropdown-item" href="https:&#x2F;&#x2F;nilsso.github.io&#x2F;pages&#x2F;math&#x2F;">
+                math
+            </a>
+            
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/tags">tags</a>
+        </div>
+    </li>
+</ul>
+
+    
+    <hr>
+    <content>
+        
+        
+        
+        <h1>Python</h1>
+        
+        <p>I wrote this because many classmates and friends had little to no experience
+with Python before the MATH-340 class. Programming in Python (and in general)
+will make much more sense if you pay special attention to tidiness,  syntax
+and semantics (what does things mean). In many Java and C++ classes I'd see
+poorly formatted code, making projects basically impossible for me to read and
+understand let alone the person who wrote it. But in Python we <em>must</em> be tidy,
+the syntax requires it. Python is a rare language where whitespace actually
+matters (every control block must be consistently indented). And lastly,
+because Python is a language which does not ask much of us as programmers
+(i.e. dynamically typed) we actually should be more careful in understanding
+what we're writing and how things change.</p>
+<span id="continue-reading"></span>
+<p>And like any other language, programming or spoken, Python just takes practice
+and time.</p>
+<h1 id="setup">Setup</h1>
+<p>Setting up Python and Jupyter can be tricky depending on your operating system
+and yourfamiliarity with software packages in general. Although the prospect of
+switching to a Linux system may sound a bit daunting, in reality it can be
+significantly easier than trying to get things set up on Windows
+(but MacOS feels the same as Linux). So consider running a Linux distribution
+like Antegros under a virtual machine on Windows.</p>
+<h2 id="linux">Linux</h2>
+<h3 id="arch-antegros">Arch (Antegros)</h3>
+<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">pacman -S python2 python2-pip
+</code></pre>
+<p>Now we have python and the python package manager (equivalent to pacman)
+installed.</p>
+<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">pip install pygments
+</code></pre>
+<p>Now its important to note that pacman <em>will want</em> to controll the installation
+of a lot of python packages, in particular will be the pygments package we just
+install via <code>pip</code>.</p>
+<pre data-lang="bash" class="language-bash "><code class="language-bash" data-lang="bash">pacman -S --assume-install python-pygments jupyter-notebook
+</code></pre>
+<hr />
+<h1 id="first-some-programming-terms">First, some programming terms...</h1>
+<p><strong>Function</strong> A function is often like a black box to which we give some
+information, and which then does something useful in return.
+Functions in Python are recognizable due to the pair of parenthesis that follow
+the name.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">sqrt(9)
+</code></pre>
+<pre><code>&gt; 3
+</code></pre>
+<p>The parenthesis denote the <em>parameter list</em>. Parameters (or arguments) are how
+we provide a functions information, although functions don't always require
+parameters.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">exit() # exiting a python environment
+</code></pre>
+<p>A very common function is the <code>print</code> function, which accepts
+values that it in turn <em>prints</em> to the user.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">print(&quot;Hello world!&quot;)
+</code></pre>
+<pre><code>&gt; Hello world!
+</code></pre>
+<p>We can consider many function to be black boxes because we expect them to do
+something useful but don't necessarily care how they do it. More importantly
+though is functions allow us to add functionality without adding lines of code.
+A very important pattern to recognize is when code starts to repeat, it's
+probably time to replace it with a function instead. It's just important to
+recognize how a function looks. Writing functions <a href="https://nilsso.github.io/pages/programming/python/#functions">will be later</a>.</p>
+<p><strong>Declaration</strong> A declaration is a statement which defines what kind of thing a
+&quot;label&quot; is; is it a variable, or a function, or something else? What is its
+type, or what does it return? Does it have access or scope limitations?</p>
+<p>But in Python, out of all these things, scope is really all that's relevant.
+Basically you can't use something (a variable or function) until you've said it
+exists, this is true in all languages. And where things exist matter: does it
+exist for the entirety of our program or only the &quot;scope&quot; of a function? And
+that's about it. In Python we don't say what type a variable is and instead
+variables take on whatever types they're given. There's also no access
+restriction in Python, and function return types don't have to be know in
+advance (i.e. declared). A function can even return multiple different types.</p>
+<p><strong>Scope</strong> Where things exist is important in programming. Most common is the
+<em>global scope</em>. Something is in the global scope when it is accessible anywhere
+throughout the program. Something is in a local scope when it is defined within
+a block (e.g. inside of a function or a decision like an <code>if</code> statement or a
+loop). What this means is that local variables that exist inside of a
+function are inaccessible outside of the function, and more-or-less stop
+existing entirely. But global variables are accessible everywhere. For example:</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">a1 = &quot;Hello&quot;
+def foo():
+    print(a1)
+    print(b1)
+b1 = &quot;World!&quot;
+foo()
+</code></pre>
+<pre><code>&gt; Hello
+&gt; World!
+</code></pre>
+<p>Works because both <code>a1</code> and <code>b1</code> exist in the global scope. So accessing them
+from inside of the function <code>foo</code> is valid, even when <code>foo</code> was defined before
+the variable <code>b1</code> was. However</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">def foo():
+    a2, b2 = &quot;Hello&quot;, &quot;World!&quot;
+print(a2)
+print(b2)
+</code></pre>
+<pre><code>&gt; ---------------------------------------------------------------------------
+&gt; NameError                                 Traceback (most recent call last)
+&gt; &lt;ipython-input-3-ddb071cc9d1f&gt; in &lt;module&gt;()
+&gt; 2     a2, b2 = &quot;Hello&quot;, &quot;World!&quot;
+&gt; 3
+&gt; ----&gt; 4 print(a2)
+&gt; 5 print(b2)
+&gt;
+&gt; NameError: name &#x27;a2&#x27; is not defined
+</code></pre>
+<p>Fails because <code>a2</code> (and <code>b2</code>) is not defined outside the scope of the function.</p>
+<p><strong>Definition</strong> A definition happens to be a declaration where the label is given
+a definitive implementation beyond its declaration. This isn't relevant to
+Python though, because there's no way to separate the declaration of functions
+from the definition of functions, but for C++ is critical. Consider</p>
+<pre data-lang="cpp" class="language-cpp "><code class="language-cpp" data-lang="cpp">int foo(); &#x2F;&#x2F; a function declaration (but not definition)
+
+int bar() { return 0; } &#x2F;&#x2F; a function definition (and necessarily declaration)
+
+bar(); &#x2F;&#x2F; works
+foo(); &#x2F;&#x2F; Error: Undefined symbol foo
+</code></pre>
+<p><strong>Initialization</strong> When a variable's state become &quot;defined&quot;, i.e. the first time
+a variable holds an actual value, and not a null-value (null meaning undefined).</p>
+<p><strong>Assignment</strong> When a variable is made to hold a different value. This can be
+the same thing as the initialization, which would be referred to as
+<em>initialization assignment</em>.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">a = 10 # initialization assignment
+a = 20 # regular assignment (because a already exists)
+</code></pre>
+<hr />
+<h1 id="values-and-types">Values and types</h1>
+<p>A value is simply some information. The integer 7 is a value, an integer value.
+In a language like C++ we might consider it to be a specific kind of integer
+value, perhaps an unsigned integer, and maybe it has a size specification as
+well: is it 8-bit wide (a character or <code>char</code>), 16, 32, 64, or bigger? But once
+the computer understands that the value is a number it acknowledges that it can
+do things to that value, like use it in mathematical statements. If a value is a
+&quot;string&quot; (a sequence of characters) then the computer will acknowledge that it
+can join it with another string or perhaps get a single character at a specific
+index.</p>
+<p>Type information is not required in Python in the same way it is in C++ or Java.
+But this doesn't make understanding and paying attention to types any less
+important in Python. I would argue that understanding types is actually more
+critical to being an effective Python programmer than it is for C++ for Java
+because in Java and C++ types are necessary and obvious. In Python types can
+change making it much more difficult and necessary to keep track of types
+throughout the lifespan of values. When values fail to interact in the way we
+want, unexpected types are a likely culprit.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">print(1, type(1))
+print(4.2, type(4.2))
+print(&quot;Hello&quot;, type(&quot;Hello&quot;))
+</code></pre>
+<pre><code>&gt; (1, &lt;type &#x27;int&#x27;&gt;)
+&gt; (4.2, &lt;type &#x27;float&#x27;&gt;)
+&gt; (&#x27;Hello&#x27;, &lt;type &#x27;str&#x27;&gt;)
+</code></pre>
+<hr />
+<h1 id="variables">Variables</h1>
+<p>In C++ or Java variable declarations require a type</p>
+<pre data-lang="cpp" class="language-cpp "><code class="language-cpp" data-lang="cpp">int a = 7;
+</code></pre>
+<p>But not in Python</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">a = 7
+print(a)
+</code></pre>
+<pre><code>&gt; 7
+</code></pre>
+<p>In C++ and Java we can't change the type of a variable</p>
+<pre data-lang="cpp" class="language-cpp "><code class="language-cpp" data-lang="cpp">int a = 7;
+a = &quot;Hello&quot;; &#x2F;&#x2F; error
+</code></pre>
+<p>But in Python we can assign a new value to a variable even if it's a different
+value than the one the variable is already holding on to</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">a = 7
+print(a)
+a = &quot;Hello&quot;
+print(a)
+</code></pre>
+<pre><code>&gt; 7
+&gt; Hello
+</code></pre>
+<hr />
+<h1 id="multiple-assignment">Multiple-assignment</h1>
+<p>We've already seen how assignment works, but a special feature of Python is
+multiple assignment.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">a, b = &quot;swap&quot;, &quot;me&quot;
+print(a)
+print(b)
+
+a, b = b, a
+print(a)
+print(b)
+</code></pre>
+<pre><code>&gt; swap
+&gt; me
+&gt; me
+&gt; swap
+</code></pre>
+<p>It works by treating whatever is on the right side of the assignment operator as
+a new temporary object, storing each coma separated expression as a part of the
+object. Each expression needs to be evaluated before the temporary object can be
+assembled. And when everything is evaluated and the temporary object created,
+then the values in it are unpacked and assigned piecemeal to whatever is on
+the left of the assignment operator in left-to-right order. The first thing on
+the right is assigned to the first thing on the left, etc.</p>
+<p>This makes swapping values absolutely trivial; no need for a temporary variable
+like in C++</p>
+<pre data-lang="cpp" class="language-cpp "><code class="language-cpp" data-lang="cpp">int a = 1;
+int b = 2;
+
+&#x2F;&#x2F; now to swap
+int temp = a;
+a = b;
+b = temp;
+</code></pre>
+<p>One very poignant example is the generating the Fibonacci sequence, which you
+can find in the functions section at the end.</p>
+<hr />
+<h1 id="decision-structures">Decision structures</h1>
+<p>But first...</p>
+<h2 id="boolean-expressions">Boolean expressions</h2>
+<p>Anyone familiar with programming or classic logic is familiar with boolean
+values, TRUE and FALSE. In Python these two values are expressed as the keywords
+<code>True</code> and <code>False</code>. But actually, basically all values in Python behave like
+boolean values. For just about everything, as long as the value isn't <code>None</code>,
+it's a <code>True</code> value. If it is <code>None</code> then it's equivalent to <code>False</code>.
+For numbers, <code>0</code> is <code>False</code> and anything else is <code>True</code>, even negative
+numbers:</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">print(True)
+print(bool(1))
+print(bool(99))
+print(bool(-47))
+print(bool(list()))
+
+print(False)
+print(bool(0))
+print(bool(None))
+</code></pre>
+<pre><code>&gt; True
+&gt; True
+&gt; True
+&gt; True
+&gt; False
+&gt; False
+&gt; False
+&gt; False
+</code></pre>
+<h2 id="if-elif-and-else"><code>if</code>, <code>elif</code> and <code>else</code></h2>
+<p>Your standard decision structure keywords. The most important syntactic
+different between Python and most other languages is that whitespace is
+syntactically significant when it comes to blocks of code. The body of an if
+statement (or a function, or a loop) is determined by the indent level. We can
+see this in all the following examples:</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">if True:
+    print(&quot;This will print (1)&quot;)
+else:
+    print(&quot;This wont print (2)&quot;)
+</code></pre>
+<pre><code>&gt; This will print (1)
+</code></pre>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">if not True:
+    print(&quot;This wont print (1)&quot;)
+else:
+    print(&quot;This will print (2)&quot;)
+</code></pre>
+<pre><code>&gt; This will print (2)
+</code></pre>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">if False:
+    print(&quot;This will not print (1)&quot;)
+elif True:
+    print(&quot;This will print (2)&quot;)
+else:
+    print(&quot;This will not print (3)&quot;)
+</code></pre>
+<pre><code>&gt; This will print (2)
+</code></pre>
+<hr />
+<h1 id="loops">Loops</h1>
+<h3 id="the-while-loop">The <code>while</code> loop</h3>
+<p>Functionally identical to basically any other language.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">flag = True
+
+while flag:
+    print(&quot;This will loop and print only once&quot;)
+    flag = False
+</code></pre>
+<pre><code>&gt; This will loop and print only once
+</code></pre>
+<p>Unlike some languages there is no <code>do-until</code> type of loop in Python, with its
+condition evaluation at the end of the loop body.</p>
+<h3 id="the-for-loop">The <code>for</code> loop</h3>
+<p>Unlike many other languages the for loop in Python is entirely range-based.
+There's no way to manually increment a counter variable like in C++:</p>
+<pre data-lang="cpp" class="language-cpp "><code class="language-cpp" data-lang="cpp">int arr[5] = { 0, 1, 2, 3, 4 };
+
+for (size_t i = 0; i &lt; 5; ++i) {
+    cout &lt;&lt; arr[i] &lt;&lt; &#x27;\n&#x27;;
+}
+</code></pre>
+<p>Instead in Python you must rely on generator functions which create a range of
+values to iterate over</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">arr = [ 0, 1, 2, 3, 4 ]
+
+for i in range(len(arr)):
+    print(arr[i])
+</code></pre>
+<pre><code>&gt; 0
+&gt; 1
+&gt; 2
+&gt; 3
+&gt; 4
+</code></pre>
+<p>Conveniently the syntax remains consistent over the variety of objects you could
+iterate over, and there is the extremely useful function <code>enumerate</code> which
+provides the numerical index value of where you are in the object you're
+iterating</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">arr = [&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;, &#x27;d&#x27;, &#x27;e&#x27;]
+
+for v in arr:
+    print(v)
+
+for i, v in enumerate(arr):
+    print(&quot;index={} value={}&quot;.format(i, v))
+</code></pre>
+<pre><code>&gt; a
+&gt; b
+&gt; c
+&gt; d
+&gt; e
+&gt; index=0 value=a
+&gt; index=1 value=b
+&gt; index=2 value=c
+&gt; index=3 value=d
+&gt; index=4 value=e
+</code></pre>
+<hr />
+<h1 id="lists">Lists</h1>
+<p>Lists are to Python as arrays are to Java or C++ in that they are contiguous
+containers, but without fixed size and without the homogeneous type restrictions
+of statically typed languages. For example:</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">arr = [ 1, 2, &quot;three&quot;, &quot;four&quot;, 5.0, 6.01 ]
+
+for v in arr:
+    print(&quot;value: {:&lt;6} type: {}&quot;.format(v, type(v)))
+</code></pre>
+<pre><code>&gt; value: 1      type: &lt;type &#x27;int&#x27;&gt;
+&gt; value: 2      type: &lt;type &#x27;int&#x27;&gt;
+&gt; value: three  type: &lt;type &#x27;str&#x27;&gt;
+&gt; value: four   type: &lt;type &#x27;str&#x27;&gt;
+&gt; value: 5.0    type: &lt;type &#x27;float&#x27;&gt;
+&gt; value: 6.01   type: &lt;type &#x27;float&#x27;&gt;
+</code></pre>
+<h2 id="list-comprehensions">List comprehensions</h2>
+<p>An incredibly useful feature included in Python are list comprehensions. It
+provides a syntactically simple way to populate a list by way of a for loop.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python"># Compare this...
+arr = [None]*10
+for i in range(10):
+    arr[i] = i*2
+
+print(arr)
+
+# To this
+arr = [i*2 for i in range(10)]
+print(arr)
+</code></pre>
+<pre><code>&gt; [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+&gt; [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+</code></pre>
+<p>Basically any kind of for loop you can devise you can also use to populate a
+list via a list comprehension. A good example are populating multidimensional
+lists...</p>
+<h2 id="multi-dimensional-lists">Multi-dimensional lists</h2>
+<p>Consider wanting a five-by-five, two-dimensional array in C++</p>
+<pre data-lang="cpp" class="language-cpp "><code class="language-cpp" data-lang="cpp">int arr[5][5];
+</code></pre>
+<p>And if we wanted to populate this array with the integers 1, 2, 3 to 25</p>
+<pre data-lang="cpp" class="language-cpp "><code class="language-cpp" data-lang="cpp">for (size_t y = 0; y &lt; 5; ++y)
+    for (size_t x = 0; x &lt; 5; ++x)
+        arr[y][x] = x+y*5;
+</code></pre>
+<p>This is just as achievable in Python, and using the same method, as demonstrated:</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">arr = [None]*5
+for i in range(5):
+    arr[i] = [None]*5
+
+for y in range(5):
+    for x in range(5):
+        arr[y][x] = 1+x+y*5
+
+pprint(arr) # pretty print (imported)
+</code></pre>
+<pre><code>&gt; [[1, 2, 3, 4, 5],
+&gt; [6, 7, 8, 9, 10],
+&gt; [11, 12, 13, 14, 15],
+&gt; [16, 17, 18, 19, 20],
+&gt; [21, 22, 23, 24, 25]]
+</code></pre>
+<p>But the initialization of the size on the first 3 lines is really unnecessary; I
+only did it to draw more of a parallel to the array declaration in C++. A more
+Pythonean way to initialize this list might be with list comprehensions which
+will populate the list and size definition just follows from the population:</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">arr = [[1+x+y*5 for x in range(5)] for y in range(5)]
+
+pprint(arr)
+</code></pre>
+<pre><code>&gt; [[1, 2, 3, 4, 5],
+&gt; [6, 7, 8, 9, 10],
+&gt; [11, 12, 13, 14, 15],
+&gt; [16, 17, 18, 19, 20],
+&gt; [21, 22, 23, 24, 25]]
+</code></pre>
+<p>List comprehensions syntactically are essentially just for loops inside of
+brackets. It can be confusing but the levels of nested loops in list
+comprehensions grows from outside-in, from right to left. In the example, for
+every time y is a single value from 0 to 4 the other variable x iterates over
+every value from 0 to 4.</p>
+<hr />
+<h1 id="functions">Functions</h1>
+<p>Writing functions allows us to encapsulate some functionality into a single
+label, which is most useful when we want to do something repeatedly. When you
+see yourself duplicating code it's usually a sign that a function would be
+useful.</p>
+<p>Function syntax is as follows:</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">def function_name(arguments):
+    # Function body
+    return # Or leave out
+</code></pre>
+<p>Functions in Python do not require any types for anything at all; a function
+which is supposed to return nothing simply lacks a return statement. Unlike many
+languages, functions in Python can return different types. This probably isn't
+such a good thing as its an occasional convenience. If you've written one
+function to return different values at different times it's probably a smarter
+idea to split this one function into two functions instead. This might save some
+frustration later in the development process.</p>
+<p>The only time I frequently use multiple return types is when a function needs to
+either return a list or nothing:</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">def foo(a):
+    if a &gt; 0:
+        return list(range(a))
+    return None
+
+print(foo(10))
+print(foo(0))
+print(foo(-10))
+</code></pre>
+<pre><code>&gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+&gt; None
+&gt; None
+</code></pre>
+<p>This isn't uncommon in most other languages, where None often behaves like a
+null-value.</p>
+<p>Here's an example of a function which generates the Fibonacci sequence to n
+numbers. It uses the keyword <code>yield</code>, turning the function into what's known as
+a Generator; these are used in particular with Python for loops, as the function
+will &quot;yield&quot; each value to the for loop until it's done yielding values entirely
+(in this case it's done when we've generated the n Fibonacci numbers we wanted).
+We'll use the function as a part of a list comprehension, and then print out the
+list of Fibonacci numbers.</p>
+<pre data-lang="python" class="language-python "><code class="language-python" data-lang="python">def fib_gen(n):
+    a, b = 1, 1
+    for i in range(n):
+        yield a
+        a, b = b, a+b
+
+print(list(fib_gen(10)))
+</code></pre>
+<pre><code>&gt; [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+</code></pre>
+<p>Hopefully this demonstrates the capabilities of Python to do a whole lot of
+things in a short number of characters/lines of code.</p>
+
+        <div id=whitespace></div>
+        
+    </content>
+</body>
+</html>

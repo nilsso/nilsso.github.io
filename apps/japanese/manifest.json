@@ -1,0 +1,12 @@
+{
+  "short_name": "Language Fragment Generator",
+  "icons": [
+    {
+      "src": "https://avatars1.githubusercontent.com/u/567181?s=60&v=4",
+      "sizes": "60x60",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}

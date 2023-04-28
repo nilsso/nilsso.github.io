@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/jpg" href="https://avatars1.githubusercontent.com/u/567181?s=60&v=4">
+    <style>@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Mono&display=swap");html,body{color:#35393e;font-family:"Merriweather",serif;line-height:1.8;font-size:18px}@media (max-width: 520px){html,body{font-size:16px}}@media (max-width: 460px){html,body{font-size:14px}}body{max-width:8in;margin:2rem auto;padding:0 1rem}p{margin:1rem 0}code{font-family:"Roboto Mono",monospace}fg{display:inline-block;text-indent:0px;line-height:normal;-webkit-text-emphasis:none;text-align:center;line-height:1}fg:before{content:attr(t);display:block;font-size:50%;line-height:1.5}cb1{color:#4080bf}cb2{color:#bf8040}cb3{color:#bf4040}cb4{color:#bfbf40}cb5{color:#4040bf}a{color:#4080bf;text-decoration:none}a:hover,a:focus{color:#bf8040}h1,h2,h3,h4,h5,h6{font-family:"Roboto Mono",monospace;line-height:1.2}h1,h2,h3{margin:2rem 0}h4,h5,h6{margin:1.5rem 0}h1{font-size:200%}h2{font-size:180%}h3{font-size:160%}h4,h5,h6{font-size:140%}hr{background:#35393e;border:0;height:1px;margin:2.5rem 0}img{width:100%}pre{padding:1rem;border-radius:3px}table{margin:auto;border-spacing:0}td,th{border-left:1px #000 solid;padding:.25em .75em}td:first-child,th:first-child{border-left:0}th{font-weight:bold}.center,.cg{display:block;text-align:center}.gray,.cg{color:gray}blockquote,.box{margin:1rem 0;padding-left:1rem;border-left:3px solid #8c99a6}.box.theorem{border-color:#4080bf}.box .proposition{border-color:#bf8040}.box.lemma{border-color:#bf4040}.box.corollary{border-color:#bfbf40}.box.definition{border-color:#4040bf}.nav{margin:2.5rem 0}.nav .nav-link{display:inline;padding:0 .5em}.nav .nav-item:first-of-type a{padding-left:0}.nav .dropdown-menu{min-width:0;margin:0;padding:.25rem 0}.nav .dropdown-menu .dropdown-item{padding:.25rem .5rem;color:#4080bf}#toc{margin-bottom:0}.listing{margin-bottom:3rem}.listing .listing-header,.listing .listing-content{padding:0}.listing-summary{color:#8c99a6}.listing-summary *{font-size:100%}.listing-summary h1,.listing-summary h2,.listing-summary h3 h4,.listing-summary h5,.listing-summary h6{margin:1rem 0}.listing-info{font-size:90%}.listing-info .listing-categories,.listing-info .listing-tags{list-style-type:none;padding:0}.listing-info ul li,.listing-info ul a{color:#8c99a6}.listing-info ul li{display:inline;margin-right:1rem}#katex-preamble{display:none}.katex-display{overflow-x:auto;overflow-y:hidden}#whitespace{height:50vh}</style>
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://nilsso.github.io/css/katex.min.css">
+    <script defer src="https://nilsso.github.io/js/katex/katex.min.js"></script>
+    <script defer src="https://nilsso.github.io/js/katex/mathtex-script-type.min.js"></script>
+    <script defer src="https://nilsso.github.io/js/katex/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    { right: "$$", left: "$$",  display: true  },
+                    { right: "$",  left: "$",   display: false }
+                ],
+                strict: true
+            })
+        });
+    </script>
+    
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    
+    
+<ul class="nav">
+    
+    <li class="nav-item">
+        <a class="nav-link" href=https:&#x2F;&#x2F;github.com&#x2F;nilsso>
+            github
+        </a>/
+    </li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link" href=&#x2F;>
+            home
+        </a>/
+    </li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link" href=&#x2F;projects>
+            projects
+        </a>/
+    </li>
+
+    <li class="nav-item dropdown">
+        <a
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+        >
+            content
+        </a>
+        <div class="dropdown-menu">
+            
+            
+            
+            <a class="dropdown-item" href="https:&#x2F;&#x2F;nilsso.github.io&#x2F;pages&#x2F;lang&#x2F;">
+                languages
+            </a>
+            
+            
+            <a class="dropdown-item" href="https:&#x2F;&#x2F;nilsso.github.io&#x2F;pages&#x2F;programming&#x2F;">
+                programming
+            </a>
+            
+            
+            <a class="dropdown-item" href="https:&#x2F;&#x2F;nilsso.github.io&#x2F;pages&#x2F;music&#x2F;">
+                music
+            </a>
+            
+            
+            <a class="dropdown-item" href="https:&#x2F;&#x2F;nilsso.github.io&#x2F;pages&#x2F;games&#x2F;">
+                games
+            </a>
+            
+            
+            <a class="dropdown-item" href="https:&#x2F;&#x2F;nilsso.github.io&#x2F;pages&#x2F;math&#x2F;">
+                math
+            </a>
+            
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/tags">tags</a>
+        </div>
+    </li>
+</ul>
+
+    
+    <hr>
+    <content>
+        
+        
+        
+        <h1>Atomic Density Research</h1>
+        
+        <h1 id="preliminary-algebra-notes">Preliminary Algebra Notes</h1>
+<p>For a non-empty set $S$ and associative binary operation $\ast$, the association $M=(S,\ast)$
+is called a <strong>monoid</strong> if $S$ is closed under the operation $\ast$, and there exists an
+identity element $e\in S$ such that for all $a\in S$, $a\ast e=e=e\ast a$.</p>
+<p>A monoid is called <strong>commutative/abelian</strong> if its operation is commutative.</p>
+<p>A <strong>submonoid</strong> is a subset of the elements of a monoid that in themselves form a monoid under the
+same operation.</p>
+<span id="continue-reading"></span>
+<div id="katex-preamble">
+$$
+\gdef\lengthset{\mathscr{L}}
+\gdef\atomset{\mathscr{A}}
+\gdef\unitsof#1{#1^{\times}}
+\gdef\nonunitsof#1{#1\setminus\unitsof{#1}}
+\gdef\fcm{\mathscr F}
+$$
+</div>
+
+<script type="text/javascript">
+const acm_elements = (a, b, l) => {
+    if (a == 1) {
+        return [...Array(l).keys()].map(q => a+q*b);
+    } else {
+        return [1].concat([...Array(l-1).keys()].map(q => a+(q+1)*b));
+    }
+};
+const acm_string = (a, b, l) => {
+    var valid = false;
+    var s;
+    if (!Number.isInteger(a) || !Number.isInteger(b) || !Number.isInteger(l)) {
+        s = String.raw`\exists x\in\{a,b,l\}\Rightarrow\not\in\N`;
+    } else if (0 >= a) {
+        s = String.raw`0\not< a`;
+    } else if (a > b) {
+        s = String.raw`a\not\leq b`;
+    } else if (a**2 % b != a % b) {
+        s = String.raw`a^2\not\equiv a\bmod b`;
+    } else {
+        valid = true;
+        s = String.raw`
+            M_{${a},${b}}
+        = \{n\in\N:n\equiv ${a}\bmod ${b}\}${a != 1 ? String.raw`\cup\{1\}` : ""}
+        = \{${acm_elements(a, b, l).join()},\ldots\}`;
+    };
+    return [valid, s];
+}
+</script>
+<p>A monoid $(M,\ast)$ is <strong>cancellative</strong> if for all $a,b,c\in M$ we have:</p>
+<ul>
+<li>$a\ast b=a\cdot c$ always implies $b=c$, and</li>
+<li>$b\ast a=c\cdot a$ always implies $b=c$.</li>
+</ul>
+<p>For a <strong>commutative cancellative</strong> monoid $M$,
+if for some $x,y\in M$ we have $x\mid y$ ($x$ divides $y$),
+then there must exist a $z\in M$ such that $xz=y$.</p>
+<p>This describes divisibility within the set of the monoid $M$.
+It may be important to denote divisibility within some specific set or monoid $S$,
+and so we write $x\mid_S y$.
+For example, if $x\mid y$ and $x,y\in\N$ then we could also write $x\mid_\N y$.</p>
+<p>A <strong>unit</strong> of a monoid $M$, similar to a unit of a ring,
+is an element $x\in M$ for which there exists an $x'\in M$ such that $x\ast x'=e$.</p>
+<p><strong>Going forward, we'll assume $M$ to be a commutative cancellative monoid, and let $\unitsof M$ be
+the set of units of $M$.</strong></p>
+<p>A non-unit $x\in M$ (that is $x\in\nonunitsof M$)
+is <strong>irreducible</strong>/an <strong>atom</strong> if whenever $x=yz$ then either $y\in\unitsof M$
+or $z\in\unitsof M$ (one is a unit, but not both).
+We write the $\atomset(M)$ for the set of atoms of $M$.</p>
+<p>A non-unit $x\in M$ is <strong>prime</strong> if whenever $x\mid yz$ for some $y,z\in M$,
+either $x\mid y$ or $x\mid z$ (divides one, but not the other).
+An element being prime implies it is an atom.</p>
+<p>A monoid $M$ is called <strong>atomic</strong> if every non-unit $x$ can be written as a product of atoms of $M$.</p>
+<p>The <strong>unique factorization monoid</strong> $(\N,\times)$ is atomic in that every integer greater than 1 can
+be written as a product of powers of atoms (or more specifically here primes) that is unique
+up to the order of the atoms, as in the Fundamental Theorem of Arithmetic.</p>
+<p>Since $M_{a,b}$ is a submonoid of $(\N,\times)$, it is also atomic.</p>
+<p><strong>Going forward, all monoids will be assumed to be atomic.</strong></p>
+<p>A monoid $M$ is <strong>factorial</strong> if every non-unit $x\in M$ has a unique factorization into
+atoms of $M$. $M$ is factorial if and only if all of its atoms are prime.</p>
+<p>For a non-unit $x\in\nonunitsof M$, we define
+
+<script type="math/tex">$$
+\lengthset(x)
+= \{n:\text{there are }\alpha_1,\ldots,\alpha_n\in\atomset(M)\text{ with }x=\alpha_1\cdots\alpha_n\},
+$$</script>
+
+
+which we call the <strong>length set</strong> of $x$. These sets collected together is
+
+<script type="math/tex">$$
+\lengthset(M)
+= \{\lengthset(x):x\in\nonunitsof M\},
+$$</script>
+
+
+The length set of $M$.</p>
+<p>The ratio $\rho(x)=\sup\lengthset(x)/\inf\lengthset(x)$ is called the <strong>elasticity</strong> of $x$,
+and the elasticity of the monoid is defined by
+
+<script type="math/tex">$$
+\rho(M)
+= \sup\{\rho(x):x\in\nonunitsof M\}.
+$$</script>
+
+</p>
+<p>If $\rho(M)=1$ then $M$ is called <strong>half-factorial</strong>. For example, $M_{1,4}$ is half-factorial in
+that any reducible $x$ has factorization(s) of length 2 ($\rho(x)=2/2=1$)
+and any atom $u$ has $\rho(u)=1$, thus $\rho(M)=1$.</p>
+<p>A monoid $M$ is said to be <strong>fully elastic</strong> if for every rational $q$ with $1\le q&lt;\rho(M)$ there
+exists an $x\in\nonunitsof M$ such that $\rho(x)=q$;
+if there exists an $x\in\nonunitsof M$ such that $\rho(M)=\rho(x)$ then the elasticity of $M$ is
+said to be <strong>accepted</strong>.</p>
+<p>Given $x\in\nonunitsof M$ we write its length set in increasing order
+
+<script type="math/tex">$$
+\lengthset(x)
+= \{n_1,n_2,\ldots,n_k\},
+$$</script>
+
+
+where $n_i&lt;n_{i+1}$ for $i\le i\le k-1$. The <strong>delta set</strong> of $x$ is defined by
+
+<script type="math/tex">$$
+\Delta(x)
+= \{ n_1 - n_{i-1}: 2\le i\le k \},
+$$</script>
+
+
+and the delta set of $M$ by
+
+<script type="math/tex">$$
+\Delta(M)
+= \bigcup_{x\in\nonunitsof M}\Delta(x).
+$$</script>
+
+</p>
+<p>Let $M$ and $N$ be commutative, cancellative, atomic monoids, and $\sigma:M\to N$ a monoid
+homomorphism. The map $\sigma$ is a <strong>transfer homomorphism</strong> if:</p>
+<ul>
+<li>$\sigma(u)\in\unitsof N$ for any $u\in\unitsof M$.</li>
+<li>$\sigma(x)\notin\unitsof N$ for any $x\notin\unitsof M$.</li>
+<li>For any $a\in N$ there exists a unit $u\in\unitsof N$ and an $x\in M$ such that $\sigma(x)=ua$.</li>
+<li>Whenever $x\in M$ and $a,b\in N$ such that $\sigma(x)=ab$, there exists $y,z\in M$ and units
+$u,v\in\unitsof N$ such that $x=yz$, $\sigma(y)=ua$, and $\sigma(z)=vb$.</li>
+</ul>
+<p>For a set $P$, the <strong>free commutative monoid</strong> $\fcm(P)$ <strong>TODO: DEFINE</strong></p>
+<p>Let $M$ be a monoid. A <strong>divisor theory</strong> for $M$ is a free commutative monoid $\fcm(P)$ and a
+monoid homomorphism $\sigma:M\to\fcm(P)$ satisfying the following properties:</p>
+<ul>
+<li>$\sigma(u)=1$ for any $u\in\unitsof M$.</li>
+<li>$\sigma(x)\ne 1$ for any $x\notin\unitsof M$.</li>
+<li>For any non-units $x,y\in M$, $\sigma(x)\mid\sigma(y)$ implies $x\mid y$.</li>
+<li>For every $p\in P$, there is a finite subset $X\subseteq M$ such that $p=\gcd(\sigma(X))$.</li>
+</ul>
+<p>A monoid $M$ which has a divisor theory is said to be a <strong>Krull monoid</strong>. The generators $P$ are said
+to be the <strong>prime divisors</strong> of $M$, and the quotient monoid $\fcm(P)/\sigma(M)$ is known as the
+<strong>class group</strong> of $M$.</p>
+<h2 id="regular-arithmetic-congruence-monoids">Regular arithmetic congruence monoids</h2>
+<p>Given $a,b\in\N$ with $0&lt;a\le b$ and $a^2\equiv a\bmod b$,
+define the <strong>arithmetic congruence monoid</strong> of $a$ and $b$:
+
+<script type="math/tex">$$
+M_{a,b}
+:= \{n\in\N: n\equiv a\bmod b\}\cup\{1\}
+= \{1,a,a+b,a+2b,\ldots\}.
+$$</script>
+
+</p>
+<div id="acm-checker" class="card">
+    <div class="card-header">
+        $M_{a,b}$ ACM Tester (where $l$ is the number of elements to generate)
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <div class="form-row">
+                <div class="col">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$a$</span>
+                        </div>
+                        <input id="acm-checker-a" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$b$</span>
+                        </div>
+                        <input id="acm-checker-b" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$l$</span>
+                        </div>
+                        <input id="acm-checker-l" class="form-control" type="text" placeholder="4">
+                    </div>
+                </div>
+                <div class="col">
+                    <button id="acm-checker-btn" class="btn btn-primary btn-block">Go</button>
+                </div>
+            </div>
+        </li>
+        <li id="acm-checker-res" class="list-group-item text-center"></li>
+    </ul>
+</div>
+<script>
+const danger = "list-group-item-danger";
+const res = $("#acm-checker-res");
+const ele = res[0];
+$("#acm-checker-btn").click(() => {
+    const a = parseFloat($("#acm-checker-a").val());
+    const b = parseFloat($("#acm-checker-b").val());
+    const l = parseFloat($("#acm-checker-l").val() || 4);
+    const [valid, s] = acm_string(a, b, l);
+    if (!valid) {
+        res.addClass(danger);
+    } else {
+        res.removeClass(danger);
+    }
+    katex.render(s, ele);
+});
+</script>
+<!-- Lemma 3.1 -->
+<p>Let $x,y,z\in\N$ such that $x=yz$. If $x,y\in M_{1,b}$ then $z\in M_{1,b}$.</p>
+<p>Said another way, if for $x,y\in M_{1,b}$ we have that $x\mid_\N y$,
+then $x\mid_{M_{1,b}}y$.
+From this we say that $M_{1,b}$ is <strong>saturated</strong> in $\N$.</p>
+<p>In contrast, $M_{b,b}$ is not since, for example,
+$2\mid_\N 6$ but $2\nmid_{M_{2,2}} 6$ since $6\notin M_{2,2}$.</p>
+<p>Let $P=\{ p\in\N: p\text{ is prime and }\gcd(p,b)=1 \}$,
+and $\fcm(P)$ the free commutative monoid generated by $P$.</p>
+<p>(For example, let $b=3$.
+Although $2$ it is prime, since $4\in M_{1,3}$ and $\gcd(2,4)=2\ne 1$, therefore $2\notin P$.
+I suppose it might be useful in the future to denote $P_b$.)</p>
+<!-- Theorem 3.2 -->
+<p>Let $P=\{ p\in\N: p\text{ is prime and }\gcd(p,b)=1 \}$.
+The free commutative monoid $\fcm(P)\le(\N,\times)$ and
+the homomorphism $\iota:M_{1,b}\hookrightarrow\fcm(P)$ form a divisor theory for $M_{1,b}$.
+Thus $M_{1,b}$ is Krull.
+(The hooked arrow $\hookrightarrow$ is to denote that $\iota$ is an <a href="https://en.m.wikipedia.org/wiki/Inclusion_map">inclusion map</a>,
+symbolizing that $M_{1,b}$ is a subset of $\fcm(P)$.)</p>
+<p>The ACM class $M_{1,b}$ being Krull is an instance of a general theorem that all saturated
+submonoids of factorial monoids are Krull, and all other ACMs besides $\N$ are not Krull.
+For ACMs that are multiples (as in $M_{b,b}$, $M_{b,2b}$, etc.), this is due to the correspondence
+with numerical monoids and translates of $(\N^n,+)$, both of which are not Krull.</p>
+
+        <div id=whitespace></div>
+        
+    </content>
+</body>
+</html>
